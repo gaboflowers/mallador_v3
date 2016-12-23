@@ -5,6 +5,7 @@ Utiliza Python 2.x.
 Las siguientes dependencias no forman parte de la librería estándar de Python:
 - bs4 *(BeautifulSoup)*
 - unidecode
+
 Para instalarlas, se recomienda usar pip:
 ```
 pip install [librería]
