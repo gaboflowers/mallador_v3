@@ -41,14 +41,18 @@ siglas = codigoDepto.keys()
 def parseCursosSopa(sopa):
     cod_cursos = [tag['id'] for tag in sopa.findAll('h2',{'id':True})]
 
-    codigo_este_depto = cod_cursos[-1][:2]
+    str_navbar = sopa.find('ul',{'id':'navbar'})
+    
+    cod_y_nombre_este_depto = str_navbar.text.split('\n')[2]
+    guion = cod_y_nombre_este_depto.find(' -')
+    codigo_este_depto = cod_y_nombre_este_depto[:guion]
+    
     if codigo_este_depto == "EI":
         tag = sopa.find('ul',{'id':'navbar'})
         nombre_depto = unidecode.unidecode(tag.findAll('li')[1].text[5:]).lower()
         if nombre_depto[:3] == "esc": codigo_este_depto = "escuela"
         elif nombre_depto[:11] == "area de ing": codigo_este_depto = "ing"
-        else: codigo_este_depto = "idiomas"
-        
+        else: codigo_este_depto = "idiomas"   
     departamento = [codigo_este_depto] # [codigo_este_depto, curso1, curso2, curso3, ...]
     
     i = 0
@@ -56,7 +60,7 @@ def parseCursosSopa(sopa):
     for tabla in tablas:
         codigo_este_curso = cod_cursos[i]
         nombre_y_codigo = sopa.find('h2',{'id':codigo_este_curso}).text.replace('\n','').replace('\t','')
-        item_curso = [nombre_y_codigo] # [nombre+codigo curso, [datos], secc1, secc2, secc3, ...]
+        item_curso = structHorario.Curso([nombre_y_codigo]) # [nombre+codigo curso, [datos], secc1, secc2, secc3, ...]
 
         tag = sopa.find('h2',{'id':codigo_este_curso})
         tag = tag.find_next('dl')
@@ -67,7 +71,7 @@ def parseCursosSopa(sopa):
         
         secciones = tabla.tbody.findAll('tr')
         for seccion in secciones:
-            item_seccion = [] # [[Profes],Cupo,Ocupados,[Horario]]    
+            item_seccion = structHorario.Seccion() # [[Profes],Cupo,Ocupados,[Horario]]    
             
             datos_seccion = seccion.findAll('td')
 
@@ -153,7 +157,12 @@ def getCatalogoHTML(yr,sem):
     catalogoHTML = []
     for s in codigosDeptos:
         url = urlCatalogo(yr,sem,s)
-        html = urllib2.urlopen(urllib2.Request(url)).read()
+        
+        request = urllib2.Request(url)
+        request.add_header('Accept-Encoding', 'utf-8')
+        response = urllib2.urlopen(request)
+        
+        html = response.read()
         sopa = BS(html,'html.parser')
         catalogoHTML.append(sopa)
     return catalogoHTML
@@ -161,7 +170,8 @@ def getCatalogoHTML(yr,sem):
 #retorna una lista "Catalogo" (cada elemento de getCatalogoHTML parseado
 #por parseCursosSopa
 def getCatalogo(yr,sem):
-    catalogo = []
+    string = str(yr) + str(sem)
+    catalogo = structHorario.Catalogo(string)
     
     for catalogo_depto in getCatalogoHTML(yr,sem):
         catalogo_depto_parseado = parseCursosSopa(catalogo_depto)
@@ -244,9 +254,14 @@ def cargarCatalogo(nombre_archivo):
     load_file.close()
     
     largo_archivo = len(file_data)
-    
+
+    if "catalogo" in nombre_archivo:
+        semestre = stripNotNumeric(nombre_archivo)
+    else:
+        semestre = "PERSONAL"
+        
     i=0
-    catalogo = []
+    catalogo = structHorario.Catalogo(semestre)
     depto = []
     curso = structHorario.Curso()
     while i < largo_archivo:
@@ -267,10 +282,11 @@ def cargarCatalogo(nombre_archivo):
                 if len(curso) == 2: curso.append([])
                 depto.append(curso)
                 curso = structHorario.Curso()
+            #len(curso) == 0
             c = item.find(';')
             nombre_y_curso = item[c+1:-1]
             #print nombre_y_curso
-            curso.append(nombre_y_curso)
+            curso.append(nombre_y_curso) # <- curso[0]
         elif primer_char == "!": # datos de curso
             datos = item[1:-1].split(";")[:-1]
             curso.append(datos)
@@ -301,6 +317,14 @@ def cargarCatalogo(nombre_archivo):
         
     return catalogo
 
+def stripNotNumeric(s):
+    out = ""
+    for char in s:
+        if char.isdigit():
+            out += char
+    return out
+
+    
 #s = BS(urllib2.urlopen(urllib2.Request('http://www.cec.uchile.cl/~gabriel.flores.m/ex_ucampus.html')).read(),'html.parser')
 
         

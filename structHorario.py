@@ -1,3 +1,5 @@
+from unidecode import unidecode
+
 class Hora:
     #Hora: str -> Hora
     def __init__(self,time):
@@ -76,34 +78,65 @@ class Bloque:
             return True
         return False
    
-class Curso(list):
-    def __init__(self,L=[]):
-        list.__init__(self,L)
 
-    def __str__(self):
-        try:
-            return "<Curso> "+str(self[0])
-        except IndexError:
-            return "<Curso [Vacio]>"
-
-    def __repr__(self):
-        return str(self)
 
 class Seccion(list):
     def __init__(self,L=[]):
         list.__init__(self,L)
-        self.profes = self[0]
-        self.cupo = self[1]
-        if len(self.cupo) == 0: self.cupo = ""
-        self.ocupados = self[2]
-        if len(self.ocupados) == 0: self.ocupados = ""
+        try:
+            self.profes = self[0]
+        except IndexError:
+            self.profes = []
+        try:    
+            self.cupo = self[1]
+            if len(self.cupo) == 0: self.cupo = ""
+            self.ocupados = self[2]
+            if len(self.ocupados) == 0: self.ocupados = ""
+        except IndexError:
+            self.cupo = ""
+            self.ocupados = ""
 
     def __str__(self):
         try:
-            return "<Curso> "+str(self[0])
+            return unidecode("<Seccion> "+self.profes)
         except IndexError:
-            return "<Curso [Vacio]>"
+            return "<Seccion [Profes no disp.]>"
 
     def __repr__(self):
         return str(self)
+    
+class Curso(list):
+    def __init__(self,L=[]):
+        list.__init__(self,L)
+        try:
+            self.cod_y_curso = self[0]
+            arr = self[0].split(' ')
+            self.cod = arr[0]
+            self.nombre = arr[1]
+        except IndexError:
+            self.cod_y_curso = "XX0000 [Curso vacio]"
+            self.cod = "XX0000"
+            self.nombre = "[Curso vacio]"
+        
 
+    def __str__(self):
+        return unidecode("<Curso> "+self.cod_y_curso)
+        
+    def __repr__(self):
+        return str(self)
+
+class Depto(list):
+    def __init__(self,L=[]):
+        list.__init__(self,L)
+        #self.name = 
+        
+class Catalogo(list):
+    def __init__(self, semestre, L=[]):
+        list.__init__(self,list())
+        self.name = semestre
+
+    def __str__(self):
+        return "<Catalogo "+self.name+">"
+
+    def __repr__(self):
+        return str(self)

@@ -884,7 +884,7 @@ Leonardo Infante;50;32;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
 !5;No tiene;
 Jose Maza Sancho;120;86;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
 =EOD
-$74;EM
+$74;EL
 %2;EL3001 Análisis y Diseño de Circuitos Eléctricos
 !10;MA2601,FI2002;EL31A;
 Pablo Estevez V.,Jorge Silva S.;57;49;Bcat,ma,8:00,10:00,Bcat,ju,8:00,10:00,Baux,vi,14:00,18:00,
@@ -958,7 +958,7 @@ Arturo Otto V.;50;17;Bcat,mi,18:00,19:30,
 Sergio Bunel T.;50;3;Bcat,mi,18:00,19:30,
 Patricio Valenzuela C.,Jorge Sandoval A.;50;10;Bcat,ju,18:00,19:30,
 %3;EL5004 Taller de Diseño
-!10;EL5002;EL64B/EL67B;
+!10;EL5002/ME5500;EL64B/EL67B;
 Augusto Lucero A.;50;20;Bcat,lu,18:00,19:30,
 Marcos Diaz Quezada;50;7;Bcat,ju,16:00,18:00,
 %1;EL5030 Seminario de Diseño e Innovación Tecnológica II
@@ -1105,7 +1105,7 @@ Claudio Estevez M.,Cesár Azurdia M.;0;6;Bcat,lu,18:00,21:00,Bcat,ju,18:00,21:00
 %1;EMC400 Proyecto de Grado II
 !30;AUTOR;
 =EOD
-$29;VA
+$29;FG
 %1;FG6016 Euskera y Cultura Vasca , los más Antiguos de Europa
 !5;No tiene;FG1B6;
 Nora Garmendia B.;3;3;Bcat,mi,16:30,18:00,
@@ -1842,7 +1842,7 @@ Alfonso Silva Ruiz.;60;54;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ma,14:30,
 !10;IN3401;Semanas de Controles 7 y 14, modulo 2.5;
 Benjamín Villena R.;111;105;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ma,16:15,17:45,
 %1;IN4524 Web y Negocios
-!5;(IN31A,CC20A)/(IN3001,IN3501);Electivo;
+!5;(IN31A,CC20A)/(IN3001,IN3501);Electivo. El curso se dicta con un minimo de 20 alumnos;
 Ivan Diaz C.,Luis Dujovne;60;48;Bcat,ju,18:00,19:30,
 %2;IN4601 Marketing I
 !10;IN4301,IN3401;
@@ -1865,7 +1865,7 @@ Marcelo Olivares A.;90;85;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,16:15,
 !5;IN41A/IN3202;
 Alejandra Mizala S;35;35;Bcat,lu,12:00,13:30,
 %1;IN4847 Seminario de Educación
-!5;IN2201;Electivo de 049;
+!5;IN2201;Electivo.Curso se dicta con un minimo de 20 alumnos;
 Pablo Gonzalez Soto;24;19;Bcat,ma,12:00,13:30,
 %1;IN4850 Discurso Para la Efectividad Profesional
 !10;IN3001;Curso se dicta con un minimo de 20 alumnos;
@@ -1882,7 +1882,7 @@ Claudio Pizarro T.;70;63;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
 !10;IN4002,IN4301;
 Sebastián Conde D.,Sebastian Depolo C;90;51;Bcat,lu,16:15,17:45,Bcat,ju,16:15,17:45,Baux,vi,12:00,13:30,
 %1;IN5132 Integración Cognitivo Corporal, Aprendizaje y Comunicación
-!10;IN3001,UD450;Electivo;
+!10;IN3001,UD450;Electivo.Curso se dicta con un minimo de 20 alumnos;
 Carmen Cordero;25;23;Bcat,ma,16:15,19:30,
 %1;IN5134 Habilidades Comunicacionales en la Empresa
 !5;IN5101;Curso se dicta con un minimo de 20 alumnos;
@@ -1899,7 +1899,7 @@ Jacques Clerc P.;50;36;Bcat,mi,14:30,17:45,Baux,ju,16:15,17:45,
 Alejandro Bernales S.;79;72;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ma,14:30,16:00,
 Alejandro Bernales S.;60;25;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ma,14:30,16:00,
 %1;IN5322 Evaluación Social de Proyectos
-!10;IN4301/IN3301;Electivo;
+!10;IN4301/IN3301;ElectivoSe dicta con un minimo de 20 alumnos;
 Eduardo Contreras V.,Alejandro Galvez Zuñiga;40;35;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,vi,14:30,16:00,
 %1;IN5324 Valoración de Decisiones Estratégicas
 !5;IN5303,IN5003;
@@ -1914,10 +1914,10 @@ Luis Morales Vera;40;32;Bcat,lu,18:00,19:30,
 !10;(IN3501/CC5401),(IN4301/IN3301);IN55A;
 Sebastian Rios P.;70;62;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,14:30,16:00,
 %1;IN5523 Data Warehousing
-!10;IN55A/CC42A/IN3501;
+!10;IN3501/CC3001/IN55A/CC42A/AUTOR;
 Hector Alvarez Gomez.,Felipe Vildoso C.;50;40;Bcat,mi,16:15,17:45,Bcat,vi,16:15,17:45,Baux,mi,18:00,19:30,
 %1;IN5528 Introducción a Big Data
-!10;(IN3501/CC3201),(IN4901S/AUTOR);
+!10;IN3501/CC3001/IN55A/CC42A/AUTOR;Curso se dicta con un minimo de 20 alumnos;
 Juan Velasquez S,Felipe Vildoso C.;40;21;Bcat,ma,14:30,16:00,Bcat,ju,16:15,17:45,Baux,ma,16:15,17:45,
 %2;IN5602 Marketing II
 !10;IN4601,IN4402;
@@ -1927,10 +1927,10 @@ Ricardo Montoya M.;50;43;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,14:30,1
 !5;(IN4703/IN47A),(IN4601/IN58A);
 Claudio Pizarro T.;70;43;Bcat,ma,10:15,11:45,
 %1;IN5721 Diseño de Supply Chain
-!5;IN47B/IN4704;Electivo;
+!5;IN47B/IN4704;Electivo.Curso se dicta con un minimo de 20 alumnos;
 Sergio Rojas N,Jaime Zuñiga Castro,Nicolas Sclabos;50;44;Bcat,vi,16:15,17:45,
 %1;IN5824 Derecho en la Empresa
-!5;IN42A/IN4301;Electivo;
+!5;IN42A/IN4301;Electivo.Curso se dicta con un minimo de 20 alumnos;
 Lorena Donoso A;60;55;Bcat,ju,8:30,10:00,
 %1;IN5845 El Papel de los Actores Públicos y Privados: Desafíos para el Diseño e Implementación de Políticas Públicas
 !5;IN4002;Curso se dicta con un minimo de 20 alumnos;
@@ -1951,7 +1951,7 @@ Fernan Ibañez A.,Juan Saez C.;24;25;Bcat,mi,8:30,11:45,
 !5;IN5303;
 Rodrigo Santibañez;40;24;Bcat,ma,8:30,10:00,
 %1;IN6838 Tópicos Avanzados en Estrategia
-!5;IN5003;
+!5;IN5003;Curso se dicta con un minimo de 20 alumnos.Se imparte la primera mitad de semestre;
 Jerko Juretic Diaz;60;43;Bcat,lu,14:30,17:45,
 %2;IN6903 Práctica Profesional III
 !0;IN4601,IN4302,IN5502,IN5902;IN69A;
@@ -2603,7 +2603,7 @@ $2;escuela
 !5;IQ3451,(CI4102/IN5322/MI5051/CI5103/IN5129/CI5522/GF3003/GF3022/GF3004/EL6000/GL4009/ME6000/BT4551/CI5312/MA45C);
 Claudia Mac-Lean Bravo;50;6;Bcat,ma,16:15,17:45,
 =EOD
-$23;TE
+$23;idiomas
 %1;EE0001 Test de Diagnóstico de Español
 !0;No tiene;
 %1;EE0002 Test de Diagnóstico de Español II
