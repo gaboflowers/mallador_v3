@@ -2,6 +2,7 @@
 Interfaz para visualizar mallas U-Campus (fcfm por el momento)
 
 Estado actual:
+
 -La interfaz deja descargar y guardar catálogos (mediante fetcher.py).
 
 -Todavía **no** se soluciona la incorporación de los ramos en la ventana principal.
