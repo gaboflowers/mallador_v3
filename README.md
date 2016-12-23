@@ -1,4 +1,4 @@
-# mallador_v2
+# mallador_v3
 Interfaz para visualizar mallas U-Campus (fcfm por el momento)
 
 Utiliza Python 2.x.
