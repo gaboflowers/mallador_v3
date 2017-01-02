@@ -27,7 +27,9 @@ Para poder probar el panel inferior:
 	Archivo > Gestionar catalogos > Importar catalogo desde archivo > "catalogo20161.fcfm"
 - Luego, abrir la ventana de carga de cursos:
 	Ventanas > Mostrar cursos disponibles
-- Ahí, seleccionar algún ramo y "Agregar al horario". El resultado debería ser similar al de la maqueta del programa (maqueta.png)
+- Ahí, seleccionar algún ramo y "Agregar al horario". El resultado debería ser similar al de la maqueta del programa
+
+![maqueta.png](https://raw.githubusercontent.com/gaboflowers/mallador_v3/master/maqueta.png)
 
 Funciones problemáticas:
 
