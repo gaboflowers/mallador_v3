@@ -13,7 +13,7 @@ from random import choice
 ###         no se puede importar y viceversa. Algun dia tendre que arreglar "fetcher"
 ###         para que trabaje de forma mas limpia con Unicode
 ###
-###     - VentanaMallador permite multiples ventanas Toplevel de cada instancia abiertas
+###     - VentanaMallador permite multiples ventanas Toplevel de cada instancia abiertas <- arreglado con self.ventanas_cerradas
     
 class VentanaMallador(Frame):
     counter = 0
@@ -97,13 +97,13 @@ class VentanaMallador(Frame):
         self.canvas.create_text(615,self.minutos_a_coord(670),text="20:00")           
 
             
-    def widgets_main(self):
+    def widgets_main(self): # <--------------- POBLA EL CANVAS DE LOS CANVASES SCROLLEABLES DE LOS RAMOS
         frame_2 = Frame(self.frame_1,height=260)
         frame_2.pack(fill=X)
         frame_2.pack_propagate(0)
 
-        self.canvas_scroll = Canvas(frame_2, borderwidth=0)#width=660, height=250)
-        self.frame_canvas = Frame(self.canvas_scroll)
+        self.canvas_scroll = Canvas(frame_2, borderwidth=0)#,width=660, height=250) # <- CANVAS SCROLLEABLE EN X
+        self.frame_canvas = Frame(self.canvas_scroll) # <- FRAME DENTRO DEL CANVAS
         scrollbar = Scrollbar(frame_2,orient=HORIZONTAL,command=self.canvas_scroll.xview)
         self.canvas_scroll.configure(xscrollcommand=scrollbar.set)
         
@@ -113,6 +113,7 @@ class VentanaMallador(Frame):
                                   tags="self.frame_canvas")
 
         self.frame_canvas.bind("<Configure>", self.onFrameConfigure)
+        self.frame_canvas.pack()
 
         self.actualizar_ramos_inferior()
         
@@ -124,9 +125,9 @@ class VentanaMallador(Frame):
 
     def actualizar_ramos_inferior(self):
         i = 0
-        for ramo in self.cargados:
+        for ramo in self.cargados:       # <----- CREO QUE POR AQUI TENGO LA PURA EMBARRA :CCCCCCCCCCC
             #print ramo, "in self.cargados"
-            frame = Frame(self.frame_canvas,width=200)
+            frame = Frame(self.frame_canvas,width=100)
             frame.pack(side=LEFT,fill=Y)
             Label(frame,text="test").pack()
             frame.pack_propagate(0)
@@ -144,7 +145,7 @@ class VentanaMallador(Frame):
 
             frame_in_canvas.bind("<Configure>", lambda event, canvas=canvas: self.onFrameConfigureSub(canvas))
 
-            self.dicc_cajas_ramo.append(diccionario)
+            self.dicc_cajas_ramo.append(diccionario) #lista de diccionarios con los widgets pertinentes
 
             self.poblar_widgets_ramo(i)
 
@@ -168,7 +169,6 @@ class VentanaMallador(Frame):
         Guarda los bloques de cada seccion en una lista, y esa lista en self.bloques_ramo.
         Posteriormente, self.dibujar_bloques solo tiene que leerlos desde ahi.'''
         ramo = self.cargados[indice]
-        
         nombre_y_cod = ramo[0]
         codigo = nombre_y_cod[:nombre_y_cod.find(' ')]
         
@@ -191,13 +191,29 @@ class VentanaMallador(Frame):
         varRadio = IntVar()
         bloques = [codigo] # [codigo, bloques s1, bloques s2, ...]
         i = 0
+        print "        secciones:"
         for seccion in lista_secciones:
-            print "tipo seccion", type(seccion)
-            cupo = seccion.cupo
-            ocupados = seccion.ocupados
+            print " "*10, seccion
+
+            try:
+                cupo = seccion.cupo
+            except AttributeError:
+                cupo = ""
+
+            try:
+                ocupados = seccion.ocupados
+            except AttributeError:
+                ocupados = ""
+
+            '''    
             profes = ""
             for profe in seccion.profes:
                 profes += (profe+'\n')
+            '''
+            try:
+                profes = seccion.str_profes
+            except AttributeError:
+                profes = "<Sin prof.>"
             
             texto = profes+'  ('+cupo+'/'+ocupados+')'
             R = Radiobutton(f_secc, text = texto, variable=varRadio,\
@@ -327,7 +343,7 @@ class VentanaMallador(Frame):
         elif i == 1: self.ventanas['db'].destroy()
         elif i == 2: self.ventanas['agregar'].destroy()
         
-    #--------------------- VENTANA CARGA -----------------------
+    #--------------------- VENTANA CARGA (catalogos) -----------------------
     def manage_db(self):
         if self.ventanas_cerradas[0]:
             self.ventanas_cerradas[0] = False
@@ -436,7 +452,7 @@ class VentanaMallador(Frame):
         print "len self.catalogos", len(self.catalogos)
 
 
-    #--------------------- VENTANA DB -----------------------
+    #--------------------- VENTANA DB (cursos) -----------------------
     def nombre_depto(self,depto):
         nombres = {'AS':u'Astronomía', 'BT':u'Biotecnología', 'CC':u'Computación', 'CI':'Civil',\
                        'CM':'Ciencia de los Materiales', 'DR':'Deportivo/Recreativo/Cultural',\
@@ -501,6 +517,7 @@ class VentanaMallador(Frame):
                 if nom in ['escuela','ing','idiomas']: nom = "EI"
                 self.items_menu.append(nom+" "+self.nombre_depto(cod))
 
+            #Variables para leer curso/depto seleccionado
             self.var_CBox = StringVar()
             self.CBox = Combobox(db_frame, textvariable=self.var_CBox, state='readonly',width=35)
             self.CBox['values'] = tuple(self.items_menu)
@@ -537,16 +554,21 @@ class VentanaMallador(Frame):
 
 
     def agregar_al_horario(self):
+        '''No lee mas parametros: tanto el departamento como el curso seleccionado
+        los lee de self.var_CBox y self.lista_cursos en ventana_ramos_db()'''
+        
         depto_seleccionado = self.items_menu.index(self.var_CBox.get())
         print "depto_seleccionado",depto_seleccionado
-        curso_seleccionado = map(int, self.lista_cursos.curselection())[0]
+        curso_seleccionado = map(int, self.lista_cursos.curselection())[0] + 1 # ojo con el +1
         print "curso_seleccionado",curso_seleccionado
 
         curso = self.union_catalogos[depto_seleccionado][curso_seleccionado]
 
-        if curso not in self.cargados:
+        if curso not in self.cargados: #solo si el curso ya no estaba
             self.cargados.append(curso)
-
+            print "--self_cargados"
+            print self.cargados
+            print "--End_self_cargados"
             self.actualizar_ramos_inferior()
 
     def actualizar_db(self): pass

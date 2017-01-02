@@ -83,10 +83,12 @@ class Bloque:
 class Seccion(list):
     def __init__(self,L=[]):
         list.__init__(self,L)
+        
         try:
             self.profes = self[0]
         except IndexError:
             self.profes = []
+            
         try:    
             self.cupo = self[1]
             if len(self.cupo) == 0: self.cupo = ""
@@ -96,9 +98,22 @@ class Seccion(list):
             self.cupo = ""
             self.ocupados = ""
 
+        if len(self.profes) == 0:
+            self.nombre_profes = "[Profes no disp.]"
+        else:
+            self.nombre_profes = ", ".join(self.profes)
+
+        if len(self.profes) == 0:
+            self.str_profes = ""
+        else:
+            self.str_profes = ", ".join(self.profes)
+
     def __str__(self):
         try:
-            return unidecode("<Seccion> "+self.profes)
+            s = "<Seccion> "+self.nombre_profes
+            if isinstance(s,str):
+                return s
+            return unidecode(s)
         except IndexError:
             return "<Seccion [Profes no disp.]>"
 
@@ -120,11 +135,21 @@ class Curso(list):
         
 
     def __str__(self):
-        return unidecode("<Curso> "+self.cod_y_curso)
+        s = "<Curso> "+self.cod_y_curso
+        if isinstance(s,str):
+            return s
+        return unidecode(s)
         
     def __repr__(self):
         return str(self)
 
+    def setNombre(self):
+        if len(self) > 0:
+            self.cod_y_curso = self[0]
+            arr = self[0].split(' ')
+            self.cod = arr[0]
+            self.nombre = arr[1]
+            
 class Depto(list):
     def __init__(self,L=[]):
         list.__init__(self,L)
@@ -136,7 +161,10 @@ class Catalogo(list):
         self.name = semestre
 
     def __str__(self):
-        return "<Catalogo "+self.name+">"
+        s = "<Catalogo "+self.name+">"
+        if isinstance(s,str):
+            return s
+        return unidecode(s)
 
     def __repr__(self):
         return str(self)

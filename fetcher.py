@@ -287,6 +287,7 @@ def cargarCatalogo(nombre_archivo):
             nombre_y_curso = item[c+1:-1]
             #print nombre_y_curso
             curso.append(nombre_y_curso) # <- curso[0]
+            curso.setNombre()
         elif primer_char == "!": # datos de curso
             datos = item[1:-1].split(";")[:-1]
             curso.append(datos)
