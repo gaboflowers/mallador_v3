@@ -18,3 +18,26 @@ pip install [librería]
 ```
 
 Si no está instalado, referirse a la página de [pip](https://pip.pypa.io/en/stable/installing/)
+
+
+## Para colaboradores:
+
+Para poder probar el panel inferior:
+- Primero, importar el catálogo de prueba (Otoño 2016):
+	Archivo > Gestionar catalogos > Importar catalogo desde archivo > "catalogo20161.fcfm"
+- Luego, abrir la ventana de carga de cursos:
+	Ventanas > Mostrar cursos disponibles
+- Ahí, seleccionar algún ramo y "Agregar al horario". El resultado debería ser similar al de la maqueta del programa (maqueta.png)
+
+Funciones problemáticas:
+
+1 En malladorv_v3.py:
+  - actualizar_ramos_inferior
+  - poblar_widgets_ramo
+  - Las funciones dibujar_bloques y relacionadas aún no ha sido probada
+  
+2  En fetcher.py:
+	- cargarCatalogo
+  
+3  En structHorario.py:
+	- clases Curso y Seccion
