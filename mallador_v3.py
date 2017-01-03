@@ -1,13 +1,15 @@
 # -*- coding: cp1252 -*-
 from fetcher import *
-from Tkinter import *
 from ttk import *
+from Tkinter import *
 from tkFileDialog import askopenfilename
 from datetime import date
 from os import getcwd
 from os import name as os_name
 from random import randint
 from random import choice
+
+from time import sleep # <------ debugging
 
 ###BUGS:- No se puede exportar un catalogo importado: si lo arreglo para la exportacion,
 ###         no se puede importar y viceversa. Algun dia tendre que arreglar "fetcher"
@@ -42,6 +44,7 @@ class VentanaMallador(Frame):
         self.root.config(menu = self.menubar)
 
         self.catalogos = [] #[["nombre", catalogo], ["nombre", catalogo], ...]
+        
 
         #info para descargar
         self.year_entry = None
@@ -50,12 +53,20 @@ class VentanaMallador(Frame):
         #lista catalogos
         self.lista_catalogos = None
 
-        #lista de cursos cargados
-        self.cargados = []
-        self.dicc_cajas_ramo = [] #<-- para guardar las cajas de los objetos dentro del canvas que se mueve
-        self.dicc_widgets_ramo = [] #<-- para guardar las variables de los widgets
-        self.bloques_ramo = [] # [ [ramo1 = cod, bloques s1, bloques s2, ...], [ ramo2 = cod, bloques s1, bloques s2, ...],. ...]
-        self.geometrias_ramo = [] # <-- geometrias_ramo[i] tiene los rectangulos y textos del ramo i
+        
+        self.cargados = [] # OBSOLETO (usar self.dict_cargados) lista de cursos cargados
+        
+        self.d_cargados = dict()
+        self.ultimo_ramo_cargado = ""
+        
+        #self.dicc_cajas_ramo = [] #<-- para guardar las cajas de los objetos dentro del canvas que se mueve
+        #self.dicc_widgets_ramo = [] #<-- para guardar las variables de los widgets
+        self.d_cajas_ramo = dict()
+        self.d_widgets_ramo = dict()
+        #self.bloques_ramo = [] # [ [ramo1 = cod, bloques s1, bloques s2, ...], [ ramo2 = cod, bloques s1, bloques s2, ...],. ...]
+        #self.geometrias_ramo = [] # <-- geometrias_ramo[i] tiene los rectangulos y textos del ramo i
+        self.d_bloques_ramo = dict()
+        self.d_geometrias_ramo = dict()
 
         #Widgets de esta ventana
         self.canvas = Canvas(self.frame_1,width=660, height=300, bg="white")
@@ -103,64 +114,102 @@ class VentanaMallador(Frame):
         frame_2.pack_propagate(0)
 
         self.canvas_scroll = Canvas(frame_2, borderwidth=0)#,width=660, height=250) # <- CANVAS SCROLLEABLE EN X
+        self.canvas_scroll.configure(background="navy") # <- DELENDA EST
         self.frame_canvas = Frame(self.canvas_scroll) # <- FRAME DENTRO DEL CANVAS
         scrollbar = Scrollbar(frame_2,orient=HORIZONTAL,command=self.canvas_scroll.xview)
         self.canvas_scroll.configure(xscrollcommand=scrollbar.set)
         
         scrollbar.pack(side=BOTTOM,fill=X)
         self.canvas_scroll.pack(fill=BOTH,expand=True)
-        self.canvas_scroll.create_window((4,4), window=self.frame_canvas, anchor="nw", 
-                                  tags="self.frame_canvas")
+        self.canvas_scroll.create_window((4,4), window=self.frame_canvas, anchor="nw")
 
-        self.frame_canvas.bind("<Configure>", self.onFrameConfigure)
-        self.frame_canvas.pack()
+        comando_aux = lambda event: self.onFrameConfigureSub(self.canvas_scroll)
+
+        self.frame_canvas.bind("<Configure>", comando_aux)
+        #self.frame_canvas.bind("<Configure>", self.onFrameConfigure)
+        self.frame_canvas.configure(background="red") #<- DELENDA EST
 
         self.actualizar_ramos_inferior()
-        
+    """    
     def onFrameConfigure(self,event): # StackOverflow :P
         self.canvas_scroll.configure(scrollregion=self.canvas_scroll.bbox("all"))
+    """
+    def onFrameConfigureSub(self,cv):
+        cv.configure(scrollregion=cv.bbox("all"))
 
-    def onFrameConfigureSub(self,canvas):
-        canvas.configure(scrollregion=canvas.bbox("all"))
+    def actualizar_ramos_inferior(self,agregaRamo=True): # <------------?
+        '''Si agregaRamo = True, significa que fue llamado por widgets_main
+           Si no, fue llamado por quitarRamo.'''
+        if len(self.d_cajas_ramo) != 0:
+            for dicc in self.d_cajas_ramo.values():
+                dicc['frame'].pack_forget()
+                dicc['frame'].destroy()
+            self.d_cajas_ramo = dict()     
 
-    def actualizar_ramos_inferior(self):
-        i = 0
-        for ramo in self.cargados:       # <----- CREO QUE POR AQUI TENGO LA PURA EMBARRA :CCCCCCCCCCC
-            #print ramo, "in self.cargados"
-            frame = Frame(self.frame_canvas,width=100)
+        for ramo in self.d_cargados:       # <----- CREO QUE POR AQUI TENGO LA PURA EMBARRA :CCCCCCCCCCC
+            #print ramo, "in self.cargados"         # PD.: Falta arreglar el puro Scroll
+            frame = Frame(self.frame_canvas,width=250,height=250)
             frame.pack(side=LEFT,fill=Y)
-            Label(frame,text="test").pack()
             frame.pack_propagate(0)
             
-            canvas = Canvas(frame,borderwidth=0,bg="#cc3102")
+            canvas = Canvas(frame,borderwidth=0,bg="green")#bg="#cc3102") #<----- DELENDA (green)
             frame_in_canvas = Frame(canvas)
             scroll = Scrollbar(frame,command = canvas.yview)
             canvas.configure(yscrollcommand = scroll.set)
 
             scroll.pack(side=RIGHT,fill=Y)
             canvas.pack(fill=BOTH,expand = True)
-            canvas.create_window((4,4), window = frame_in_canvas, anchor="nw",tags="frame_in_canvas")
+            canvas.create_window((4,4), window = frame_in_canvas, anchor="nw")#,tags="frame_in_canvas")
 
             diccionario = {'frame':frame, 'canvas':canvas, 'frame_in_canvas':frame_in_canvas}
 
-            frame_in_canvas.bind("<Configure>", lambda event, canvas=canvas: self.onFrameConfigureSub(canvas))
+            comando_bind = lambda event : self.onFrameConfigureSub(canvas)    
 
-            self.dicc_cajas_ramo.append(diccionario) #lista de diccionarios con los widgets pertinentes
+            frame_in_canvas.bind("<Configure>", comando_bind)
+            #frame_in_canvas.bind("<Configure>", lambda event, canvas=canvas: self.onFrameConfigureSub(canvas))
 
-            self.poblar_widgets_ramo(i)
+            self.d_cajas_ramo[self.ultimo_ramo_cargado] = diccionario
+            #self.dicc_cajas_ramo.append(diccionario) #lista de diccionarios con los widgets pertinentes
 
-                       
-            i+=1
+            if agregaRamo: ### <-----------?
+                self.poblar_widgets_ultimo_ramo()
+
         print "----"
         self.dibujar_bloques()
-        
-    '''
-    def poblar_widgets_ramo(self,indice):
-        pass
-    '''
 
-    def poblar_widgets_ramo(self,indice):
-        '''Lee el ramo que quiero cargar (el indice-esimo) de self.cargados.
+    def nuevo_ramo_inferior(self):
+        ramo = self.d_cargados[self.ultimo_ramo_cargado]
+
+        frame = Frame(self.frame_canvas,width=250,height=250)
+        frame.pack(side=LEFT,fill=Y)
+        frame.pack_propagate(0)
+        
+        canvas = Canvas(frame,borderwidth=0,bg="green")#bg="#cc3102") #<----- DELENDA (green)
+        frame_in_canvas = Frame(canvas)
+        scroll = Scrollbar(frame,command = canvas.yview)
+        canvas.configure(yscrollcommand = scroll.set)
+
+        scroll.pack(side=RIGHT,fill=Y)
+        canvas.pack(fill=BOTH,expand = True)
+        canvas.pack_propagate(0)
+        canvas.create_window((4,4), window = frame_in_canvas, anchor="nw")#,tags="frame_in_canvas")
+
+        diccionario = {'frame':frame, 'canvas':canvas, 'frame_in_canvas':frame_in_canvas}
+
+        comando_bind = lambda event : self.onFrameConfigureSub(canvas)    
+
+        frame_in_canvas.bind("<Configure>", comando_bind)
+        #frame_in_canvas.bind("<Configure>", lambda event, canvas=canvas: self.onFrameConfigureSub(canvas))
+
+        self.d_cajas_ramo[self.ultimo_ramo_cargado] = diccionario
+        #self.dicc_cajas_ramo.append(diccionario) #lista de diccionarios con los widgets pertinentes
+
+        self.poblar_widgets_ultimo_ramo()
+        #self.poblar_widgets_ramo(i)
+        self.dibujar_bloques()
+    
+    def poblar_widgets_ultimo_ramo(self): #nuevo ramo
+        '''Lee el ramo que quiero cargar (cuyo codigo es self.ultimo_ramo_cargado)
         Escribe el nombre y los datos generales en el frame_in_canvas que le corresponde,
         coloca un Radiobutton para cada seccion, una checkbox (para mostrar/ocultar el ramo)
         y un boton para eliminarlo. Guarda las variables en un diccionario, y guarda
@@ -168,7 +217,9 @@ class VentanaMallador(Frame):
 
         Guarda los bloques de cada seccion en una lista, y esa lista en self.bloques_ramo.
         Posteriormente, self.dibujar_bloques solo tiene que leerlos desde ahi.'''
-        ramo = self.cargados[indice]
+        ultimo_ramo = self.ultimo_ramo_cargado
+        
+        ramo = self.d_cargados[ultimo_ramo]
         nombre_y_cod = ramo[0]
         codigo = nombre_y_cod[:nombre_y_cod.find(' ')]
         
@@ -176,20 +227,31 @@ class VentanaMallador(Frame):
         lista_secciones = ramo[2:]
         print "poblar:", ramo
     
-        frame = self.dicc_cajas_ramo[indice]['frame_in_canvas']
+        frame = self.d_cajas_ramo[ultimo_ramo]['frame_in_canvas']
         frame.pack()
-        Label(frame,text = nombre_y_cod).pack()
-        Label(frame,text = datos_generales[0]+" UD").pack(side=LEFT)
+        titulo = (nombre_y_cod[:37]+"..") if len(nombre_y_cod) > 37 else nombre_y_cod
+        Label(frame,text = titulo).pack()
+        Label(frame,text = datos_generales[0]+" UD").pack()#side=LEFT)
 
         f_secc = Frame(frame)
         f_secc.pack(pady=5)
 
-        varCheck = BooleanVar()
-        C = Checkbutton(f_secc, text = "Mostrar", variable=varCheck, onvalue=True, offvalue=False, command= lambda: self.dibujar_bloques(indice))
+        if ultimo_ramo not in self.d_widgets_ramo:
+            varCheck = BooleanVar()
+            varRadio = IntVar()
+        else:
+            varCheck = self.d_widgets_ramo[ultimo_ramo]['mostrar']
+            varRadio = self.d_widgets_ramo[ultimo_ramo]['seccion']
+            
+        comando = lambda : self.dibujar_bloques_codigo(str(ultimo_ramo))
+        #siempre va a ser el ultimo ramo cargado, pero para cada ramo nuevo que se pueble,
+        # la funcion 'comando' va a ser distinta
+        C = Checkbutton(f_secc, text = "Mostrar", variable=varCheck, onvalue=True,\
+                        offvalue=False, command= comando)
+        
         C.pack(anchor=W)
         
-        varRadio = IntVar()
-        bloques = [codigo] # [codigo, bloques s1, bloques s2, ...]
+        bloques = [] # [bloques seccion1, bloques seccion2, ...]
         i = 0
         print "        secciones:"
         for seccion in lista_secciones:
@@ -215,7 +277,11 @@ class VentanaMallador(Frame):
             except AttributeError:
                 profes = "<Sin prof.>"
             
-            texto = profes+'  ('+cupo+'/'+ocupados+')'
+            texto = '('+ocupados+'/'+cupo+') ' + profes
+            texto = (texto[:35]) if len(texto) > 35 else texto
+            n_secc = str(i+1)
+            texto = n_secc + ") " + texto
+            
             R = Radiobutton(f_secc, text = texto, variable=varRadio,\
                         value = i, command = self.dibujar_bloques)
             R.pack(anchor=W)
@@ -224,66 +290,88 @@ class VentanaMallador(Frame):
 
             i+=1
             
-        self.bloques_ramo.append(bloques)
+        #self.bloques_ramo.append(bloques)
+        self.d_bloques_ramo[ultimo_ramo] = bloques
+
+        #master_frame = self.dicc_cajas_ramo[indice]['frame']
+        print "fww", frame.winfo_width()
+        #master_frame.config(width = frame.winfo_width())
             
-        remover = Button(f_secc, text="Quitar", command = lambda: self.quitarRamo(indice))
+        remover = Button(f_secc, text="Quitar", command = lambda: self.quitarRamo(ultimo_ramo))
         remover.pack()
 
-        handles = {'mostrar':varCheck, 'seccion':varRadio}
-        self.dicc_widgets_ramo.append(handles)
-    
+        handles = {'mostrar':varCheck, 'seccion':varRadio, 'checkbox':C}
+        self.d_widgets_ramo[ultimo_ramo] = handles
+        #self.dicc_widgets_ramo.append(handles)
+        
     def dibujar_bloques(self):
+        print "dibujando?"
         self.canvas.delete("all")
         self.tabla_horario()
-        self.geometrias_ramo = []
-        
+        self.d_geometrias_ramo = dict()
+
+        '''
         for i in range(len(self.bloques_ramo)):
             if self.dicc_widgets_ramo[i]['mostrar'].get():
-                seccion_marcada = self.dicc_widgets_ramo[i]['seccion'].get()
-                codigo = self.bloques_ramo[i][0]
-                bloques = self.bloques_ramo[i][seccion_marcada + 1] # bloques_ramo[i] = [codigo, bloques s1, bloques s2, ...]
-                self.dibujar_bloques_ramo(codigo,bloques,i)
-                
-    def dibujar_bloques_ramo(self,codigo,bloques,indice): #indice indica que este es el indice-esimo ramo que estoy dibujando (offset)
-        color = self.asignar_color(codigo)
-        items_canvas = []
-        for bloque in bloques: #bloque = structHorario.Bloque(str tipo, str dia, Hora ti, Hora tf)
-            dias = ["lu","ma","mi","ju","vi","sa"]
-            w = 600
-            tipo = bloque.tipo
-            dia = bloque.dia
-            ti = bloque.ti # class Hora
-            tf = bloque.tf #
+                self.dibujar_bloques_indice(i)
+        '''
+        for cod in self.d_cargados:
+            if self.d_widgets_ramo[cod]['mostrar'].get():
+                self.dibujar_bloques_codigo(cod)
+  
 
-            # El contorno del rectangulo depende del tipo de ramo
-            dashTuple = None
-            if tipo == "aux":
-                dashTuple = (2,2)
-            elif tipo == "lab":
-                dashTuple = (3,2,1)
+    def dibujar_bloques_codigo(self,codigo):
+        varCheckbox = self.d_widgets_ramo[codigo]['mostrar'] #evento "caja marcada o desmarcada?"
 
-            offset = 0
-            if len(self.cargados)>1: offset = i/(len(self.cargados) - 1)
+        if varCheckbox.get(): #si "Mostrar" esta marcado
+            color = self.asignar_color(codigo)
 
-            x1 = equis1 = dias.index(bloque.dia)*w/5+offset
-            x2 = x1+w/5-30
-            y1 = self.minutos_a_coord(ti.getMinutos())
-            y2 = self.minutos_a_coord(tf.getMinutos())
-
-            R = self.canvas.create_rectangle(x1,y1,x2,y2,dash=dashTuple,fill=color)
-            texto = codigo+"\n("+tipo+")"
-            T = canvas.create_text(x1+w/10-offset, (y1+y2)/2 ,text = texto)
-            items_canvas.append(R)
-            items_canvas.append(T)
+            seccion_marcada = self.d_widgets_ramo[codigo]['seccion'].get() #numero seccion marcada por Radiobutton
+            bloques = self.d_bloques_ramo[codigo][seccion_marcada]
             
-        self.geometrias_ramo.append(items_canvas)
+            items_canvas = []
+            for bloque in bloques: #bloque = structHorario.Bloque(str tipo, str dia, Hora ti, Hora tf)
+                dias = ["lu","ma","mi","ju","vi","sa"]
+                w = 600
+                tipo = bloque.tipo
+                dia = bloque.dia
+                ti = bloque.ti # class Hora
+                tf = bloque.tf #
 
+                # El contorno del rectangulo depende del tipo de ramo
+                dashTuple = None
+                if tipo == "aux":
+                    dashTuple = (2,2)
+                elif tipo == "lab":
+                    dashTuple = (3,2,1)
+
+                offset = 0
+                if len(self.cargados)>1: offset = i/(len(self.d_cargados) - 1)
+
+                x1 = equis1 = dias.index(bloque.dia)*w/5+offset
+                x2 = x1+w/5-30
+                y1 = self.minutos_a_coord(ti.getMinutos())
+                y2 = self.minutos_a_coord(tf.getMinutos())
+
+                R = self.canvas.create_rectangle(x1,y1,x2,y2, tags=codigo, dash=dashTuple,fill=color)
+                texto = codigo+"\n("+tipo+")"
+                T = self.canvas.create_text(x1+w/10-offset, (y1+y2)/2 ,text = texto, tags=codigo)
+                items_canvas.append(R)
+                items_canvas.append(T)
+
+            self.d_geometrias_ramo[codigo] = items_canvas
+            print "s.d_g_r",self.d_geometrias_ramo
+            
+        else: #"Mostrar" esta desmarcado
+            self.canvas.delete(codigo) #borro todas las geometrias con el tag [codigo]
+            
+        
     def asignar_color(self,codigo):
         ran = lambda: randint(30,255)
         epsilon = lambda: randint(-6,6)
         n_alto = lambda: randint(150,245)
         n_medio = lambda: randint(100,170)
-        n_bajo = lambda: randint(10,90)
+        n_bajo = lambda: randint(50,90)
 
         color_str = lambda a,b,c: ('#%02X%02X%02X' % (a,b,c))
 
@@ -312,8 +400,31 @@ class VentanaMallador(Frame):
         b = color_str(n_medio(),n_medio(), n_alto())
         c = color_str(n_medio(),n_alto(),n_medio())
         return choice([a,b,c])
-            
-            
+
+    def quitarRamo(self,codigo):
+        del self.d_cargados[codigo]
+        self.canvas.delete(codigo)
+        
+        try:
+            check = self.d_widgets_ramo[codigo]['checkbox']
+            check.deselect()
+            del self.d_widgets_ramo[codigo]
+        except KeyError:
+            print "KE"
+            pass
+        
+        try:
+            del self.d_geometrias_ramo[codigo]
+            frame = self.d_cajas_ramo[codigo]['frame']
+            frame.pack_forget()
+            frame.destroy()
+            del self.d_cajas_ramo[codigo]
+        except KeyError:
+            pass
+
+        self.actualizar_ramos_inferior(False)
+        
+    """        
     def quitarRamo(self,i):
         self.cargados.pop(i)
         for item in self.geometrias_ramo[i]:
@@ -325,7 +436,7 @@ class VentanaMallador(Frame):
         self.dicc_cajas_ramo.pop(i)
         self.dicc_widgets_ramo.pop(i)
         self.bloques_ramo.pop(i)
-
+    """
         
         
     '''def populate(self):
@@ -564,12 +675,23 @@ class VentanaMallador(Frame):
 
         curso = self.union_catalogos[depto_seleccionado][curso_seleccionado]
 
+        if curso.cod not in self.d_cargados:
+            self.d_cargados[curso.cod] = curso
+            print "--self.d_cargados"
+            print self.d_cargados
+            print "--End_self.d_cargados"
+            self.ultimo_ramo_cargado = curso.cod
+            self.nuevo_ramo_inferior()
+
+        '''
         if curso not in self.cargados: #solo si el curso ya no estaba
             self.cargados.append(curso)
             print "--self_cargados"
             print self.cargados
             print "--End_self_cargados"
-            self.actualizar_ramos_inferior()
+            #self.actualizar_ramos_inferior()
+            self.nuevo_ramo_inferior()
+        '''
 
     def actualizar_db(self): pass
 

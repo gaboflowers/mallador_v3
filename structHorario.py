@@ -99,12 +99,40 @@ class Seccion(list):
             self.ocupados = ""
 
         if len(self.profes) == 0:
-            self.nombre_profes = "[Profes no disp.]"
+            self.nombre_profes = "<Profes no disp.>"
         else:
             self.nombre_profes = ", ".join(self.profes)
 
         if len(self.profes) == 0:
             self.str_profes = ""
+        elif len(self.profes) >= 3:
+            s = ""
+            for p in self.profes:
+                n_completo = p.split()
+                nuevo = ""
+                if len(n_completo) <= 1: s = p
+                elif len(n_completo) == 2:
+                    nuevo = n_completo[0]+". "+n_completo[1]+", "
+                elif len(n_completo) == 3:
+                    A = n_completo[0]
+                    B = n_completo[1]
+                    C = n_completo[2]
+                    if "." in B:
+                        nuevo = A[0]+". "+C+", "
+                    else:
+                        nuevo = A[0]+", "+B+", "
+                else:
+                    nuevo = n_completo[0]+". "
+                    for n in n_completo[1:]:
+                        if not n.istitle():
+                            nuevo += (n + " ")
+                        else:
+                            nuevo += n
+                            break
+                    nuevo += ", "
+                    
+                s += nuevo
+            self.str_profes = s[:-1]    
         else:
             self.str_profes = ", ".join(self.profes)
 
