@@ -1,11 +1,13 @@
 # mallador_v3
-Interfaz para visualizar mallas U-Campus (fcfm por el momento)
+Interfaz para visualizar horarios U-Campus (fcfm por el momento)
 
 Estado actual:
 - La interfaz deja descargar y guardar catálogos (mediante fetcher.py).
-- Todavía **no** se soluciona la incorporación de los ramos en la ventana principal.
+- Se pueden incorporar ramos a la ventana principal.
+- Hay muchos problemas ocasionados la quitar los ramos de la ventana principal.
+- No funciona el scrollbar la lista de sección de cada ramo
 
-En resumen, **de momento (2016-12-23) sólo sirve para descargar y guardar los catálogos en un formato interno de texto plano**.
+En resumen, **de momento (2017-01-03) sólo sirve para descargar y guardar los catálogos en texto plano, y visualizarlos una vez seleccionados (no se pueden quitar una vez seleccionados)**.
 
 Utiliza Python 2.x.
 Las siguientes dependencias no forman parte de la librería estándar de Python:
@@ -33,13 +35,9 @@ Para poder probar el panel inferior:
 
 Funciones problemáticas:
 
-1 En malladorv_v3.py:
-  - actualizar_ramos_inferior
-  - poblar_widgets_ramo
-  - Las funciones dibujar_bloques y relacionadas aún no ha sido probada
+1  En malladorv_v3.py:
+  - actualizar_ramos_inferior (<- será necesario separar su función?)
+  - nuevo_ramo_inferior
+  - poblar_widgets_ultimo_ramo (<- será necesario separar su función?)
+  - quitar_ramo (MUCHO)
   
-2  En fetcher.py:
-	- cargarCatalogo
-  
-3  En structHorario.py:
-	- clases Curso y Seccion
