@@ -33,6 +33,9 @@ Para poder probar el panel inferior:
 
 ![maqueta.png](https://raw.githubusercontent.com/gaboflowers/mallador_v3/master/maqueta.png)
 
+- Update: Se ha logrado prácticamente un resultado similar a la maqueta (falta solucionar lo de los Scrollbar verticales)
+![captura](https://raw.githubusercontent.com/gaboflowers/mallador_v3/master/captura_main.png)
+
 Funciones problemáticas:
 
 1  En malladorv_v3.py:
