@@ -6,22 +6,26 @@ from tkFileDialog import askopenfilename
 from datetime import date
 from os import getcwd
 from os import name as os_name
+from os import remove as os_remove
 from random import randint
 from random import choice
 
-from time import sleep # <------ debugging
+#from time import sleep # <------ debugging
 
-###BUGS:- No se puede exportar un catalogo importado: si lo arreglo para la exportacion,
+###BUGS:- (ARREGLADO) No se puede exportar un catalogo importado: si lo arreglo para la exportacion,
 ###         no se puede importar y viceversa. Algun dia tendre que arreglar "fetcher"
 ###         para que trabaje de forma mas limpia con Unicode
 ###
-###     - VentanaMallador permite multiples ventanas Toplevel de cada instancia abiertas <- arreglado con self.ventanas_cerradas
-    
+###     - (ARREGLADO) VentanaMallador permite multiples ventanas Toplevel de cada instancia abiertas <- arreglado con self.ventanas_cerradas
+###     - No funcionan los Scrollbars verticales (de cada ramo). Lo siento, Taller de Proyecto :c
+
 class VentanaMallador(Frame):
     counter = 0
     def __init__(self,*args,**kwargs):
         self.frame_1 = Frame.__init__(self, *args, **kwargs)
         self.root = args[0]
+
+        #self.root.bind( "<Configure>", self.onresize )
 
         self.ventanas_cerradas = [True,True,True] #[ventana importar catalogos, ventana db, ventana agregar]
         self.ventanas = {'carga':None, 'db':None, 'agregar':None}
@@ -36,8 +40,8 @@ class VentanaMallador(Frame):
         self.winmenu = Menu(self.menubar, tearoff=0) #Ventana
         self.winmenu.add_command(label="Mostrar Cursos Disponibles",\
                                  command=self.ventana_ramos_db)
-        self.winmenu.add_command(label="Mostrar Cursos Seleccionados",\
-                                 command=self.ventana_ramos_db)
+        self.winmenu.add_command(label="Nada")#"Mostrar Cursos Seleccionados",\
+                                 #command=self.ventana_ramos_db)
         self.menubar.add_cascade(label="Ventanas", menu=self.winmenu)
 
         #mostrar barra menu
@@ -68,13 +72,19 @@ class VentanaMallador(Frame):
         self.d_bloques_ramo = dict()
         self.d_geometrias_ramo = dict()
 
+        self.n_bloques = 0
+
         #Widgets de esta ventana
         self.canvas = Canvas(self.frame_1,width=660, height=300, bg="white")
         self.canvas.pack()
         self.tabla_horario()
         self.widgets_main()
         
-        
+    """
+    def onresize(self,event):
+        print self.root.winfo_reqwidth()
+    """
+    
     #---------------- Widgets ventana principal ----------------
     def tabla_horario(self):
         
@@ -109,7 +119,7 @@ class VentanaMallador(Frame):
 
             
     def widgets_main(self): # <--------------- POBLA EL CANVAS DE LOS CANVASES SCROLLEABLES DE LOS RAMOS
-        frame_2 = Frame(self.frame_1,height=260)
+        frame_2 = Frame(self.frame_1,height=300)
         frame_2.pack(fill=X)
         frame_2.pack_propagate(0)
 
@@ -130,13 +140,31 @@ class VentanaMallador(Frame):
         self.frame_canvas.configure(background="red") #<- DELENDA EST
 
         self.actualizar_ramos_inferior()
+        
     """    
     def onFrameConfigure(self,event): # StackOverflow :P
         self.canvas_scroll.configure(scrollregion=self.canvas_scroll.bbox("all"))
     """
+    
     def onFrameConfigureSub(self,cv):
         cv.configure(scrollregion=cv.bbox("all"))
 
+    def actualizar_ramo_quitado_inferior(self,codigo):
+        print "s.d_c_r",self.d_cajas_ramo
+        
+        try:
+            self.d_cajas_ramo[codigo]['frame'].destroy()
+            del self.d_cajas_ramo[codigo]
+        except KeyError:
+            pass
+        
+        for dicc in self.d_cajas_ramo.values():
+            dicc['frame'].pack_forget()
+
+        for dicc in self.d_cajas_ramo.values():
+            dicc['frame'].pack(side=LEFT, fill=Y)
+
+        
     def actualizar_ramos_inferior(self,agregaRamo=True): # <------------?
         '''Si agregaRamo = True, significa que fue llamado por widgets_main
            Si no, fue llamado por quitarRamo.'''
@@ -148,7 +176,7 @@ class VentanaMallador(Frame):
 
         for ramo in self.d_cargados:       # <----- CREO QUE POR AQUI TENGO LA PURA EMBARRA :CCCCCCCCCCC
             #print ramo, "in self.cargados"         # PD.: Falta arreglar el puro Scroll
-            frame = Frame(self.frame_canvas,width=250,height=250)
+            frame = Frame(self.frame_canvas,width=250,height=280)
             frame.pack(side=LEFT,fill=Y)
             frame.pack_propagate(0)
             
@@ -180,7 +208,7 @@ class VentanaMallador(Frame):
     def nuevo_ramo_inferior(self):
         ramo = self.d_cargados[self.ultimo_ramo_cargado]
 
-        frame = Frame(self.frame_canvas,width=250,height=250)
+        frame = Frame(self.frame_canvas,width=250,height=280)
         frame.pack(side=LEFT,fill=Y)
         frame.pack_propagate(0)
         
@@ -190,8 +218,8 @@ class VentanaMallador(Frame):
         canvas.configure(yscrollcommand = scroll.set)
 
         scroll.pack(side=RIGHT,fill=Y)
-        canvas.pack(fill=BOTH,expand = True)
-        canvas.pack_propagate(0)
+        canvas.pack(side=LEFT,expand = True)
+        #canvas.pack_propagate(0)
         canvas.create_window((4,4), window = frame_in_canvas, anchor="nw")#,tags="frame_in_canvas")
 
         diccionario = {'frame':frame, 'canvas':canvas, 'frame_in_canvas':frame_in_canvas}
@@ -307,6 +335,7 @@ class VentanaMallador(Frame):
     def dibujar_bloques(self):
         print "dibujando?"
         self.canvas.delete("all")
+        self.n_bloques = 0
         self.tabla_horario()
         self.d_geometrias_ramo = dict()
 
@@ -330,6 +359,7 @@ class VentanaMallador(Frame):
             bloques = self.d_bloques_ramo[codigo][seccion_marcada]
             
             items_canvas = []
+            i=0
             for bloque in bloques: #bloque = structHorario.Bloque(str tipo, str dia, Hora ti, Hora tf)
                 dias = ["lu","ma","mi","ju","vi","sa"]
                 w = 600
@@ -337,6 +367,7 @@ class VentanaMallador(Frame):
                 dia = bloque.dia
                 ti = bloque.ti # class Hora
                 tf = bloque.tf #
+
 
                 # El contorno del rectangulo depende del tipo de ramo
                 dashTuple = None
@@ -346,7 +377,9 @@ class VentanaMallador(Frame):
                     dashTuple = (3,2,1)
 
                 offset = 0
-                if len(self.cargados)>1: offset = i/(len(self.d_cargados) - 1)
+                if len(self.d_cargados)>1:
+                    offset = 3*i/(len(self.d_cargados) - 1)
+                print "off",offset
 
                 x1 = equis1 = dias.index(bloque.dia)*w/5+offset
                 x2 = x1+w/5-30
@@ -358,6 +391,8 @@ class VentanaMallador(Frame):
                 T = self.canvas.create_text(x1+w/10-offset, (y1+y2)/2 ,text = texto, tags=codigo)
                 items_canvas.append(R)
                 items_canvas.append(T)
+                i+=1
+                self.n_bloques += 1
 
             self.d_geometrias_ramo[codigo] = items_canvas
             print "s.d_g_r",self.d_geometrias_ramo
@@ -383,7 +418,7 @@ class VentanaMallador(Frame):
                 if codigo[3:5] == "00": #calculos
                     return color_str(n_alto(),b+epsilon(),b+epsilon())
                 return color_str(b+epsilon(),b+epsilon(),n_alto()) #alg,edo
-            if depto == "ei": return color_str(n_alto(),min(n_alto(),190),n_alto)
+            if depto == "ei": return color_str(n_alto(),min(n_alto(),190),n_alto())
             if yr == 1:
                 if depto == "fi":
                     a = n_alto()
@@ -422,7 +457,8 @@ class VentanaMallador(Frame):
         except KeyError:
             pass
 
-        self.actualizar_ramos_inferior(False)
+        self.actualizar_ramo_quitado_inferior(codigo)
+        #self.actualizar_ramos_inferior(False)
         
     """        
     def quitarRamo(self,i):
@@ -558,6 +594,9 @@ class VentanaMallador(Frame):
             if sem in [1,2,3] and yr > 2009:
                 print "loading"
                 catalogo = getCatalogo(yr,sem)
+                archivo_temporal = guardarCatalogo(catalogo,yr,sem,"fcfm_tmp", "~cat"+str(yr)+str(sem))
+                catalogo = cargarCatalogo(archivo_temporal)
+                os_remove(archivo_temporal)                
                 self.catalogos.append(["DESCARGADO "+str(yr)+"/"+str(sem),catalogo])
                 self.actualizar_lista_catalogos()
         print "len self.catalogos", len(self.catalogos)

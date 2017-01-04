@@ -24,6 +24,7 @@ codigoDepto = {'AS':'3', 'BT':'268', 'CC':'5', 'CI':'6', 'CM':'306', 'DR':'7',\
                'EH':'8', 'escuela':'27', 'idiomas':'9', 'ing':'12060002', 'EL':'10',\
                'FG':'310', 'FI':'13', 'GF':'15', 'GL':'16', 'IN':'19', 'IQ':'20',\
                'MA':'21', 'ME':'22', 'MI':'23'}
+
 global codigosDeptos
 codigosDeptos = codigoDepto.keys()
 codigosDeptos.sort()
@@ -59,7 +60,7 @@ def parseCursosSopa(sopa):
     tablas = sopa.findAll('table')
     for tabla in tablas:
         codigo_este_curso = cod_cursos[i]
-        nombre_y_codigo = sopa.find('h2',{'id':codigo_este_curso}).text.replace('\n','').replace('\t','')
+        nombre_y_codigo = sopa.find('h2',{'id':codigo_este_curso}).text.replace('\n','').replace('\t','') # UNICODE
         item_curso = structHorario.Curso([nombre_y_codigo]) # [nombre+codigo curso, [datos], secc1, secc2, secc3, ...]
 
         tag = sopa.find('h2',{'id':codigo_este_curso})
@@ -71,7 +72,7 @@ def parseCursosSopa(sopa):
         
         secciones = tabla.tbody.findAll('tr')
         for seccion in secciones:
-            item_seccion = structHorario.Seccion() # [[Profes],Cupo,Ocupados,[Horario]]    
+            #item_seccion = structHorario.Seccion() # [[Profes],Cupo,Ocupados,[Horario]]    
             
             datos_seccion = seccion.findAll('td')
 
@@ -79,7 +80,8 @@ def parseCursosSopa(sopa):
             vector_profes = []
             for profe in profes_seccion:
                 vector_profes.append(profe.text.replace('\n','').strip())
-            item_seccion.append(vector_profes)
+            item_seccion = structHorario.Seccion([vector_profes]) # [[Profes],Cupo,Ocupados,[Horario]]    
+            
             for j in range(2,4):
                 item_seccion.append(datos_seccion[j].text.replace('\n','').strip())
 
@@ -149,6 +151,19 @@ def parseCursosSopa(sopa):
         i+=1
     return departamento
 
+#retorna la sopa del codigo HTML del depto/sem/yr indicado
+def getDeptoSopa(depto,yr,sem):
+    yr,sem = str(yr),str(sem)
+    depto = depto.upper()
+    url = urlCatalogo(yr,sem,depto)
+    
+    request = urllib2.Request(url)
+    request.add_header('Accept-Encoding', 'utf-8')
+    response = urllib2.urlopen(request)
+    
+    html = response.read()
+    sopa = BS(html,'html.parser')
+    return sopa
         
 #retorna una lista con las sopas del codigo HTML de cada depto
 def getCatalogoHTML(yr,sem):
@@ -181,13 +196,16 @@ def getCatalogo(yr,sem):
 
 
 #dada una lista Catalogo, la codifica en texto para su posterior lectura
-def guardarCatalogo(catalogo,yr,sem,extension='.fcfm'):
-    nombre_archivo = "catalogo"+str(yr)+str(sem)
+def guardarCatalogo(catalogo,yr,sem,extension='fcfm',file_name=None):
+    extension = "."+extension
+    if file_name != None:
+        nombre_archivo = file_name+extension
+    else:
+        nombre_archivo = "catalogo"+str(yr)+str(sem)+extension
     directorio_actual = ls(pwd())
-    if nombre_archivo+".fcfm" in directorio_actual:
+    if nombre_archivo in directorio_actual:
         time = str(datetime.datetime.now()).replace(' ','-').replace(':','-')[0:19]
         nombre_archivo = nombre_archivo +"-"+ time
-    nombre_archivo = nombre_archivo + extension
     
     save_file = codecs.open(nombre_archivo,'w',encoding='utf-8')
     for departamento in catalogo:
@@ -238,7 +256,7 @@ def guardarCatalogo(catalogo,yr,sem,extension='.fcfm'):
                 save_file.write(string)#.encode('utf-8'))
         save_file.write('=EOD\n') #fin del departamento
     save_file.close()
-    return
+    return nombre_archivo
 
 #carga una base de datos Catalogo generada por guardarCatalogo
 #retorna una lista de departamentos
