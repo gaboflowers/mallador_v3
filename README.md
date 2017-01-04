@@ -10,6 +10,9 @@ Estado actual:
 En resumen, **de momento (2017-01-03) sólo sirve para descargar y guardar los catálogos en texto plano, y visualizarlos una vez seleccionados (no se pueden quitar una vez seleccionados)**.
 
 Utiliza Python 2.x.
+
+## Dependencias  
+
 Las siguientes dependencias no forman parte de la librería estándar de Python:
 - bs4 *(BeautifulSoup)*
 - unidecode
@@ -18,8 +21,11 @@ Para instalarlas, se recomienda usar pip:
 ```
 pip install [librería]
 ```
+(se ejecuta en el Símbolo del sistema, o en la Terminal de UNIX/Linux. Ejemplo: "pip install bs4")
 
 Si no está instalado, referirse a la página de [pip](https://pip.pypa.io/en/stable/installing/)
+
+En caso de utilizar las versiones provistas en el ZIP (no se recomienda), se debe copiar las carpetas *bs4* y *unidecode* en la carpeta *site-packages* de la instalación local de Python. Generalmente, esta carpeta está en C:\Python27\Lib\site-packages en Windows.
 
 
 ## Para colaboradores:
