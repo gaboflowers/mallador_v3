@@ -27,7 +27,35 @@ Si no está instalado, referirse a la página de [pip](https://pip.pypa.io/en/st
 
 En caso de utilizar las versiones provistas en el ZIP (no se recomienda), se debe copiar las carpetas *bs4* y *unidecode* en la carpeta *site-packages* de la instalación local de Python. Generalmente, esta carpeta está en C:\Python27\Lib\site-packages en Windows.
 
+## Utilización
 
+Una vez satisfechas las dependencias, los archivos principales son sólo *mallador_v3.pyw*, *fetcher.py* y *structHorario.py*.
+La información de los cursos está guardada en "catálogos", los cuales se pueden descargar de U-Campus, o utilizar uno ya obtenido en disco.
+
+El programa principal es *mallador_v3.pyw*. Generalmente, basta con hacer doble clic para ejecutarlo, pero en caso contrario, se puede abrir con IDLE y ejecutar como siempre (o directamente desde Python en la línea de comandos)
+
+- Para obtener el catálogo de algún semestre (posterior a Otoño 2013, inclusive):
+	- Abrir *mallador_v3.pyw*
+	- Clic en "Archivo", luego en "Gestionar catalogos"
+	- Ingresar año y semestre en la parte inferior. Por defecto, lee la fecha del sistema y "asume" el semestre, pero debido a varias razones político-administrativas, usted puede modificarlo. Clic en Descargar.
+	- Una vez hecho clic, el programa puede demorar varios segundos (o minutos, dependiendo de la conexión) en cargar. Es normal que mientras esté cargando, al hacer clic en la ventana el sistema muestre que esté pegado. Basta con esperar (a menos que pase mucho tiempo, eso queda al sentido común del usuario). Si aun así falla, seguir con la sección siguiente.
+	- El programa mostrará en el Gestor de catálogos el item "DESCARGADO"+[código semestre]. Si lo desea, puede hacer clic en "Guardar catálogo" para no tener que descargarlo nuevamente. En este momento, ya puede cerrar la ventana del Gestor. Para seguir con la visualización de ramos, sáltese la sección siguiente.
+
+- Para cargar un catálogo:
+	- Archivo > Gestionar catalogos > Cargar catalogo
+	- Seleccione el archivo de catálogo (generalmente, "catalogo"+[semestre]+".fcfm")
+	- Aceptar. La ventana mostrará el nombre del archivo cargado. Ya se puede cerrar la ventana del Gestor.
+
+- Para cargar un curso (sólo una vez cargado un catálogo):
+	- Ventanas > Mostrar cursos disponibles. Se abrirá el catálogo de cursos, con un menú selector de departamentos en la parte superior.
+	- Escoja un departamento, y haga clic en "Agregar al Horario". Puede escoger ramos de varios departamentos a la vez.
+	- A medida que agrega ramos al horario, van apareciendo menúes en la ventana principal.
+
+- Para visualizar una combinación de (secciones de) ramos:
+	- Por defecto, los ramos cargados están ocultos. Al marcar la casilla "Mostrar", aparecerán los bloques dibujados en el horario. Puede escoger cualquier sección en cualquier momento, y los bloques de dicho ramo se redibujarán.
+	- Si no quiere que algún ramo siga apareciendo, puede desmarcar la casilla "Mostrar", o hacer clic en "Quitar" para removerlo de la lista de menúes. Si quiere agregarlo nuevamente, puede volver a hacerlo en "Mostrar cursos disponibles".Debi
+	- **Debido a un bug, no se pueden deslizar las listas de secciones de cada ramo. Si agregó un ramo cuyo botón de menú quedó dibujado fuera de la ventana, para removerlo tendrá sólo que ocultarlo, o volver a iniciar el programa.**
+	
 ## Para colaboradores:
 
 Para poder probar el panel inferior:
