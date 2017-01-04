@@ -45,6 +45,7 @@ El programa principal es *mallador_v3.pyw*. Generalmente, basta con hacer doble 
 	- Archivo > Gestionar catalogos > Cargar catalogo
 	- Seleccione el archivo de catálogo (generalmente, "catalogo"+[semestre]+".fcfm")
 	- Aceptar. La ventana mostrará el nombre del archivo cargado. Ya se puede cerrar la ventana del Gestor.
+	- El Zip viene con el catálogo de Otoño 2017 (y el repositorio incluye Otoño 2016).
 
 - Para cargar un curso (sólo una vez cargado un catálogo):
 	- Ventanas > Mostrar cursos disponibles. Se abrirá el catálogo de cursos, con un menú selector de departamentos en la parte superior.
