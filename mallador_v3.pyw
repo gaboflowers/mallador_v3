@@ -5,6 +5,7 @@ from Tkinter import *
 from tkFileDialog import askopenfilename
 from datetime import date
 from os import getcwd
+from os import chdir as os_chdir
 from os import name as os_name
 from os import remove as os_remove
 from random import randint
@@ -574,8 +575,10 @@ class VentanaMallador(Frame):
             
         
     def importar(self):
-            filename = askopenfilename().split('/')
-            filename = filename[-1]
+            filelocation = askopenfilename().split("/")
+            filefolder = "/".join(filelocation[:-1])
+            os_chdir(filefolder)            
+            filename = filelocation[-1]
 
             catalogo = cargarCatalogo(filename)
             #nombre = filename[:filename.find('.')]
