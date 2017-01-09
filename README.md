@@ -7,7 +7,7 @@ Estado actual:
 - Hay muchos problemas ocasionados la quitar los ramos de la ventana principal.
 - No funciona el scrollbar la lista de sección de cada ramo
 
-En resumen, **de momento (2017-01-03) sólo sirve para descargar y guardar los catálogos en texto plano, y visualizarlos una vez seleccionados (no se pueden quitar una vez seleccionados)**.
+En resumen, **de momento (2017-01-05) ya sirve para visualizar los ramos, a excepción de los que tengan más de 8 secciones, en cuyo caso aún no se puede hacer scroll para revisar toda la lista**.
 
 Utiliza Python 2.x.
 
@@ -32,7 +32,8 @@ En caso de utilizar las versiones provistas en el ZIP (no se recomienda), se deb
 Una vez satisfechas las dependencias, los archivos principales son sólo *mallador_v3.pyw*, *fetcher.py* y *structHorario.py*.
 La información de los cursos está guardada en "catálogos", los cuales se pueden descargar de U-Campus, o utilizar uno ya obtenido en disco.
 
-El programa principal es *mallador_v3.pyw*. Generalmente, basta con hacer doble clic para ejecutarlo, pero en caso contrario, se puede abrir con IDLE y ejecutar como siempre (o directamente desde Python en la línea de comandos)
+El programa principal es *mallador_v3.pyw*. Generalmente, basta con hacer doble clic para ejecutarlo, pero en caso contrario, se puede abrir con IDLE y ejecutar como siempre (o directamente desde Python en la línea de comandos). Desde Linux, abriendo una ventana de terminal (gráfica), generalmente basta con escribir "python"+[espacio], luego arrastrar el ícono de *mallador_v3.pyw*
+hacia la terminal, para que se ingrese la ruta completa del archivo, y luego Enter.
 
 - Para obtener el catálogo de algún semestre (posterior a Otoño 2013, inclusive):
 	- Abrir *mallador_v3.pyw*
@@ -45,17 +46,19 @@ El programa principal es *mallador_v3.pyw*. Generalmente, basta con hacer doble 
 	- Archivo > Gestionar catalogos > Cargar catalogo
 	- Seleccione el archivo de catálogo (generalmente, "catalogo"+[semestre]+".fcfm")
 	- Aceptar. La ventana mostrará el nombre del archivo cargado. Ya se puede cerrar la ventana del Gestor.
-	- El Zip viene con el catálogo de Otoño 2017 (y el repositorio incluye Otoño 2016).
-
+	- El Zip viene con el catálogo de Otoño 2017 (y el repositorio incluye Otoño 2016). La idea es descargar nuevamente el catálogo entre Inscripción y Modificas, ya que en la ventana principal de ramos cargados se ve el cupo y la cantidad de ocupados, número que varía en cada Modifica.
+	
 - Para cargar un curso (sólo una vez cargado un catálogo):
 	- Ventanas > Mostrar cursos disponibles. Se abrirá el catálogo de cursos, con un menú selector de departamentos en la parte superior.
 	- Escoja un departamento, y haga clic en "Agregar al Horario". Puede escoger ramos de varios departamentos a la vez.
 	- A medida que agrega ramos al horario, van apareciendo menúes en la ventana principal.
+	- **He visto que muchas veces un ramo seleccionado de la lista de cursos disponibles simplemente no se agrega. Esto parece tincada de Python, puesto que al cerrar y abrir el programa de nuevo, no he logrado recrear el bug. Por lo visto, basta con abrir de nuevo.**
 
 - Para visualizar una combinación de (secciones de) ramos:
 	- Por defecto, los ramos cargados están ocultos. Al marcar la casilla "Mostrar", aparecerán los bloques dibujados en el horario. Puede escoger cualquier sección en cualquier momento, y los bloques de dicho ramo se redibujarán.
 	- Si no quiere que algún ramo siga apareciendo, puede desmarcar la casilla "Mostrar", o hacer clic en "Quitar" para removerlo de la lista de menúes. Si quiere agregarlo nuevamente, puede volver a hacerlo en "Mostrar cursos disponibles".Debi
 	- **Debido a un bug, no se pueden deslizar las listas de secciones de cada ramo. Si agregó un ramo cuyo botón de menú quedó dibujado fuera de la ventana, para removerlo tendrá sólo que ocultarlo, o volver a iniciar el programa.**
+	- **Una vez borrado un ramo, lo más probable es que el resto de los ramos cargados queden en un orden distinto al que tenían originalmente. Esto se debe a la implementación mediante Diccionario, la cual no garantiza ningún. Debido a que no es crucial, no planeo cambiar esto prontamente.**
 	
 ## Para colaboradores:
 
@@ -73,9 +76,14 @@ Para poder probar el panel inferior:
 
 Funciones problemáticas:
 
-1  En malladorv_v3.py:
-  - actualizar_ramos_inferior (<- será necesario separar su función?)
+1  En malladorv_v3.pyw:
+  - actualizar_ramos_inferior
   - nuevo_ramo_inferior
-  - poblar_widgets_ultimo_ramo (<- será necesario separar su función?)
+  - poblar_widgets_ultimo_ramo
   - quitar_ramo (MUCHO)
+  Debería separar sus funciones, pero de momento funcionan...
+  
+2  En fetcher.py
+  - guardarCatalogo
+  - cargarCatalogo
   
