@@ -58,7 +58,7 @@ class VentanaMallador(Frame):
         self.lista_catalogos = None
 
         
-        self.cargados = [] # OBSOLETO (usar self.dict_cargados) lista de cursos cargados
+        #self.cargados = [] # OBSOLETO (usar self.dict_cargados) lista de cursos cargados
         
         self.d_cargados = dict()
         self.ultimo_ramo_cargado = ""
@@ -79,6 +79,7 @@ class VentanaMallador(Frame):
         self.canvas.pack()
         self.tabla_horario()
         self.widgets_main()
+        self.status_main()
         
     """
     def onresize(self,event):
@@ -137,7 +138,7 @@ class VentanaMallador(Frame):
 
         self.frame_canvas.bind("<Configure>", comando_aux)
         #self.frame_canvas.bind("<Configure>", self.onFrameConfigure)
-        self.frame_canvas.configure(background="red") #<- DELENDA EST
+        #self.frame_canvas.configure(background="red") #<- DELENDA EST
 
         self.actualizar_ramos_inferior()
         
@@ -235,6 +236,7 @@ class VentanaMallador(Frame):
         self.poblar_widgets_ultimo_ramo()
         #self.poblar_widgets_ramo(i)
         self.dibujar_bloques()
+        self.ud_actualizar_cargadas()
     
     def poblar_widgets_ultimo_ramo(self): #nuevo ramo
         '''Lee el ramo que quiero cargar (cuyo codigo es self.ultimo_ramo_cargado)
@@ -347,6 +349,8 @@ class VentanaMallador(Frame):
         for cod in self.d_cargados:
             if self.d_widgets_ramo[cod]['mostrar'].get():
                 self.dibujar_bloques_codigo(cod)
+        self.ud_actualizar_mostradas()
+        self.choques_actualizar()
   
 
     def dibujar_bloques_codigo(self,codigo):
@@ -399,6 +403,9 @@ class VentanaMallador(Frame):
             
         else: #"Mostrar" esta desmarcado
             self.canvas.delete(codigo) #borro todas las geometrias con el tag [codigo]
+
+        self.ud_actualizar_mostradas()
+        self.choques_actualizar()
             
         
     def asignar_color(self,codigo):
@@ -459,6 +466,9 @@ class VentanaMallador(Frame):
 
         self.actualizar_ramo_quitado_inferior(codigo)
         #self.actualizar_ramos_inferior(False)
+        self.ud_actualizar_cargadas()
+        self.ud_actualizar_mostradas()
+        self.choques_actualizar()
         
     """        
     def quitarRamo(self,i):
@@ -482,7 +492,85 @@ class VentanaMallador(Frame):
                   relief="solid").pack(side=LEFT)
             t="this is the second column for row %s" %row
             Label(self.frame_canvas, text=t).pack(side=LEFT) '''
-    
+
+    #--------------------- Barra de estado ventana principal
+
+    def status_main(self):
+        self.frame_status = Frame(self.frame_1)
+        self.frame_status.pack(fill=X)
+
+        self.frame_ud = Frame(self.frame_status,bg="red")#,width=30,height=20)
+        self.frame_ud.pack(side=LEFT)
+        
+        self.ud_cargadas = UDs_Bar(self.frame_ud,"UDs Cargadas")
+        self.ud_mostradas = UDs_Bar(self.frame_ud,"UDs Mostradas")
+
+        self.choques = ChoquesBar(self.frame_status,"Choques (mostrados)")
+
+    def ud_actualizar_cargadas(self):
+        n_uds = 0
+        error = False
+        for ramo in self.d_cargados.values():
+            datos_ramo = ramo[1]
+            uds_ramo = datos_ramo[0]
+            if not uds_ramo.isdigit():
+                error = True
+            else:
+                n_uds += int(uds_ramo)
+
+        if error:
+            n_uds = str(n_uds) +"?"
+        else:
+            n_uds = str(n_uds)
+
+        self.ud_cargadas.set_UDs(n_uds)
+
+    def ud_actualizar_mostradas(self):
+        try:
+            n_uds = 0
+            error = False
+            for cod in self.d_cargados:
+                if self.d_widgets_ramo[cod]['mostrar'].get():
+                    ramo = self.d_cargados[cod]
+                    datos_ramo = ramo[1]
+                    uds_ramo = datos_ramo[0]
+                    if not uds_ramo.isdigit():
+                        error = True
+                    else:
+                        n_uds += int(uds_ramo)
+
+            if error:
+                n_uds = str(n_uds) +"?"
+            else:
+                n_uds = str(n_uds)
+
+            self.ud_mostradas.set_UDs(n_uds)
+        except AttributeError:
+            pass
+
+    def choques_actualizar(self):
+        try:
+            bloques_mostrados = []
+            for cod in self.d_cargados:
+                if self.d_widgets_ramo[cod]['mostrar'].get():
+                    seccion_marcada = self.d_widgets_ramo[cod]['seccion'].get()
+                    bloques = self.d_bloques_ramo[cod][seccion_marcada]
+                    bloques_mostrados.extend(bloques)
+
+            n_choques = 0
+            
+            n = len(bloques_mostrados)
+            for i in range(n):
+                for j in range(i+1,n):
+                    bloque_x = bloques_mostrados[i]
+                    bloque_y = bloques_mostrados[j]
+                    if bloque_x.chocaCon(bloque_y):
+                        n_choques+=1
+
+            self.choques.set_choques(str(n_choques))
+        except AttributeError:
+            pass
+         
     #--------------------- COMUN
     def cerrar_ventana(self,i):
         self.ventanas_cerradas[i] = True
@@ -739,6 +827,57 @@ class VentanaMallador(Frame):
     def actualizar_db(self): pass
 
 
+class StatusBar:
+    #pk=-1 -> pack side=LEFT;    0 -> fill=X;    1 -> side=RIGHT
+    def __init__(self, frame, ancho,pk=-1):
+        self.label = Label(frame, bd=2, relief=RIDGE, anchor=W, width=ancho)
+        if pk == -1:
+            self.label.pack(side=LEFT)
+        elif pk == 0:
+            self.label.pack(fill=X)
+        else:
+            self.label.pack(side=RIGHT)
+
+    def set(self, texto):
+        self.label.config(text=texto)
+
+    def clear(self):
+        self.label.config(text="")
+
+class UDs_Bar(StatusBar):
+    def __init__(self,frame,texto):
+        StatusBar.__init__(self, frame, 17)
+        self.text = texto
+        self.uds = "0"
+        self.update_label()
+
+    def set_UDs(self,uds):
+        self.uds = uds
+        self.update_label()
+
+    def update_label(self):
+        self.set(self.text+": "+self.uds)
+
+
+class ChoquesBar(StatusBar):
+    def __init__(self,frame,texto):
+        StatusBar.__init__(self, frame, 20, pk=1)
+        self.text = texto
+        self.choques = "0"
+        self.update_label()
+
+    def set_choques(self,choques):
+        self.choques = choques
+        self.update_label()
+
+    def update_label(self):
+        self.set(self.text+": "+self.choques)
+        if self.choques != "0":
+            self.label.config(fg = "red3")
+        else:
+            self.label.config(fg = "black")
+
+                           
 if __name__ == "__main__":
     root = Tk()
     root.wm_title("Mallador")

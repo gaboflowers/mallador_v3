@@ -67,10 +67,10 @@ class Bloque:
     #True si 2 bloques se solapan. Si el parametro "margen" se pasa, considera
     #ese tiempo (en minutos) como tolerancia maxima
     def chocaCon(self,x,margen=0):
-        inicioA = self.ti.getHora()
-        inicioB = x.ti.getHora()
-        finA = self.tf.getHora()
-        finB = x.tf.getHora()
+        inicioA = self.ti.getHoraFloat()
+        inicioB = x.ti.getHoraFloat()
+        finA = self.tf.getHoraFloat()
+        finB = x.tf.getHoraFloat()
         
         puntoA = max(inicioA, inicioB)
         puntoB = min(finA,finB)

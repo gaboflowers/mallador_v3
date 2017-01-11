@@ -67,7 +67,11 @@ def parseCursosSopa(sopa):
         tag = tag.find_next('dl')
         datos_raw = tag.findAll('dd') #UD, Requisitos, Equivalencias...
 
-        datos = [dato.text.replace('\n','').replace('\t','') for dato in datos_raw]
+        datos = [dato.text.replace('\n','').replace('\t','').replace('\r','') for dato in datos_raw]
+        '''datos = []
+        for dato in datos_raw:
+            texto_dato = dato.text.replace('\n','').replace('\t','').replace('\r','')
+            #if texto_dato >'''
         item_curso.append(datos)
         
         secciones = tabla.tbody.findAll('tr')
