@@ -172,7 +172,6 @@ def getCatalogoHTML(yr,sem):
     catalogoHTML = []
     for s in codigosDeptos:
         url = urlCatalogo(yr,sem,s)
-        
         request = urllib2.Request(url)
         request.add_header('Accept-Encoding', 'utf-8')
         response = urllib2.urlopen(request)
@@ -197,16 +196,23 @@ def getCatalogo(yr,sem):
 
 #dada una lista Catalogo, la codifica en texto para su posterior lectura
 def guardarCatalogo(catalogo,yr,sem,extension='fcfm',file_name=None):
+    yr = str(yr)
+    sem = str(sem)
     extension = "."+extension
+    
     if file_name != None:
-        nombre_archivo = file_name+extension
+        nombre_archivo = file_name
     else:
-        nombre_archivo = "catalogo"+str(yr)+str(sem)+extension
+        nombre_archivo = "catalogo"+str(yr)+str(sem)
+    nombre_archivo_ext = nombre_archivo + extension
+    
     directorio_actual = ls(pwd())
-    if nombre_archivo in directorio_actual:
+    if nombre_archivo_ext in directorio_actual:
         time = str(datetime.datetime.now()).replace(' ','-').replace(':','-')[0:19]
         nombre_archivo = nombre_archivo +"-"+ time
-    
+        nombre_archivo_ext = nombre_archivo + extension
+
+    nombre_archivo = nombre_archivo_ext
     save_file = codecs.open(nombre_archivo,'w',encoding='utf-8')
     for departamento in catalogo:
         n_cursos = str(len(departamento) - 1)
@@ -266,7 +272,7 @@ def cargarCatalogo(nombre_archivo):
         raise OSError("Archivo "+nombre_archivo+" no encontrado")
 
     #cargar y leer archivo
-    load_file = open(nombre_archivo,'r')
+    load_file = codecs.open(nombre_archivo,'r',encoding='utf-8') #<-------- ???
     file_data = [] #guardar informacion del archivo en un arreglo
     for linea in load_file: file_data.append(linea)
     load_file.close()
@@ -318,12 +324,23 @@ def cargarCatalogo(nombre_archivo):
                 vector_profes.append(profe)
                 
             #print "datos_seccion:",datos_seccion
-            seccion = structHorario.Seccion([vector_profes,datos_seccion[1],datos_seccion[2]])
-            
-            horario_raw = datos_seccion[3]
+            try:
+                seccion = structHorario.Seccion([vector_profes,datos_seccion[1],datos_seccion[2]])
+            except IndexError:
+                try:
+                    seccion = structHorario.Seccion([vector_profes,datos_seccion[1],""])
+                except IndexError:
+                    seccion = structHorario.Seccion([vector_profes,"",""])
+
+            try:
+                horario_raw = datos_seccion[3]
+            except IndexError:
+                horario_raw = ""
             horario = []
 
             bloques_raw = horario_raw.split('B')[1:]
+            if horario_raw == "": bloques_raw = []
+            
             #print bloques_raw
             for bloque_raw in bloques_raw:
                 b_raw = bloque_raw.split(",")

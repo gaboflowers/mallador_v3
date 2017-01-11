@@ -3,6 +3,7 @@ from unidecode import unidecode
 class Hora:
     #Hora: str -> Hora
     def __init__(self,time):
+        if type(time) == unicode: time = str(time)
         if type(time) != str: raise TypeError
         if ":" not in time: raise ValueError("Colon not in argument")
         indexColon = time.index(":")

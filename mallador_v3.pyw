@@ -5,7 +5,6 @@ from Tkinter import *
 from tkFileDialog import askopenfilename
 from datetime import date
 from os import getcwd
-from os import chdir as os_chdir
 from os import name as os_name
 from os import remove as os_remove
 from random import randint
@@ -571,14 +570,13 @@ class VentanaMallador(Frame):
             else:                               #<-------faltan los catalogos personales/EDIT: ni loco los implemento
                 yr = 0000
                 sem = 0
+            print "g_i_l_c so far so good..."
             guardarCatalogo(catalogo,yr,sem)
             
         
     def importar(self):
-            filelocation = askopenfilename().split("/")
-            filefolder = "/".join(filelocation[:-1])
-            os_chdir(filefolder)            
-            filename = filelocation[-1]
+            filename = askopenfilename().split('/')
+            filename = filename[-1]
 
             catalogo = cargarCatalogo(filename)
             #nombre = filename[:filename.find('.')]
@@ -597,6 +595,7 @@ class VentanaMallador(Frame):
             if sem in [1,2,3] and yr > 2009:
                 print "loading"
                 catalogo = getCatalogo(yr,sem)
+                print "(truco archivo temporal)"
                 archivo_temporal = guardarCatalogo(catalogo,yr,sem,"fcfm_tmp", "~cat"+str(yr)+str(sem))
                 catalogo = cargarCatalogo(archivo_temporal)
                 os_remove(archivo_temporal)                
@@ -623,13 +622,15 @@ class VentanaMallador(Frame):
             self.ventanas_cerradas[1] = False
             
             self.ventanas['db'] = Toplevel(self,padx=5,pady=5)
+            self.ventanas['db'].minsize(width=245, height = 400)
             self.ventanas['db'].title("Lista de catalogos")
             self.ventanas['db'].protocol("WM_DELETE_WINDOW", lambda: self.cerrar_ventana(1))
             
             N = len(self.catalogos)
 
-            db_frame = Frame(self.ventanas['db'], width=200, height = 300)
-            db_frame.pack()
+            #db_frame = Frame(self.ventanas['db'], width=200, height = 300)
+            db_frame = Frame(self.ventanas['db'])
+            db_frame.pack(fill=BOTH,expand=True)
 
             union_codigos = []
             for i in range(N):
