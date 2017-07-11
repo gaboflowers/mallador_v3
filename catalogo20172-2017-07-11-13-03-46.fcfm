@@ -1,0 +1,2404 @@
+$9;AS
+%2;AS2001 Astronomía General
+!10;FI1002/FI1A2;AS30A;
+Sebastián López M.;100;0;Bcat,ma,14:30,16:00,Bcat,vi,14:30,16:00,Baux,lu,16:15,17:45,
+Jose Maza Sancho;100;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,lu,16:15,17:45,
+%1;AS3004 Medio Intergaláctico
+!10;FI2002,(FI2004/CM2004);AS46B;
+Sebastián López M.;40;0;Bcat,ma,16:15,17:45,Bcat,vi,16:15,17:45,
+%1;AS3010 Introducción a la Astrobiología
+!10;FI2004/CM2004;
+Diego Mardones P.;40;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,Baux,mi,16:15,17:45,
+%1;AS3101 Astrofísica de Estrellas
+!10;FI2002,(FI2004/CM2004);AS31B;
+Edgardo Costa Hechenleitner;40;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,Baux,ma,16:15,17:45,
+%1;AS4101 Astrofísica de Galaxias
+!10;AS3101;AS42A;
+Valentino Gonzalez;40;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ma,16:15,17:45,
+%1;AS4108 Investigación Dirigida II
+!10;AS4901,AUTOR;
+Paulina Lira T.;12;0;Bcat,mi,8:30,11:45,Bcat,mi,14:30,17:45,
+%1;AS4109 Teoría de Galaxias
+!10;FI3001/FI3102/AUTOR;
+Andrés Escala A.;40;0;Bcat,mi,14:30,16:00,
+%2;AS4201 Astronomía Experimental
+!10;(FI2003/FI2A3/(FI25A,FI35A)),AUTOR;
+Leonardo Bronfman A.,Nicolás Reyes Guzmán;10;0;Bcat,lu,14:30,19:30,
+Leonardo Bronfman A.,Patricio Rojo R.;10;0;Bcat,mi,14:30,19:30,
+%1;AS4501 Astroinformática
+!10;(FI3104/CC3501/MA33A),(MA3403/MA34B/MA3402),(FI2003/FI35A),(FI2002/FI33A);
+Patricio Rojo R.,Francisco Forster;40;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+=EOD
+$0;
+=EOD
+$80;CC
+%1;CC1000 Herramientas Computacionales para Ingeniería y Ciencias
+!5;No tiene;
+Patricio Poblete,Maira Samary;50;0;Bcat,lu,8:30,10:00,
+%9;CC1002 Introducción a la Programación
+!10;No tiene;
+Benjamín Bustos C.;80;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,18:00,20:00,
+José Pino U.,Nelson Baloian T.;80;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,18:00,20:00,
+Patricio Inostroza F.;80;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,18:00,20:00,
+Francisco J. Gutiérrez;90;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,vi,16:00,18:00,
+Alejandro Hevia A,;90;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,vi,16:00,18:00,
+José Pino U.,Nelson Baloian T.;90;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,16:00,18:00,
+Juan Álvarez R.;90;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,16:00,18:00,
+Juan Álvarez R.;79;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,18:00,20:00,
+Francisco J. Gutiérrez;90;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,18:00,20:00,
+%2;CC3001 Algoritmos y Estructuras de Datos
+!10;(CC1001/CC1002),MA1101;CC30A/CC253/CC211;
+Benjamín Bustos C.;70;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,14:30,16:00,
+Jeremy Barbay;70;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,14:30,16:00,
+%1;CC3002 Metodologías de Diseño y Programación
+!10;CC3001/CC30A;CC51H;
+Alexandre Bergel;60;0;Bcat,lu,12:00,13:30,Bcat,mi,14:30,16:00,Baux,vi,12:00,13:30,
+%1;CC3101 Matemáticas Discretas para la Computación
+!10;(CC1001/CC1002),MA1101;CC40C;
+Gonzalo Navarro;60;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,16:15,17:45,
+%1;CC3102 Teoría de la Computación
+!10;CC3101,CC3001;CC30B/CC214;
+Alejandro Hevia A,;60;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,16:15,17:45,
+%1;CC3201 Bases de Datos
+!10;CC3101/FI2002;CC42A/CC432/CC705;
+Claudio Gutierrez G.;60;0;Bcat,lu,10:15,11:45,Bcat,mi,10:15,11:45,Baux,vi,10:15,11:45,
+%1;CC3301 Programación de Software de Sistemas
+!10;CC3001;CC31A/CC212/CC252;
+Luis Mateu B.;60;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,14:30,16:00,
+%1;CC3501 Modelación y Computación Gráfica para Ingenieros
+!10;(CC1001/CC1002),MA2601;
+María Cecilia Rivara Z.;60;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,Baux,lu,16:15,17:45,
+%1;CC4001 Taller de Programación A
+!5;CC1001/CC1002/CC1000;
+%1;CC4006 Taller de Programación Competitiva B
+!10;CC1000/CC1001;
+%1;CC4101 Lenguajes de Programación
+!10;CC3102;CC41A/CC362/CC251;
+Federico Olmedo;50;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,lu,14:30,16:00,
+%1;CC4102 Diseño y Análisis de Algoritmos
+!10;(MA3403/MA3401),(MA5201/CC3102/AUTOR),FI2003;CC40A/CC412;
+Gonzalo Navarro;40;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,Baux,lu,16:15,17:45,
+%1;CC4301 Arquitectura de Computadores
+!10;CC3301,FI2002;CC41C/CC213;
+Pablo Guerrero Pérez;40;0;Bcat,lu,10:15,11:45,Bcat,mi,10:15,11:45,Baux,vi,10:15,11:45,
+%1;CC4302 Sistemas Operativos
+!10;CC4301;CC41B/CC582/CC452;
+Luis Mateu B.;40;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,16:15,17:45,
+%1;CC4303 Redes
+!10;CC4302S;CC51C/CC458/EL4107;
+Jose Miguel Piquer G.;40;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,14:30,16:00,
+%1;CC4401 Ingeniería de Software
+!10;CC3001,CC3002,CC3201;CC31B/CC332/CC355;
+Jocelyn Simmonds W.;40;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,Baux,mi,18:00,19:30,
+%1;CC4901 Práctica Profesional I
+!0;CC3002,CC3201,CC3301;CC49A/CC399;
+%1;CC5002 Desarrollo de Aplicaciones Web
+!10;CC3001/CC30A;CC51T;
+José Urzúa R.;40;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,lu,12:00,13:30,
+%1;CC5101 Análisis Avanzado de Algoritmos
+!10;CC3001,(MA3403/AUTOR);CC50N;
+Patricio Poblete;20;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+%1;CC5102 Métodos Lógicos en Ciencias de la Computación
+!10;CC3102/AUTOR;CC51N;
+Pablo Barcelo Baeza;30;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;CC5114 Redes Neuronales y Programación Genética
+!10;CC3002;
+Alexandre Bergel;20;0;Bcat,lu,16:15,17:45,Bcat,mi,16:15,17:45,
+%1;CC5206 Introducción a la Mineria de Datos
+!10;CC3001/FI2002;CC71Q;
+Bárbara Poblete L.;30;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+%1;CC5213 Recuperación de Información Multimedia
+!10;CC5206/EL4106/CC4102;CC5204;
+;30;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,
+%1;CC5304 Arquitectura de Sistemas de Alta Disponibilidad
+!10;(CC3201/CC42A),(CC4302/CC41B);CC61S;
+Cesar Guerrero S.;15;0;Bcat,ma,18:00,19:30,
+%1;CC5306 Computación para el Trabajo Grupal
+!10;CC4302/CC41B;CC52N;
+José Pino U.;30;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,
+%1;CC5401 Ingeniería de Software II
+!10;CC4101,CC4401;CC51A;
+Sergio Ochoa D;40;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,lu,14:30,16:00,
+%1;CC5402 Proyecto de Software
+!20;IN3301,CC5401,CC4303,CC4102;CC61A;
+Maria Bastarrica Piñeyro;30;0;Bcat,lu,18:00,19:30,Bcat,ma,18:00,19:30,
+%1;CC5509 Reconocimiento de Patrones
+!10;CC3002,CC3301;
+Mauricio Cerda Villablanca,José Saavedra Rondo;20;0;Bcat,lu,16:15,17:45,Bcat,mi,16:15,17:45,
+%1;CC5602 Gestión Informática
+!10;CC5401,IN3301;
+Jose Benguria D.;40;0;Bcat,vi,8:30,10:00,
+%1;CC5609 Taller de Desarrollo Comercial
+!5;CC3002;
+Adolfo Carrasco Acosta;30;0;Bcat,lu,18:00,19:30,
+%1;CC5613 Taller de Comunicación Efectiva: Caso Práctico de Lanzamiento de Producto.
+!5;CC3002;
+Eduardo Godoy V.;21;0;Bcat,lu,18:00,19:30,
+%1;CC5614 Herramientas para el Trabajo en Equipo
+!5;CC3002;
+Andrea Rodríguez;20;0;Bcat,ju,16:15,17:45,
+%1;CC5615 Business Analytics
+!5;CC3201;CC5608;
+Marcela Calderón C.;30;0;Bcat,lu,14:30,16:00,
+%1;CC5901 Práctica Profesional II
+!0;CC4901,CC4401,CC4101;CC59A;
+%1;CC6402 Taller Avanzado de Desarrollo Agil y Lean
+!10;CC6401/CC5401/CC61A/CC62V/AUTOR;
+Agustín Villena M.;30;0;Bcat,vi,10:15,13:30,
+%1;CC6501 Taller de Interacción Humano-Computador
+!10;CC5401/CC5504/CC52E;CC62T;
+Jaime Sánchez I.;20;0;Bcat,lu,10:15,11:45,Bcat,mi,10:15,11:45,
+%1;CC6502 Taller de Usabilidad de Interfaces de Software
+!10;CC5401/CC51A/CC5504;CC61E;
+Jaime Sánchez I.;20;0;Bcat,lu,12:00,13:30,Bcat,mi,14:30,16:00,
+%1;CC6908 Introducción al Trabajo de Título
+!5;UD445,(EI4205S/EI2090),CC5401;CC69E;
+Maria Bastarrica Piñeyro;50;0;Bcat,mi,18:00,19:30,
+%10;CC6909 Trabajo de Título
+!35;CC6908,(EI4205/EI2090),CC5402;
+Jocelyn Simmonds W.;4;0;Bcat,mi,18:00,19:30,
+Benjamín Bustos C.;3;0;Bcat,mi,18:00,19:30,
+Nancy Hitschfeld K.;6;0;Bcat,mi,18:00,19:30,
+Sergio Ochoa D,Daniel Perovich G.;8;0;Bcat,mi,18:00,19:30,
+Éric Tanter;3;0;Bcat,mi,18:00,19:30,
+Claudio Gutierrez G.,Aidan Hogan ..;6;0;Bcat,mi,18:00,19:30,
+Alejandro Hevia A,;3;0;Bcat,mi,18:00,19:30,
+José Pino U.;3;0;Bcat,mi,18:00,19:30,
+Javier Bustos J.;3;0;Bcat,mi,18:00,19:30,
+Juan Manuel Barrios,José Saavedra Rondo;4;0;Bcat,mi,18:00,19:30,
+%1;CC7010 Pasantía de Investigación I
+!5;No tiene;CC79P;
+%1;CC7015 Pasantía de Investigación II
+!5;No tiene;CC79Q;
+%1;CC7020 Investigación Dirigida
+!10;No tiene;CC79A;
+%1;CC7220 La Web de Datos
+!10;CC3201;
+Aidan Hogan ..;20;0;Bcat,lu,10:15,11:45,Bcat,mi,10:15,11:45,
+%1;CC7310 Análisis Fino de Algoritmos y Estructuras de Datos
+!10;CC3001;
+Jeremy Barbay;20;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,
+%1;CC7615 Algoritmos Avanzados de Rendering 3D
+!10;CC3501/AUTOR;
+Alejandro Echeverria;10;0;Bcat,lu,14:30,17:45,
+%1;CC7910 Investigación en Ciencia de la Computación (Métodos, Técnicas, Perspectivas)
+!10;CC4102/AUTOR;CC71T;
+Claudio Gutierrez G.;20;0;Bcat,lu,16:15,17:45,Bcat,mi,16:15,17:45,
+%1;CC7920 Introducción a la Tesis
+!30;No tiene;CC79T;
+%1;CC7970 Trabajo de Tesis I
+!30;No tiene;CC797;
+%1;CC7980 Trabajo de Tesis II
+!30;No tiene;CC798;
+%1;CC8910 Trabajo de Tesis I
+!50;No tiene;CC896;
+%1;CC8920 Trabajo de Tesis II
+!50;No tiene;CC897;
+%1;CC8930 Trabajo de Tesis III
+!50;No tiene;CC898;
+%1;CC8940 Trabajo de Tesis IV
+!50;No tiene;CC899;
+%1;CC8950 Trabajo de Tesis V
+!50;No tiene;
+%1;CC8960 Trabajo de Tesis VI
+!50;No tiene;
+%1;CC63D Seminario de Actualización Tecnológica I
+!5;AUTOR;
+%1;CC63E Gestión del Conocimiento
+!5;AUTOR;
+%1;CC63L Introducción a la Gestión de Calidad de Software
+!5;AUTOR;
+%1;CC63O Técnicas de Prueba de Software
+!5;AUTOR;
+%1;CC63P Administración de Proyectos de Gestión de Calidad
+!5;AUTOR;
+%1;CC63Q Métrica y Calidad de Software
+!5;AUTOR;
+%1;CC64D Seminario de Actualización Tecnológica II
+!5;AUTOR;
+%1;CC66A Programación Estadística
+!5;No tiene;
+%1;CC66B Visualización de Datos
+!5;No tiene;
+%1;CC66C Recuperación de Información
+!5;No tiene;
+%1;CC66D Bases de Datos Relacionales
+!5;No tiene;
+%1;CC66E Minería de Datos
+!5;No tiene;
+%1;CC66F Gestión de Datos
+!5;No tiene;
+%1;CC66G Taller de Proyecto
+!5;No tiene;
+%1;CC67A Introducción a la Programación
+!5;No tiene;
+%1;CC67B Fundamentos de Criptografía
+!5;No tiene;
+%1;CC67C Seguridad de Redes
+!5;No tiene;
+%1;CC67D Seguridad de Software
+!5;No tiene;
+%1;CC67E Análisis de Riesgo y Planificación de Contingencia
+!5;No tiene;
+%1;CC67F Aspectos del Derecho Informático
+!5;No tiene;
+%1;CC67G Comercio Electrónico
+!5;No tiene;
+%1;CC73C Taller de Proyectos de Gestión de Calidad
+!5;AUTOR;
+%1;CC73F Avances en Bases de Datos
+!5;AUTOR;
+%0;CC73I Normas y Estandares de Calidad de Software
+!10;No tiene;
+=EOD
+$88;CI
+%1;CI3101 Mecánica de Fluidos
+!10;MA2002,MA2601,FI2003,(FI2004/CM2004);CI31A;
+Aldo Tamburrino T.,Yarko Niño C.;120;0;Bcat,lu,8:30,10:00,Bcat,mi,8:30,10:00,Baux,vi,14:00,16:00,
+%2;CI3201 Análisis de Estructuras Isostáticas
+!10;FI2001/FI2A1;CI32B;
+Francisco Hernandez Prado;100;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,10:15,11:45,
+Rafael Ruiz G.;100;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,10:00,12:00,
+%1;CI3202 Mecánica de Sólidos
+!10;CI3201,MA2601;CI32C/ME3202;
+Felipe Beltran M.;120;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,10:00,12:00,
+%1;CI3501 Materiales de Construcción
+!10;FI2003,CI3201,(FI2004/CM2004);CI34A/ME3601;
+Eduardo Donoso C.,Gerardo Díaz R.;50;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,Baux,lu,14:00,16:00,
+%1;CI3502 Topografía
+!10;(MA2002/MA2A2),(FI2003/FI2A3);
+Ivan Bejarano B.;60;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ma,14:30,17:45,Bcon,vi,18:00,21:00,
+%1;CI4101 Hidráulica
+!10;CI3101;CI41A;
+Alberto de la Fuente Stranger;100;0;Bcat,lu,8:30,10:00,Bcat,mi,8:30,10:00,Baux,vi,14:00,16:00,
+%1;CI4102 Ingeniería Ambiental
+!10;CI3101/ME3301/IQ3202/MI3010;CI41B;
+Ana Prieto;100;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,mi,14:00,16:00,
+%1;CI4201 Hormigón Estructural
+!10;CI3202,CI3501;CI42B;
+Leonardo Massone S.;80;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,16:00,18:00,
+%1;CI4202 Análisis Estructural
+!10;CI3202;CI42A;
+Francisco Hernandez Prado;60;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ju,14:00,16:00,
+%1;CI4203 Dinámica de Estructuras
+!10;CI4202;CI42G;
+Ruben Boroschek Krauskopf;50;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ju,14:00,16:00,
+%1;CI4301 Análisis de Sistemas de Transporte
+!10;MA2002,IN2201;CI43A;
+Marcela Munizaga M.;100;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ju,16:00,18:00,
+%1;CI4401 Geotecnia
+!10;GL3101,CI3202;CI44A;
+Cesar Pasten P.;80;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,10:00,12:00,Blab,lu,14:00,16:00,
+%1;CI4402 Geomecánica
+!10;CI4401;CI44B;
+Roberto Gesche S.;80;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,10:00,12:00,Blab,lu,16:00,18:00,
+%1;CI5101 Hidrología
+!10;CI4101,(MA3403/MA3402);CI41C;
+Ximena Vargas M.,Miguel Lagos Zuñiga;50;0;Bcat,lu,12:00,13:30,Bcat,mi,8:30,10:00,Baux,vi,16:00,18:00,
+%1;CI5102 Calidad del Agua
+!10;CI4102;CI51I;
+Katherine Lizama;50;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ju,16:00,18:00,
+%1;CI5104 Hidráulica Aplicada al Diseño de Obras
+!10;CI5101,CI4102S;CI51B;
+Ricardo González Valenzuela;25;0;Bcat,lu,8:30,10:00,Bcat,mi,8:30,10:00,Baux,vi,16:00,18:00,
+%1;CI5105 Hidráulica de Aguas Subterráneas y su Aprovechamiento
+!10;CI4102S,CI5101;CI51J;
+Javier González S.;50;0;Bcat,ma,14:30,17:45,Baux,lu,18:00,20:00,
+%1;CI5106 Procesos de Tratamiento de Aguas
+!10;CI5102;CI51M;
+Gerardo Ahumada T.,Javier Nannig Briceño,Néstor Rojas Alcayaga;50;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,vi,16:00,18:00,
+%1;CI5108 Seminario de Recursos Hidrícos y Medio Ambiente
+!5;CI4102;
+Jorge Castillo G.;50;0;Bcat,lu,16:00,18:00,
+%1;CI5201 Diseño Sísmico de Estructuras
+!10;CI4201,CI4203,CI5202S;CI52S;
+Fabián Rojas B.;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,10:00,12:00,
+%1;CI5202 Estructuras de Acero
+!10;CI3501,CI4202;CI52R;
+Alejandro Verdugo P.;50;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,mi,16:00,18:00,
+%2;CI5206 Proyecto de Hormigón Armado
+!10;CI5401,CI5201;CI52G;
+Iván Hrepic C.;12;0;Bcat,mi,8:30,11:45,
+Juan Mendoza V.;25;0;Bcat,mi,8:30,11:45,
+%1;CI5213 Seminario de Ingeniería Estructural I
+!10;CI4202;
+Sergio Córdova A.,Juan Carlos Gutiérrez C.,Veronica Reveco;50;0;Bcat,ma,16:15,17:45,Baux,vi,14:30,16:00,
+%1;CI5222 Hormigón Pretensado
+!10;CI4201;CI52K;
+Fernando Yañez U.;50;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,Baux,mi,16:00,18:00,
+%1;CI5223 Diseño de Albañileria Estructural
+!10;CI52S/CI5201;CI52H;
+Thomas Sturm Moreira;25;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,vi,16:00,18:00,
+%1;CI5303 Microeconomía
+!5;IN2201/IN41A;CI43B;
+Sergio Jara D.;40;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ju,16:00,18:00,
+%1;CI5304 Economía de Transporte
+!5;(CI4301/CI43A),CI5303S;CI73H;
+%1;CI5305 Redes y Circulación
+!10;CI5302,CI5301;CI53J;
+Cristian Cortes C.;50;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+%1;CI5306 Economía de Localización
+!5;CI5304;CI63E;
+Francisco Martinez C.;50;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,Baux,lu,16:15,17:45,
+%1;CI5307 Modelos de Localización
+!5;CI5306S;
+Francisco Martinez C.;50;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,Baux,lu,16:15,17:45,
+%1;CI5308 Demanda de Transporte
+!10;CI43B/CI5304;CI53I;
+Cristián Guevara Cue;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Blab,vi,14:00,16:00,
+%1;CI5309 Diseño Vial
+!10;CI4301,CI3502;CI53D;
+Carlos Moya Saavedra;50;0;Bcat,mi,16:15,19:30,Blab,vi,16:15,20:00,
+%1;CI5310 Competencia y Regulación en Mercados de Transporte
+!10;CI5304/CI43B;CI63L;
+Leonardo J. Basso Sotz;20;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;CI5312 Transporte Sustentable
+!5;IN2201;
+Alejandro Tirachini H.;40;0;Bcat,lu,14:30,16:00,
+%1;CI5401 Fundaciones
+!10;CI4201,CI4402;CI52Q;
+Felipe Ochoa Cornejo;40;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,lu,16:00,18:00,
+%1;CI5411 Fundaciones II
+!10;CI52Q/CI5401;CI62D;
+Sebastián Boldrini;10;0;Bcat,mi,14:30,16:00,Bcat,ju,14:30,16:00,Baux,vi,16:00,18:00,
+%1;CI5413 Instumentación en Ingeniería Geotecnica y Estructural
+!10;(CI4203/CI42G),(CI4402/CI44B);CI64A;
+Pedro Soto Muñoz,Roberto Gesche S.;50;0;Bcat,ma,14:30,16:00,Baux,mi,10:15,11:45,Blab,vi,16:15,17:45,
+%1;CI5415 Seminario de Geotecnia
+!5;CI5401S;
+Felipe Ochoa Cornejo;50;0;Bcat,mi,16:15,17:45,
+%1;CI5501 Métodos Constructivos
+!10;CI3501,MA3403,CI4301;CI52A;
+William Wragg L.;70;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,lu,14:00,16:00,
+%1;CI5502 Planificación y Control de Proyectos
+!10;CI5501,IN3301,(IN3701/MA3701);CI52B;
+Claudio Mancilla Pizarro;70;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,lu,14:00,16:00,
+%1;CI5503 Tecnología del Hormigón
+!10;MA3403,CI3501;CI52C;
+%1;CI5504 Patología de las Obras de Construcción
+!5;CI4201/CI42B;
+David Silva Saavedra;30;0;Bcat,lu,18:00,19:30,
+%1;CI5511 Dirección de Proyectos
+!10;CI5502S/CI52B;CI62R;
+Alejandro Polanco;50;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,16:00,18:00,
+%1;CI5522 Sustentabilidad en la Construcción
+!10;CI3501;
+Paula Araneda Guerra;25;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,16:00,18:00,
+%1;CI5532 Diseño y Construcción de Estructuras Prefabricadas
+!10;CI42B/CI4201;CI62L;
+David Campusano B.;18;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,14:00,16:00,
+%1;CI5554 Seminario: Diseño de Edificios contra Incendios
+!10;CI52A/CI5501;
+Miguel Pérez Árias;50;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,16:00,18:00,
+%1;CI5803 Trabajo Dirigido en Ingeniería Civil
+!5;AUTOR;CI65A;
+%1;CI5806 Gestión de la Innovación
+!5;UD350;
+Santiago Barcaza Soto;50;0;Bcat,vi,12:00,13:30,
+%1;CI5807 Derecho y Regulación Ambiental
+!5;No tiene;
+Pablo Aranda V.,Ezio Costa C.;50;0;Bcat,lu,14:00,16:00,
+%1;CI5808 Evaluación de impacto ambiental
+!5;UD350;CI5110;
+Juan Cuchacovich R;30;0;Bcat,mi,18:00,19:30,
+%1;CI5809 Taller de Liderazgo y Trabajo en equipo para Ingenieros Civiles
+!5;CI5901;
+Andrea Rodríguez;20;0;Bcat,ju,14:30,16:00,
+%1;CI5901 Práctica Profesional II
+!0;CI4901,(CI4102/CI4301/CI4201);CI59A;
+%1;CI6102 Proyecto Integrado de Recursos Hídricos
+!10;UD480;CI61B/CI61C/CI61D/CI61E;
+Carolina Meruane Naranjo;20;0;Bcat,mi,8:30,11:45,
+%2;CI6103 Proyecto de Sistemas Hidráulicos/Sanitarios/Ambiental
+!10;UD480;CI61B/CI61C/CI61D/CI61E;
+Rodrigo Arbuch Meza;12;0;Bcat,ju,18:00,21:00,
+Arturo Jorquera Acuña;15;0;Bcat,lu,18:00,21:00,
+%1;CI6105 Transporte Hidráulico de Sólidos
+!10;CI5104S;
+Aldo Tamburrino T.,Yarko Niño C.;15;0;Bcat,lu,12:00,13:30,Bcat,mi,16:15,17:45,Baux,vi,12:00,14:00,
+%1;CI6106 Modelación Numérica con Aplicación en Ingeniería Hidráulica y Ambi
+!10;CI51J/CI5105S;
+Yarko Niño C.,Luis Zamorano R.;20;0;Bcat,lu,10:15,11:45,Bcat,mi,10:15,11:45,Baux,mi,18:00,20:00,
+%1;CI6107 Hidraulica Maritima
+!10;CI51B/CI5104S;CI61U;
+César Guzmán Mardones;20;0;Bcat,ma,18:00,19:30,Bcat,ju,18:00,19:30,Baux,ju,19:30,21:00,
+%1;CI6112 Análisis de Sistemas de Recursos Hídricos
+!10;CI5101/CI41C;CI61T;
+Marcelo Olivares A.;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,14:00,16:00,
+%1;CI6116 Seminario de Recursos Hídricos  y Medio Ambiente XIV
+!10;CI5105/CI51J;CI66J;
+Julio Cornejo M.,René Figueroa Leiva;20;0;Bcat,vi,14:00,16:00,Baux,vi,16:00,18:00,
+%2;CI6201 Proyecto de Estructuras de Acero
+!10;CI4102,(CI5202/CI52R);CI62A;
+Horacio Pinochet V.,Elizabeth Parra H.;15;0;Bcat,lu,16:15,19:30,
+Boris Saez G.;15;0;Bcat,lu,16:15,19:30,
+%1;CI6202 Estructuras de Acero II
+!10;CI5202;
+Eduardo Núñez;20;0;Bcat,ma,18:00,19:30,Bcat,ju,18:00,19:30,
+%1;CI6302 Proyecto de Diseño Tecnológico
+!10;CI6301S;CI68A;
+Juan Enrique Cannobbio S.;30;0;Bcat,lu,18:00,21:00,
+%1;CI6304 Seminario de Ingeniería de Transporte
+!10;AUTOR;CI63B;
+Alejandro Tirachini H.;50;0;Bcat,ma,18:00,19:30,Bcat,ju,18:00,19:30,
+%1;CI6305 Seminario de Transporte II
+!10;AUTOR;CI63C;
+Alejandro Tirachini H.;50;0;Bcat,ma,18:00,19:30,Bcat,ju,18:00,19:30,
+%1;CI6309 Transporte Público
+!10;AUTOR;CI63G;
+Antonio Gschwender K.,Cristian Cortes C.;30;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,14:00,16:00,
+%1;CI6313 Ingeniería de Tránsito Avanzada y Diseño Urbano
+!10;CI6301;
+Alejandro Tirachini H.;50;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,
+%1;CI6502 Proyecto de Construcción de Obras Civiles
+!10;CI4102,(CI52B/CI5502);CI62C;
+Hugo Baesler C.;50;0;Bcat,mi,8:30,11:45,
+%1;CI6901 Práctica Profesional III
+!0;CI5901,CI4102;CI69A;
+%4;CI6908 Introducción al Trabajo de Título
+!5;UD480;CI69E/CI697;
+Jorge Pulgar;15;0;Bcat,ju,16:00,18:00,
+Boris Saez G.;15;0;Bcat,ju,16:00,18:00,
+Marcelo Olivares A.;15;0;Bcat,ju,16:00,18:00,
+Agustín Campos C.;15;0;Bcat,ju,16:00,18:00,
+%4;CI6909 Trabajo de Título
+!35;CI6901S,CI6908,(EI2090/EI4205);
+David Campusano B.;15;0;Bcat,ju,16:00,18:00,
+David Campusano B.;15;0;Bcat,ju,16:00,18:00,
+Yarko Niño C.;15;0;Bcat,ju,16:00,18:00,
+Agustín Campos C.;15;0;Bcat,ju,16:00,18:00,
+%1;CI6910 Trabajo de Memoria de Título
+!35;CI6901S,CI6908,(EI2090/EI4205),AUTOR;
+Mauricio Sarrazin A.;15;0;Bcat,ju,16:15,17:45,
+%1;CI7110 Análisis Geo-Espacial de Recursos Hídricos
+!10;CI3502;
+Miguel Lagos Zuñiga,Yohann Videla G.;20;0;Bcat,vi,10:15,11:45,Baux,vi,14:30,17:45,
+%1;CI7111 Sistemas de tratamientos naturales
+!10;CI5102;
+Katherine Lizama;20;0;Bcat,ma,18:00,19:30,Bcat,ju,18:00,19:30,
+%1;CI7212 Elementos Finitos
+!10;CI4202;CI72A;
+Mauricio Sarrazin A.;50;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+%1;CI7301 Trabajo de Tesis I
+!25;AUTOR;CI73N;
+Cristián Guevara Cue;20;0;Bcat,ma,16:15,17:45,
+%1;CI7302 Trabajo de Tesis II
+!25;AUTOR;CI73P;
+Cristián Guevara Cue;20;0;Bcat,ma,16:15,17:45,
+%1;CI7411 Dinámica de Suelos
+!10;CI4402/CI44B;
+Cesar Pasten P.;15;0;Bcat,ma,18:00,19:30,Bcat,ju,18:00,19:30,
+%1;CI7412 Leyes Constitutivas de Suelos
+!10;AUTOR,CI5401;
+Cesar Pasten P.;15;0;Bcat,ma,18:00,19:30,Bcat,ju,18:00,19:30,
+%1;CI71A Análisis de Sistemas de Recursos Hídricos
+!10;AUTOR;
+Marcelo Olivares A.;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,14:00,16:00,
+%1;CI71D Modelación Numérica con Aplic. en Ing. Hidráulica y Ambiental
+!10;AUTOR;
+Yarko Niño C.,Luis Zamorano R.;15;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,ju,10:00,12:00,
+%1;CI71F Modelación Hidrológica
+!10;AUTOR;
+Ximena Vargas M.,Pablo Mendoza Z.;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,10:00,12:00,
+%1;CI71J Transporte Hidráulico de Sólidos
+!10;AUTOR;
+Aldo Tamburrino T.,Yarko Niño C.;15;0;Bcat,lu,12:00,13:30,Bcat,mi,16:15,17:45,Baux,vi,12:00,14:00,
+%1;CI71K Hidráulica Marítima
+!10;AUTOR;
+César Guzmán Mardones;15;0;Bcat,ma,18:00,19:30,Bcat,ju,18:00,19:30,Baux,ju,19:30,21:00,
+%1;CI72N Trabajo de Tesis I
+!25;AUTOR;
+%1;CI72P Trabajo de Tesis II
+!25;AUTOR;
+%1;CI79A Introducción a la Tesis
+!10;AUTOR;
+Yarko Niño C.;15;0;Bcat,vi,12:00,13:30,
+%1;CI79B Tesis I
+!25;AUTOR;
+Yarko Niño C.;15;0;Bcat,ju,14:30,16:00,
+%1;CI79C Trabajo de Tesis II
+!25;AUTOR;
+Yarko Niño C.;15;0;Bcat,ju,14:30,16:00,
+=EOD
+$9;CM
+%2;CM1001 Química
+!10;No tiene;CM1A1/QI21A/QI212;
+Franck Quero;50;0;Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,Baux,lu,16:00,18:00,
+Isadora Berlanga M.;50;0;Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ma,16:00,18:00,
+%3;CM2004 Fisicoquímica
+!10;(CM1001/CM1A1),(MA2001/MA2A1),(FI2001S/FI2A1S);CM2A4;
+Ricardo Letelier D.;100;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,lu,19:30,21:00,
+Octavio Vasquez A.;100;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,lu,19:30,21:00,
+Gerardo Díaz R.;100;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,Baux,lu,19:30,21:00,
+%1;CM3001 Química Inorgánica
+!10;(CM1001/CM1A1),(MA1002/MA1A2),(FI1001/FI100);IQ3205/QI33A;
+Mónica Soler J,Isadora Berlanga M.;50;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,Baux,lu,18:00,19:30,
+%1;CM3002 Química Orgánica
+!10;CM1001,MA1001,FI1001;IQ3204/QI34B;
+Jorge Manzur S.;50;0;Bcat,lu,12:00,13:30,Bcat,mi,16:15,17:45,Baux,ju,12:00,13:30,
+%1;CM3201 Ciencia de los Materiales I
+!10;FI2001,MA2001,(FI2004/CM2004);ME3201/ME32A;
+Eduardo Donoso C.;35;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,16:00,18:00,
+%1;CM4201 Materiales de Ingeniería
+!10;CM3201/ME3201;ID55B;
+Gerardo Díaz R.;20;0;Bcat,ma,14:30,17:45,
+%1;CM4202 Caracterización de Materiales
+!10;CM3201/ME3201;ID54C;
+Rodrigo Espinoza G.,Franck Quero;20;0;Bcat,ju,12:00,13:30,Bcat,ju,14:30,16:00,
+%1;CM5101 Laboratorio de Materiales
+!10;CM3201/ME3201;
+Eduardo Donoso C.,Gerardo Díaz R.,Isadora Berlanga M.;8;0;Blab,mi,8:30,11:45,
+%1;CM5205 Nuevos Materiales de Ingeniería
+!10;CM3201/ME3201;
+Mauricio Morel Escobar,Mónica Soler J;12;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,mi,18:00,19:30,
+=EOD
+$44;DR
+%3;DR100A Acondicionamiento Físico Básico
+!5;EI1101;
+Mario Rodriguez;25;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+Mario Rodriguez;25;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+Héctor Basaure;25;0;Bcat,mi,14:30,16:00,Bcat,vi,14:30,16:00,
+%3;DR100B Acondicionamiento Físico Avanzado
+!5;EI1101;
+Mario Rodriguez;15;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+Mario Rodriguez;15;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+Héctor Basaure;15;0;Bcat,mi,14:30,16:00,Bcat,vi,14:30,16:00,
+%1;DR120A Running I
+!5;EI1101;
+Mario Rodriguez;25;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;DR120B Running II
+!5;EI1101,DR120A;
+Mario Rodriguez;15;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;DR130A Gimnasia Aeróbica I
+!5;No tiene;
+Carolina Andrade P;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%1;DR130B Gimnasia Aeróbica II
+!5;No tiene;
+Carolina Andrade P;10;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%1;DR150A Entrenamiento Funcional I
+!5;No tiene;
+Carolina Andrade P;30;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,
+%1;DR200A Taekwondo I
+!5;No tiene;
+Alejandro Allende A.;15;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;DR200B Taekwondo II
+!5;No tiene;
+Alejandro Allende A.;5;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%3;DR210A Tai Chi I
+!5;No tiene;
+Jaime Caceres P.;14;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+Jaime Caceres P.;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+Jaime Caceres P.;20;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+%1;DR210B Tai Chi II
+!5;DR210A;
+Jaime Caceres P.;6;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;DR230A Aikido I
+!5;No tiene;
+Gabriel Ayala;20;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,
+%1;DR230B Aikido II
+!5;DR230A;
+Gabriel Ayala;10;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,
+%3;DR301A Futsal Varones
+!5;No tiene;
+Raul Moya H.;18;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+Marcelo Berríos;22;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+Marcelo Berríos;10;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+%2;DR301B Futsal Varones II
+!5;DR301A;
+Raul Moya H.;4;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+Marcelo Berríos;10;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+%1;DR311A Futsal Damas
+!5;No tiene;
+Marcelo Berríos;14;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+%1;DR311B Futsal Damas II
+!5;DR311A;
+Marcelo Berríos;10;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+%2;DR320A Voleibol I
+!5;No tiene;
+Jorge de la Cerda;18;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+Jorge de la Cerda;18;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%2;DR320B Voleibol II
+!5;No tiene;
+Jorge de la Cerda;6;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+Jorge de la Cerda;6;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%2;DR331A Basquetbol Varones I
+!5;No tiene;
+Julio Figueroa C;20;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+Julio Figueroa C;20;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+%2;DR331B Basquetbol Varones  II
+!5;No tiene;
+Julio Figueroa C;6;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+Julio Figueroa C;6;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+%1;DR332A Basquetbol Damas  I
+!5;No tiene;
+Julio Figueroa C;18;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+%1;DR332B Basquetbol Damas II
+!5;No tiene;
+Julio Figueroa C;10;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+%9;DR400A Natación I
+!5;No tiene;
+Gisel Rodiño S.;14;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+Mauricio Mignogna A;14;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+Gisel Rodiño S.;14;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+Mauricio Mignogna A;14;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+Gisel Rodiño S.;14;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+Mauricio Mignogna A;14;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+Gisel Rodiño S.;14;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+Mauricio Mignogna A;14;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+Mauricio Mignogna A;0;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,
+%9;DR400B Natación II
+!5;No tiene;
+Gisel Rodiño S.;4;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+Mauricio Mignogna A;4;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+Gisel Rodiño S.;4;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+Mauricio Mignogna A;4;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+Gisel Rodiño S.;4;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+Mauricio Mignogna A;4;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+Gisel Rodiño S.;4;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+Mauricio Mignogna A;4;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+Mauricio Mignogna A;0;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%2;DR410A Tenis I
+!5;No tiene;
+Rodolfo Catalan G;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+Rodolfo Catalan G;20;0;Bcat,mi,8:30,10:00,Bcat,vi,8:30,10:00,
+%1;DR410B Tenis II
+!5;DR410A;
+Rodolfo Catalan G;20;0;Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,
+%2;DR420A Tenis de Mesa I
+!5;No tiene;DR191/DR19A/DRA19;
+Hector Moreno;14;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+Hector Moreno;14;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+%2;DR420B Tenis de Mesa II
+!5;DR420A;DRB19;
+Hector Moreno;10;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+Hector Moreno;14;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+%2;DR500A Ajedrez I
+!5;No tiene;DRA20/DR20A/DR101;
+Pablo Calvo S.;13;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+Pablo Calvo S.;13;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+%2;DR500B Ajedrez II
+!5;No tiene;
+Pablo Calvo S.;7;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+Pablo Calvo S.;7;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+%1;DR510A Bridge
+!5;EI1101;
+Joseph de la Taille-Tretinville;17;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,
+%1;DR510B Bridge Avanzado
+!5;EI1101;
+Joseph de la Taille-Tretinville;8;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,
+%1;DR520A Yoga
+!5;No tiene;
+Ruth Contreras S;25;0;Bcat,lu,10:15,11:45,Bcat,mi,10:15,11:45,
+%1;DR601A Baile y Ritmo Damas I
+!5;No tiene;
+Carolina Andrade P;14;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;DR602A Baile y Ritmo Varones I
+!5;No tiene;
+Carolina Andrade P;14;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;DR610A Guitarra Clásica I
+!5;No tiene;
+Felipe Moya;20;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;DR610B Guitarra Clásica II
+!5;No tiene;
+Felipe Moya;5;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;DR620A Folclore Latinoamericano I
+!5;No tiene;
+Felipe Moya;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%1;DR620B Folclore Latinoamericano II
+!5;No tiene;
+Felipe Moya;5;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%2;DR700A Teatro I
+!5;No tiene;
+;25;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,
+;25;0;Bcat,lu,16:15,17:45,Bcat,mi,16:15,17:45,
+%1;DR711A Educación de la voz y Canto popular
+!5;No tiene;
+Cecilia Almarza;25;0;Bcat,lu,10:15,11:45,Bcat,mi,10:15,11:45,
+%1;DR800A Práctica Deportiva de Selección I
+!5;AUTOR;
+%0;DR800B Práctica Deportiva de Selección II
+!5;AUTOR;
+=EOD
+$25;EH
+%1;EH2001 Argumentación, la realización del hombre en el discurso
+!5;No tiene;
+Maria Torres V;50;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,
+%1;EH2102 Religión, Ciencia y Tecnología
+!5;No tiene;
+Rainer María Hauser Molina,Rafael Kries;50;0;Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,
+%1;EH2103 Filosofía Política
+!5;No tiene;
+Pablo Ramirez R.;50;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;EH2104 Filosofía: Teoría de la Justicia
+!5;No tiene;
+Fernando Quintana Bravo;50;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+%1;EH2106 Juego Filosofía y Ciencias
+!5;No tiene;
+Cristóbal Holzapfel O.;50;0;Bcat,ma,16:15,17:45,Bcat,ju,12:00,13:30,
+%1;EH2108 Experiencia Estética entre Arte, Ciencia y Tecnología
+!5;No tiene;
+Ricardo Loebell;50;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;EH2201 Ingeniería, Etica y Seguridad Industrial
+!5;No tiene;
+Hervi Lara,Andres Bassi V;50;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+%2;EH2202 Etica Profesional de la Ingeniería
+!5;No tiene;
+Pablo Ramirez R.;50;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+Pablo Ramirez R.;50;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+%1;EH2204 Problemas Éticos en la Investigación Cientifíca
+!5;No tiene;
+Álvaro Quezada;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%1;EH2205 Otras Éticas, Otras Economías
+!5;No tiene;
+Andrés Monares R.;50;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+%1;EH2307 Territorio y Sociedad
+!5;No tiene;
+Luis Lira C.,Claudia Rodriguez S.,Rugiero Vanessa;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%1;EH2403 Ciencia y Religión
+!5;No tiene;
+Andrés Monares R.;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%1;EH2405 Socioeonomía Latinoamericana
+!5;No tiene;
+Nicolás Gómez N.;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%1;EH2504 Los Mitos de la Democracia Chilena
+!5;No tiene;
+Felipe Portales C;50;0;Bcat,lu,16:15,17:45,Bcat,ju,16:15,17:45,
+%1;EH2505 Historia II
+!5;No tiene;
+Alfredo Jocelyn-Holt L.;50;0;Bcat,ma,12:00,13:30,Bcat,ma,14:30,16:00,
+%1;EH2509 Psicología e Historia para entender la cultura latinoamericana
+!5;No tiene;
+Andrea Rodríguez;50;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+%1;EH2514 Historia General de América Latina
+!5;No tiene;
+Fabián Bustamante O.;50;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+%1;EH2515 Primeras Naciones Americanas
+!5;No tiene;
+Carlos Contreras;50;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;EH2516 Ingeniería, Tecnología y Sociedad: una perspectiva histórica
+!5;No tiene;
+%1;EH2603 Todo es Poesía Menos la Poesía
+!5;No tiene;
+Cesar Cuadra B.;50;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,
+%1;EH2606 Literatura Latinoamericana
+!5;No tiene;
+Luz Martínez C.;50;0;Bcat,lu,14:30,16:00,Bcat,mi,10:15,11:45,
+%1;EH2607 Literatura y Memoria
+!5;No tiene;
+Ximena Azua;50;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+%1;EH2702 Historia del Arte en el Siglo XX
+!5;No tiene;
+Enrique Solanich;50;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+%1;EH2703 Historia y Estética de la Fotografía
+!5;No tiene;
+Leonardo Infante;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%1;EH2802 Historia de la Astronomía II
+!5;No tiene;
+Jose Maza Sancho;100;0;Bcat,lu,16:15,17:45,Bcat,mi,16:15,17:45,
+=EOD
+$69;EL
+%1;EL3001 Análisis y Diseño de Circuitos Eléctricos
+!10;MA2601,FI2002;EL31A;
+Pablo Medina Cofre;50;0;Bcat,ma,8:00,10:00,Bcat,ju,8:00,10:00,Baux,vi,14:00,18:00,
+%2;EL3002 Electromagnetismo Aplicado
+!10;FI2002;EL32B;
+Marcos Díaz Quezada;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,ma,16:15,17:45,
+Ernest Michael;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,ma,16:15,17:45,
+%2;EL3003 Laboratorio de Ingeniería Eléctrica
+!10;EL3002,EL3001;EL41B;
+Rodrigo Moreno,Patricio Mendoza A.;36;0;Bcat,ma,10:00,12:00,Blab,mi,8:00,12:00,
+Rodrigo Moreno,Patricio Mendoza A.;36;0;Bcat,ma,10:00,12:00,Blab,vi,14:00,20:00,
+%1;EL3004 Circuitos Electrónicos y Analógicos
+!10;EL3001;EL42A;
+Nicolás Reyes Guzmán;100;0;Bcat,lu,10:00,12:00,Bcat,ju,10:00,12:00,Baux,ma,14:00,16:00,
+%2;EL3005 Señales y Sistemas I
+!10;EL3001;EL41C;
+Nestor Becerra Y.;40;0;Bcat,ma,16:15,17:45,Bcat,vi,12:00,13:30,Baux,ju,16:15,17:45,
+Jorge Silva S.;40;0;Bcat,lu,14:30,16:00,Bcat,mi,16:15,17:45,Baux,ma,16:15,17:45,
+%1;EL3006 Seminario de Ingeniería Eléctrica
+!0;EL3001/EL3002;
+Andrés Caba;100;0;Bcat,ju,12:00,14:00,
+%1;EL4001 Conversión de la Energía y Sistemas Eléctricos
+!10;FI2002,EL3001;EL42C;
+Jorge Romo L.;50;0;Bcat,lu,10:00,12:00,Bcat,ma,18:00,20:00,Baux,vi,14:30,16:00,
+%1;EL4002 Sistemas Digitales
+!10;EL3001,EL3004S;EL42B;
+Ricardo Finger C.;50;0;Bcat,mi,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,16:15,17:45,Blab,ju,14:30,17:45,
+%1;EL4003 Señales y Sistemas II
+!10;MA3403,EL3005;EL32D;
+Manuel Duarte M,Marcos Orchard Concha;50;0;Bcat,lu,12:00,14:00,Bcat,vi,12:00,14:00,Baux,ma,16:00,18:00,
+%2;EL4004 Fundamentos de Control de Sistemas
+!10;EL4003;EL42D;
+Roberto Cárdenas D;50;0;Bcat,ma,12:00,14:00,Bcat,ju,12:00,14:00,Baux,lu,12:00,14:00,
+Martín Adams;50;0;Bcat,lu,12:00,14:00,Bcat,ju,12:00,14:00,Baux,ma,12:00,14:00,
+%1;EL4005 Principios de Comunicaciones
+!10;EL4003,MA3403;
+Nestor Becerra Y.;50;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,Baux,mi,16:15,17:45,
+%1;EL4030 Seminario de Diseño e Innovación Tecnológica
+!10;AUTOR;
+%1;EL4103 Sistemas de Energía y Equipos Eléctricos
+!10;EL4001/(EL42D,EL59AS);
+Claudia Rahmann Z.;50;0;Bcat,lu,10:00,12:00,Bcat,vi,10:00,12:00,Baux,mi,18:00,20:00,
+%1;EL4105 Control Avanzado de Sistemas
+!10;EL4004S;
+Doris Saez Hueichapan,Marcos Orchard Concha;50;0;Bcat,ma,10:00,12:00,Bcat,vi,10:00,12:00,Baux,ju,14:00,16:00,
+%1;EL4106 Inteligencia Computacional
+!10;EL4003/(CC3301,CC3201);
+Pablo Estevez V.,Pablo Huijse Heise;50;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,Baux,vi,8:30,10:00,
+%1;EL4107 Tecnologías de Información y de Comunicación
+!10;(EL3005,EL4005S)/CC4302S;
+Sandra Cespedes U.;50;0;Bcat,ma,14:00,16:00,Bcat,ju,14:00,16:00,Baux,lu,10:00,12:00,
+%1;EL4108 Principios de Intrumentación
+!10;EL3002,EL3004,EL4003;
+%1;EL4901 Práctica Profesional I
+!0;EL3003,EL3006;EL49A;
+%3;EL5001 Introducción al Taller de Proyecto
+!5;EL4901S,(EL4102/EL4103/EL4105/EL4106/EL4107);EL55B/EL53A/EL57B;
+Arturo Otto V.,Oriol Tucas A.;50;0;Bcat,mi,18:00,19:30,
+Patricio Valenzuela C.;50;0;Bcat,mi,18:00,19:30,
+Jorge Lopez H.;50;0;Bcat,vi,10:15,11:45,
+%3;EL5002 Introducción al Taller de Diseño
+!5;EL4901S,(EL4102/EL4103/EL4105/EL4106/EL4107);EL54D/EL57C;
+Augusto Lucero A.;15;0;Bcat,ju,18:00,19:30,
+Mauricio Bahamonde B.;15;0;Bcat,mi,10:15,11:45,
+Miguel Patiño,Andrés Caba;50;0;Bcat,ju,10:15,11:45,
+%3;EL5003 Taller de Proyecto
+!10;EL5001;
+Víctor Segovia C.,Sergio Marchant K.;15;0;Bcat,mi,18:00,19:30,
+Sergio Bunel T.;15;0;Bcat,mi,18:00,19:30,
+Patricio Valenzuela C.;15;0;Bcat,ju,18:00,19:30,
+%4;EL5004 Taller de Diseño
+!10;EL5002/ME5500;EL64B/EL67B;
+Jorge Romo L.;15;0;Bcat,lu,18:00,19:30,
+Mauricio Bahamonde B.;15;0;Bcat,mi,8:30,10:00,
+Miguel Patiño,Andrés Caba;15;0;Bcat,ju,10:15,11:45,
+Jorge Sandoval A.;15;0;Bcat,mi,10:15,11:45,
+%1;EL5030 Seminario de Diseño e Innovación Tecnológica II
+!10;EL4030/ME4030;
+Rodrigo Palma B.;50;0;Bcat,vi,16:15,17:45,
+%1;EL5202 Laboratorio de Sistemas Digitales
+!10;EL4002/(EL42A,EL42B);
+Helmuth Thiemer W.;50;0;Bcat,vi,14:00,16:00,Blab,ma,12:00,18:00,
+%1;EL5203 Laboratorio de Energía
+!10;EL4103;
+Rodrigo Moreno,Patricio Mendoza A.;50;0;Blab,vi,12:00,18:00,
+%1;EL5204 Laboratorio de Equipos y Dispositivos Eléctricos
+!10;EL4001/(EL42C,EL42D);
+Jorge Romo L.;50;0;Blab,mi,8:30,11:45,
+%1;EL5205 Laboratorio de Control Avanzado
+!10;EL4004;
+Manuel Duarte M,Doris Saez Hueichapan,Marcos Orchard Concha;50;0;Bcat,mi,16:15,19:30,
+%1;EL5206 Laboratorio de Inteligencia Computacional y Robótica
+!10;EL4106;
+Claudio Pérez F.,Cristián Figueroa Sepúlveda,Martín Adams;50;0;Bcat,ju,16:00,20:00,
+%1;EL5207 Laboratorio de Tecnologías de Información y Comunicaciones
+!10;EL4107S/CC4303S;
+Jinsong Wu;18;0;Blab,mi,8:30,11:45,
+%1;EL5208 Laboratorio de Receptores, Antenas y Señales
+!10;EL4108/AUTOR;
+Nicolás Reyes Guzmán;50;0;Bcat,mi,8:00,12:00,
+%1;EL5900 Taller de Desempeño Profesional
+!5;EL5001,EL5002;
+Alvaro Silva M.;50;0;Bcat,lu,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;EL5901 Práctica Profesional II
+!0;EL5001,EL5002;EL59A,EL69A;
+%1;EL6008 Aplicaciones Industriales de la Energía Eléctrica
+!10;EL57A/EL4103;EL607;
+Ernesto Bianchi S.;50;0;Bcat,lu,10:15,13:30,Baux,ma,16:15,17:45,
+%1;EL6013 Puesta a Tierra de Instalaciones Eléctricas y Electrónicas
+!10;EL4103;
+Nelson Morales O.;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,ma,18:00,19:30,
+%1;EL6015 Sistemas de Energía y Equipos Eléctricos II
+!10;EL4103;EL605;
+Agustin Leon T.,Pablo Medina Cofre;50;0;Bcat,ju,14:30,17:45,Baux,vi,14:30,16:00,
+%1;EL6016 Análisis Técnico Económico del Sector Eléctrico
+!10;(EL4001/EL40E),AUTOR;EM736;
+L.Francisco Aguirre,Cristián Hermansen R.;50;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,lu,18:00,21:00,
+%1;EL6017 Gestión de la Distribución de la Energía Eléctrica
+!10;EL4001,IN3301;EL67F;
+Juan Alberto Bravo C.,Fernando Flatow G.;50;0;Bcat,lu,18:00,21:00,Bcat,ju,18:00,21:00,
+%3;EL6020 Taller de Innovación Tecnológica y Emprendimiento
+!10;UD395,AUTOR;
+Andrés Caba;18;0;Bcat,mi,14:30,17:45,
+Mario Medina G.;18;0;Bcat,mi,14:30,17:45,
+Alfredo Schnell D.;18;0;Bcat,mi,14:30,17:45,
+%1;EL6024 Regulación y Competencia del Sector de Telecomunicaciones
+!10;(EL4107,IN3301)/AUTOR;
+Nazre el Hureimi F.;50;0;Bcat,lu,18:00,21:00,
+%1;EL6028 Ingeniería de Control
+!10;EL4004;
+Vader Johnson Vera;50;0;Bcat,lu,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;EL6029 Propagación y Comunicaciones Inalámbricas
+!10;EL4107;
+Benjamin Jacard H.;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%1;EL6030 Seminario de Diseño e Innovación Tecnológica III
+!10;EL4030/ME4030/EL5002;
+%1;EL6045 Seminario de Tecnologías Emergentes
+!10;EL4003;
+%1;EL6046 Impacto Ambiental y Social de Proyectos Eléctricos
+!10;EL4001;
+Aldo Di Biase F.;50;0;Bcat,ma,16:15,17:45,
+%1;EL6801 Trabajo Dirigido I
+!5;EL4003,AUTOR;EL681;
+%1;EL6802 Trabajo Dirigido II
+!5;EL4003,AUTOR;EL682;
+%1;EL6803 Trabajo Dirigido III
+!5;EL4003,AUTOR;EL683;
+%1;EL6908 Introducción al Trabajo de Título
+!10;UD480,AUTOR;EL69E;
+Jorge Lopez H.;15;0;Bcat,vi,8:30,10:00,
+%1;EL6909 Trabajo de Título
+!40;(EL6908/EL69E),AUTOR;
+Alfredo Schnell D.;15;0;Bcat,ma,14:30,16:00,
+%1;EL7007 Introducción al Procesamiento Digital de Imágenes
+!10;EL4003,AUTOR;
+Claudio Pérez F.;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%1;EL7008 Procesamiento Avanzado de Imágenes
+!10;EL4106/AUTOR;EL780;
+Javier Ruiz del Solar;50;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;EL7014 Diagnóstico Y Pronóstico de Fallas
+!10;EL4004;
+Marcos Orchard Concha;50;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,Baux,lu,10:15,11:45,
+%1;EL7017 Control Adaptativo de Sistemas
+!10;EL4004,AUTOR;
+Manuel Duarte M;50;0;Bcat,lu,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;EL7018 Mercados Internacionales de la Energia
+!10;(EL4103/EL57A),AUTOR;
+Rodrigo Palma B.;50;0;Bcat,ju,12:00,13:30,Bcat,vi,8:30,10:00,Baux,lu,8:30,10:00,
+%1;EL7022 Procesamiento de Voz  en Telecomunicaciones
+!10;AUTOR;EM756;
+Nestor Becerra Y.;50;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;EL7027 Seminario de Control Automático
+!10;EL4004,AUTOR;
+%1;EL7030 Antenas
+!10;EL3002/EL3004;
+Nicolás Reyes Guzmán;50;0;Bcat,ma,18:00,21:00,
+%1;EL7031 Robotics, Sensing and Autonomous Systems
+!10;EL4003;
+Martín Adams;50;0;Bcat,ma,12:00,14:00,Bcat,vi,12:00,14:00,
+%1;EL7032 Electrónica de Potencia y Accionamiento
+!10;EL4004,EL4001,AUTOR;
+Roberto Cárdenas D;12;0;Bcat,lu,10:00,12:00,Bcat,ju,16:00,18:00,
+%1;EL7044 Conceptos Avanzados en Redes Inalámbricas
+!10;EL4107/CC4303/AUTOR;
+Sandra Cespedes U.;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,12:00,13:30,
+%1;EL7047 Riesgo y Confiabilidad en Sistemas Eléctricos
+!10;EL4103;
+Rodrigo Moreno;50;0;Bcat,mi,16:15,17:45,Bcat,vi,16:15,17:45,
+%1;EL7048 Tópicos en Tecnologías Sustentables de la Información y Comunicación
+!10;EL4005/EL4001/EL4002/EL4102/EL4103/EL4107/CC4301/CC4303/IN4402/IN4703/IN4704/CI4102/CI5106/AUTOR;
+Jinsong Wu;50;0;Bcat,mi,14:30,17:45,
+%1;EL7050 Writing for Engineers
+!10;EL7907/ED740/ED786;
+%1;EL7051 Control Predictivo
+!10;EL4004,IN3701;
+Diego Muñoz Carpintero;50;0;Bcat,lu,12:00,13:30,Bcat,mi,14:30,16:00,
+%1;EL7108 Dispositivos Ópticos y Fotónicos
+!10;EL3002/AUTOR;
+Ernest Michael;50;0;Bcat,lu,14:30,16:00,Bcat,ju,12:00,13:30,
+%1;EL7806 Introducción a la Tesis
+!10;(EL4102/EL4103/EL4105/EL4106/EL4107),AUTOR;
+%1;EL7850 Trabajo de Investigación Dirigido
+!10;AUTOR;
+%1;EL7907 Trabajo de Tesis I
+!20;AUTOR;
+%0;EL7908 Trabajo de Tesis II
+!20;AUTOR;
+=EOD
+$0;
+=EOD
+$16;FI
+%1;FI1001 Introducción a la Física Newtoniana
+!10;No tiene;FI100;
+Nelson Zamorano H.;100;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,Baux,ma,14:30,17:45,
+%8;FI1002 Sistemas Newtonianos
+!10;(FI1001/FI100),(CC1001/CC100/CC1000),(MA1001/MA100);FI1A2;
+Rene Garreaud S.;90;0;Bcat,ma,16:15,17:45,Baux,ma,18:00,19:30,Blab,ju,14:30,17:45,
+Nicolás Huneeus Lagos;90;0;Bcat,ma,16:15,17:45,Baux,ma,18:00,19:30,Blab,mi,8:30,11:45,
+Rodrigo Soto B.;90;0;Bcat,ma,16:15,17:45,Baux,ma,18:00,19:30,Blab,lu,14:30,17:45,
+;49;0;Bcat,lu,16:15,17:45,Baux,lu,18:00,19:30,Blab,ma,8:30,11:45,
+Raul Muñoz Alvarado;90;0;Bcat,lu,16:15,17:45,Baux,lu,18:00,19:30,Blab,vi,14:30,17:45,
+Roberto Rondanelli R.;90;0;Bcat,vi,10:15,11:45,Baux,vi,8:30,10:00,Blab,mi,14:30,17:45,
+Claudio Falcon Beas;90;0;Bcat,vi,8:30,10:00,Baux,vi,10:15,11:45,Blab,ma,14:30,17:45,
+María Cordero Garayar;90;0;Bcat,ju,14:30,16:00,Baux,ju,16:15,17:45,Blab,vi,8:30,11:45,
+%4;FI2001 Mecánica
+!10;(FI1002/FI1A2),(MA1002/MA1A2),(MA1102/MA1B2);FI2A1/FI21A/FI215;
+Ricardo Muñoz M.;90;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,lu,14:30,16:00,Baux,vi,16:15,17:45,
+Mario Riquelme;90;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,lu,14:30,16:00,Baux,vi,16:15,17:45,
+Francisco Brieva R.;90;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,14:30,16:00,Baux,vi,16:15,17:45,
+Claudio Romero Z.;90;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,14:30,16:00,Baux,vi,16:15,17:45,
+%6;FI2002 Electromagnetismo
+!10;(FI2001/FI2A1),(MA2001/MA2A1),(MA2601/MA2G1);FI33A/FI2A2/FI302;
+Aliro Cordero Simunovic;90;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,ma,16:15,17:45,
+Boris Chornik A.;90;0;Bcat,lu,14:30,16:00,Bcat,ju,14:30,16:00,Baux,ma,16:15,17:45,
+Luis Vargas D.;90;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+Domenico Sapone;90;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,vi,16:15,17:45,
+Claudio Romero Z.;90;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,vi,16:15,17:45,
+Francisco Brieva R.;90;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,vi,16:15,17:45,
+%10;FI2003 Métodos Experimentales
+!10;(MA2001/MA2A1),(CM1001/CM1A1),(EI1102/EI1B2/CC10A/CC10B),(FI2001/FI2A1),(MA2601/MA2G1);
+Rene Mendez B.;56;0;Bcat,mi,16:15,17:45,Blab,ma,10:15,13:30,
+Rene Mendez B.;56;0;Bcat,mi,16:15,17:45,Blab,ma,14:30,17:45,
+;56;0;Bcat,mi,16:15,17:45,Blab,vi,14:30,17:45,
+;56;0;Bcat,mi,16:15,17:45,Blab,vi,8:30,11:45,
+Diana Dulic;56;0;Bcat,mi,16:15,17:45,Blab,lu,10:15,13:30,
+Diana Dulic;56;0;Bcat,mi,16:15,17:45,Blab,lu,14:30,17:45,
+Claudio Falcon Beas;56;0;Bcat,mi,16:15,17:45,Blab,mi,8:30,11:45,
+Claudio Falcon Beas;56;0;Bcat,mi,16:15,17:45,Blab,ju,10:15,13:30,
+Marcos Flores C.;56;0;Bcat,lu,16:15,17:45,Blab,mi,14:30,17:45,
+Marcos Flores C.;56;0;Bcat,lu,16:15,17:45,Blab,ju,14:30,17:45,
+%3;FI2004 Termodinámica
+!10;(CM1001/CM1A1),(MA2001/MA2A1),(FI2001S/FI2A1S);FI2A4/FI22A/FI212;
+Víctor Fuenzalida E.;100;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,Blab,ju,18:00,21:00,
+Felipe Barra D.;56;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Blab,ju,18:00,21:00,
+Luis Campusano B;56;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Blab,ju,18:00,21:00,
+%1;FI3001 Vibraciones y Ondas
+!10;MA2002,FI2001;FI21B;
+Simón Casassus M.;50;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ju,14:30,16:00,
+%1;FI3003 Física Experimental I
+!10;(FI2002/FI2A2),(FI2003/FI2A3);
+Nicolás Mujica F.;50;0;Bcat,mi,8:30,11:45,
+%1;FI3101 Mecánica Clásica
+!15;FI3001;FI31A;
+Marcel Clerc G.;40;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ma,14:30,16:00,
+%1;FI3102 Física Moderna
+!10;FI2002,FI3001;FI34A;
+Gonzalo A. Palma;30;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,ju,14:30,16:00,
+%1;FI3104 Métodos Numéricos para la Ciencia e Ingeniería
+!10;MA2002,(FI2004/CM2004/MA3401/MA3403);MA33A/FI46A/MA367;
+Valentino Gonzalez;40;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,lu,16:15,17:45,
+%1;FI4001 Mecánica Cuántica
+!15;FI3102,FI3002;FI41A;
+Néstor Sepúlveda Salazar;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,14:30,16:00,
+%1;FI4003 Física Experimental II
+!10;FI3003;FI3105;
+Raul Muñoz Alvarado;10;0;Bcat,mi,14:30,16:00,
+%1;FI4101 Introducción a la Física del Sólido
+!10;FI4001,(FI2004/CM2004);
+Rodrigo Árias F.;20;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ma,16:15,17:45,
+%1;FI4104 Mecánica Estadística
+!15;FI3101S,(MA3401/MA3403),FI3102,(FI2004/CM2004);FI4002;
+Alvaro Nuñez Vasquez;10;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ma,14:30,17:45,
+%1;FI7002 Mecánica Cuántica II
+!15;FI4001;
+Fernando Lund Plantat;50;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,ju,16:15,17:45,
+=EOD
+$25;GF
+%1;GF3001 Geofísica General
+!10;FI2002S/FI2A2;GF31A;
+Jaime Campos M.;70;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ju,16:15,17:45,
+%1;GF3004 Sistema Climático
+!10;GF3101;
+Maisa Rojas C.;40;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ju,14:30,16:00,
+%1;GF3022 Contaminación Atmosférica
+!10;CM2004/FI2004;
+Laura Gallardo K.;50;0;Bcat,lu,16:15,19:30,Baux,mi,16:15,17:45,
+%2;GF3103 Introducción a la Meteorología
+!10;CM2004/FI2004;GF3101/GF3003;
+Nicolás Huneeus Lagos;70;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,Baux,vi,16:15,17:45,
+Rene Garreaud S.;70;0;Bcat,lu,14:30,16:00,Bcat,mi,16:15,17:45,Baux,vi,14:30,16:00,
+%2;GF4001 Sismología
+!10;MA2002,FI2003;GF40A;
+Mario Pardo P.;100;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,vi,14:30,16:00,
+Sergio Ruiz T.;100;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,14:30,16:00,
+%1;GF4002 Física de la Tierra
+!10;FI2002;GF41C;
+Emilio Vera S.;100;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,18:00,19:30,
+%1;GF4005 Matemáticas Aplicadas a la Geociencia
+!10;FI2002,MA2601;FI3002;
+Javier Ruiz Paredes;100;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,14:30,16:00,
+%1;GF4101 Sismología Aplicada
+!10;GF4001,GF4029;
+Felipe Leyton Florez,Sergio Ruiz T.;100;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;GF4102 Prospección Sismica
+!10;GF4001,GF4029,GF4006;
+Emilio Vera S.,Eduardo Contreras Reyes;100;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,Baux,lu,18:00,19:30,
+%1;GF4901 Práctica Profesional I
+!0;GF4029,EI1090,AUTOR;GF49A;
+%1;GF5013 Métodos Inversos Aplicados a la Geofísica
+!10;FI2003,MA2002,GF4001,(MA3401/MA3403);
+Francisco Ortega C.;30;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,18:00,19:30,
+%1;GF5017 Geodesia de Tectónica Activa
+!10;GF4004;
+Francisco Ortega C.;100;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,Baux,mi,16:15,17:45,
+%1;GF5018 GNSS y su aplicación al estudio de terremotos
+!10;GF4001,GF4029;
+Felipe Leyton Florez,Juan Baez,Sergio Ruiz T.;50;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,
+%1;GF5070 Seminario de Exploración Geofísica
+!10;GF4006;
+Andrei Maksymowicz J.,Daniel Diaz A.;70;0;Bcat,lu,16:15,17:45,Bcat,vi,16:15,17:45,
+%1;GF5071 Formulación de proyectos geofísicos
+!10;GF4006;
+Sergio Contreras González,Daniel Diaz A.;70;0;Bcat,mi,8:30,11:45,
+%1;GF7003 Métodos Electromagnéticos de Exploración Geofísica
+!15;GF4006;
+Daniel Diaz A.;100;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+%1;GF41E Geodinámica del Margen Chileno
+!10;GF4001,GL3101;
+Eduardo Contreras Reyes;100;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+%1;GF501 Meteorología General II
+!12;(FI34A,MA33A)/AUTOR;
+Roberto Rondanelli R.;10;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,Baux,mi,16:15,17:45,
+%1;GF652 Meteorología de Capa Límite
+!12;AUTOR;
+Ricardo Muñoz M.;10;0;Bcat,lu,16:15,17:45,Bcat,vi,16:15,17:45,Baux,vi,18:00,19:30,
+%1;GF732 Sismología Teórica II
+!12;GF4001;
+Javier Ruiz Paredes;100;0;Bcat,lu,12:00,13:30,Bcat,mi,10:15,11:45,
+%1;GF757 Seminario Peligro Sísmico I
+!8;GF40A/AUTOR;
+Diana Comte S.;100;0;Bcat,ma,18:00,19:30,Bcat,ju,18:00,19:30,
+%1;GF772 Modelamiento de Tsunamis
+!10;MA2002,GF3001;
+Sebastián Riquelme Muñoz,Mauricio Fuentes Serrano;50;0;Bcat,vi,16:15,19:30,
+%1;GF791 Proyecto de Grado
+!50;AUTOR;
+%1;GF797 Trabajo de Tesis I
+!30;AUTOR;
+%0;GF798 Trabajo de Tesis II
+!30;(GF797S,AUTOR)/GF797;
+=EOD
+$39;GL
+%1;GL3004 Estratigrafía y Paleontología
+!10;GL3101,GF3001;GL41E;
+Alfonso Rubilar R.,Luisa Pinto L.;40;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ma,14:30,17:45,
+%4;GL3101 Geología General
+!10;(MA2002/MA2A2),(FI2001/FI2A1);
+Katja Deckart;30;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,8:30,11:45,
+Katja Deckart;30;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,16:15,19:30,
+Gabriel Vargas E.,Valentina Flores A.;30;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,8:30,11:45,
+Gabriel Vargas E.,Valentina Flores A.;30;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,16:15,19:30,
+%1;GL3102 Energía de Procesos Geológicos
+!10;(FI2004/CM2004),MA2002,GL3101S;GL4201;
+Angelo Castruccio Alvarez,Daniel Moncada;50;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,vi,14:30,17:45,
+%1;GL3301 Fundamentos de Cristalografía y Mineralogía
+!10;GL3101;GL33A;
+Francisco Munizaga V.;30;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,14:30,17:45,
+%1;GL3402 Geomorfología
+!10;GL3101;GL54C;
+Germán Aguilar;30;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,8:30,11:45,
+%1;GL4001 Fundamentos de Petrología
+!10;GL3101;GL41C;
+Miguel Ángel Parada R.;30;0;Bcat,lu,10:15,11:45,Bcat,mi,10:15,11:45,Baux,ma,14:30,17:45,
+%1;GL4010 Proyecto I
+!5;GL4001;
+%1;GL4102 Fundamentos de Geología Estructural
+!10;GL3101;GL41B;
+Sofía Rebolledo L.;40;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,ju,16:15,19:30,
+%3;GL4401 Introducción a Yacimientos Minerales
+!10;GL4102;GL54A;
+Victor Maksaev J.;25;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,ma,18:00,21:00,
+Daniel Moncada;25;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,ju,14:30,17:45,
+Daniel Moncada;25;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,ju,18:00,21:00,
+%1;GL4402 Geología de Campo I
+!10;GL4102,GL3402,GL4001,GL3004;GL44B;
+Gregory de Pascale;40;0;Bcat,lu,8:30,10:00,Baux,vi,14:30,16:00,
+%3;GL4502 Mineralogía de Silicatos
+!10;GL4503S,GL4001;GL45B;
+Claudia Cannatelli;14;0;Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,Baux,lu,14:30,17:45,
+Claudia Cannatelli;14;0;Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,Baux,mi,14:30,17:45,
+Claudia Cannatelli;14;0;Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ju,14:30,17:45,
+%1;GL4503 Fundamentos de Geoquímica
+!10;MA3403,GL3301,(GL3102/GL4201/CC3501/FI3104);GL45C;
+Martin Reich M.;30;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,14:30,17:45,
+%1;GL4901 Práctica Profesional I
+!0;IN3301,GL4001;GL49A;
+%1;GL5002 Seguridad en Montaña
+!5;GL4402;
+Jorge Quinteros M;20;0;Bcat,lu,18:00,20:00,Baux,sa,8:30,11:45,
+%1;GL5003 Evaluación Geológica y Económica de Proyectos de Exploración de Hi
+!5;IN41A/IN3301;
+Alejandro Pérez R.;20;0;Bcat,ju,16:00,18:00,
+%1;GL5007 Geoquímica Aplicada
+!10;GL54E/GL5103;
+Brian Townley C.;15;0;Bcat,lu,14:30,16:00,Baux,lu,16:15,17:45,
+%1;GL5010 Proyecto II
+!10;(GL54E,GL54D,GL54B)/(GL5103,GL5102);
+%1;GL5011 Expresión Oral y Escrita
+!5;GL4402;
+Osvaldo Carvajal;20;0;Bcat,ju,18:00,19:30,
+%1;GL5013 Procesos de Alteración en Sistemas Geotermales
+!10;GL4503,GL4502,GL5103;
+Diego Morata C.;20;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,Baux,mi,8:30,10:00,
+%1;GL5017 Desarrollo de la conciencia para el manejo de habilidades en la conducción efectiva de equipos
+!5;GL4402;
+;20;0;Bcat,ma,14:30,16:00,Baux,ma,16:15,17:45,
+%1;GL5018 Ajustar el tiempo en el Antropoceno
+!5;No tiene;
+Alejandra Pérez;20;0;Bcat,vi,14:30,16:00,
+%1;GL5019 Cultura y Comunicación de la Ciencia
+!10;No tiene;
+Sofía Otero Cavada,Sofía Vargas,Diego Pozo Reye;20;0;Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,
+%1;GL5101 Geología Estructural
+!10;GL4402;GL55C;
+;50;0;Bcat,ju,8:30,10:00,Bcat,vi,8:30,10:00,Baux,mi,14:30,17:45,
+%3;GL5102 Sedimentología
+!10;GL4402;GL54B;
+Valentina Flores A.;14;0;Bcat,mi,8:30,10:00,Bcat,vi,8:30,10:00,Baux,lu,18:00,21:00,
+Valentina Flores A.;14;0;Bcat,mi,8:30,10:00,Bcat,vi,8:30,10:00,Baux,ma,18:00,21:00,
+Valentina Flores A.;14;0;Bcat,mi,8:30,10:00,Bcat,vi,8:30,10:00,Baux,sa,14:30,17:45,
+%3;GL5103 Petrología Ignea y Metamórfica
+!10;GL4502;GL54E;
+Miguel Ángel Parada R.,Diego Morata C.;14;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,ma,14:30,17:45,
+Miguel Ángel Parada R.,Diego Morata C.;14;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,14:30,17:45,
+Miguel Ángel Parada R.,Diego Morata C.;14;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,sa,10:15,13:30,
+%1;GL5114 Geología de Chile
+!10;GL5101S;GL51B;
+Luisa Pinto L.;50;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,ma,14:30,17:45,
+%1;GL5201 Geología Aplicada
+!10;IN3301,GL4102,GL4402;GL55B;
+Sofía Rebolledo L.;40;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,ju,14:30,17:45,
+%1;GL5212 Volcanología Física
+!10;GL5102;GL611;
+Angelo Castruccio Alvarez;50;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ju,14:30,17:45,
+%1;GL5213 Hidrogeología
+!10;GL5102S,GL4503;
+Linda Daniele;30;0;Bcat,lu,10:15,11:45,Bcat,mi,10:15,11:45,Baux,vi,10:15,11:45,
+%3;GL5311 Metalogénesis
+!10;GL4401,GL5103;
+Brian Townley C.;14;0;Bcat,lu,8:30,10:00,Bcat,ma,8:30,10:00,Baux,mi,8:30,11:45,
+Brian Townley C.;14;0;Bcat,lu,8:30,10:00,Bcat,ma,8:30,10:00,Baux,mi,18:00,21:00,
+Brian Townley C.;14;0;Bcat,lu,8:30,10:00,Bcat,ma,8:30,10:00,Baux,ju,18:00,21:00,
+%1;GL5901 Práctica Profesional II
+!0;GL4901,GL5103;GL59A;
+%1;GL6001 Remociones en Masa
+!10;(GL3402,GL5201S)/(GL55BS,GL54C);
+Sergio Sepulveda V.,Marisol Lara C.;20;0;Bcat,lu,16:15,17:45,Bcat,mi,8:30,10:00,
+%1;GL6006 Teledetección: Fundamentos y Aplicaciones en Geología
+!10;GL5101,GL5311;
+José Lattus S.;20;0;Bcat,ma,10:15,13:30,
+%1;GL6101 Geología de Campo II
+!15;GL5101,GL5114,GL5212;GL61E;
+Marcelo Farias T.;40;0;Bcat,ma,10:15,11:45,Baux,ju,10:15,11:45,
+%2;GL6301 Geología Económica
+!10;GL5311,GL5213,GL5201;GL61F;
+Fernando Barra P;20;0;Bcat,lu,10:15,13:30,
+Fernando Barra P;20;0;Bcat,lu,10:15,13:30,
+%1;GL6508 Fundamentos de exploración y modelamiento geológico de yacimientos
+!10;GL4401;
+Brian Townley C.,Mauricio Garrido Palma;25;0;Bcat,lu,10:15,11:45,Bcat,vi,16:15,17:45,
+%1;GL6908 Introducción al Trabajo de Título
+!5;(EI4205S/EI2090/EI0006),GL4901,UD480;GL69E;
+Miguel Ángel Parada R.;100;0;Bcat,ju,12:00,13:30,
+%1;GL6909 Trabajo de Título
+!35;EI2090,GL5901S,GL6908,UD530;
+%0;GL6910 Trabajo de Memoria de Título
+!35;EI2090,GL5901S,GL6908,UD530,AUTOR;
+=EOD
+$130;IN
+%3;IN2201 Economía
+!10;MA2001S;
+;80;0;Bcat,lu,8:30,10:00,Bcat,mi,8:30,10:00,Baux,vi,16:15,17:45,Bcon,mi,18:00,21:00,
+;80;0;Bcat,lu,8:30,10:00,Bcat,mi,8:30,10:00,Baux,vi,16:15,17:45,Bcon,mi,18:00,21:00,
+;80;0;Bcat,lu,8:30,10:00,Bcat,mi,8:30,10:00,Baux,ju,16:15,17:45,Bcon,mi,18:00,21:00,
+%1;IN3001 Taller de Ingeniería Industrial I
+!10;(IN2201/IN2C1),(EI2001/EI2A1);
+Carlos Vignolo F.,Macarena Zarate Diaz,Fernando Brierley Vera;100;0;Bcat,mi,8:30,11:45,Baux,lu,16:15,17:45,
+%2;IN3142 Oratoria
+!5;IN3001;
+Catalina Millán;15;0;Bcat,mi,8:30,11:45,
+Juan Iriarte;15;0;Bcat,ju,14:30,17:45,
+%2;IN3202 Microeconomía
+!10;IN2201,(MA3403/MA3401);
+;70;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,16:15,17:45,
+;70;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,16:15,17:45,
+%3;IN3301 Evaluación de Proyectos
+!10;IN2201,(MA3403/MA3401);
+;70;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,Baux,ma,18:00,19:30,
+;70;0;Bcat,lu,18:00,19:30,Bcat,ju,18:00,19:30,Baux,ma,18:00,19:30,
+Claudio Jiménez Carvajal,Loreto Tamblay N.;70;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,ma,18:00,19:30,
+%2;IN3401 Estadística para la Economía y Gestión
+!10;IN2201,(MA3403/MA3401);
+Franco Basso;60;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,vi,14:30,16:00,
+Richard Weber H.;60;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,vi,14:30,16:00,
+%2;IN3501 Tecnologías de Información y Comunicaciones para la Gestión
+!10;FI2001/FI2A1;
+Iván Díaz C.,Ángel Jiménez M.;50;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ma,16:15,17:45,
+Juan Velásquez S,Víctor Hernández Martínez;50;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ma,16:15,17:45,
+%1;IN3701 Modelamiento y Optimización
+!10;MA2002/MA2A2;
+Fernando Ordoñez P.;100;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ju,14:30,16:00,
+%2;IN3702 Investigación de Operaciones
+!10;(IN3701/MA3701),(MA3403/MA3401);
+Denis Saure V.;70;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ma,14:00,16:00,
+Denis Saure V.;70;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ma,14:00,16:00,
+%3;IN4002 Taller de Ingeniería Industrial II
+!10;IN3001,IN3701,IN3401;
+;20;0;Bcat,mi,8:30,11:45,Baux,lu,12:00,13:30,
+;20;0;Bcat,mi,8:30,11:45,Baux,lu,12:00,13:30,
+;20;0;Bcat,mi,8:30,11:45,Baux,lu,12:00,13:30,
+%1;IN4127 Emprendimiento en Negocios Digitales
+!10;(IN3001/IN31A)/IN3301/AUTOR;
+Pedro Pineda Herrera;60;0;Bcat,mi,8:30,11:45,
+%1;IN4137 Liderando con Ojos de Mujer
+!5;IN4901;CC5616;
+Lucía Schwember Neira;40;0;Bcat,ju,8:30,10:00,
+%1;IN4141 Liderazgo Efectivo para el Trabajo en Equipo
+!10;IN4901S;
+Paula Cabrera;35;0;Bcat,ju,10:15,13:30,
+%2;IN4203 Macroeconomía
+!10;IN2201;
+Pamela Arellano P.;60;0;Bcat,lu,16:15,17:45,Bcat,ju,16:15,17:45,Baux,vi,16:15,17:45,
+;60;0;Bcat,lu,16:15,17:45,Bcat,ju,16:15,17:45,Baux,vi,16:15,17:45,
+%1;IN4301 Análisis y Matemáticas Financieras
+!10;IN2201,(MA3403/(MA3401,MA3402));
+Claudio Jiménez Carvajal;90;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,Baux,mi,14:30,16:00,
+%2;IN4302 Finanzas I
+!10;IN4301/IN3301;
+Patricio Valenzuela,Marcela Valenzuela;60;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,mi,14:30,16:00,
+Patricio Valenzuela,Marcela Valenzuela;60;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,mi,14:30,16:00,
+%1;IN4402 Aplicaciones de Probabilidades y Estadística en Gestión
+!10;IN3401;
+Benjamín Villena R.;70;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ma,16:15,17:45,
+%1;IN4529 Desarrollo de Proyectos Tecnológicos con Internet de las Cosas
+!10;IN3001,IN3501,UD300;
+Ignacio Saavedra Manriquez,Sandra Cespedes U.;9;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,Baux,ma,10:15,11:45,
+%2;IN4601 Marketing I
+!10;IN4301,IN3401;
+Todd Pezzuti;50;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,vi,14:30,16:00,
+Todd Pezzuti;60;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,Baux,vi,14:30,16:00,
+%2;IN4703 Gestión de Operaciones I
+!10;(IN3701/MA3701),(MA3403/(MA3401,MA3402));
+Andres Weintraub Pohorille;70;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,lu,18:00,19:30,
+;70;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,lu,18:00,19:30,
+%1;IN4704 Gestión de Operaciones II
+!10;IN4703;
+Marcelo Olivares A.;100;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,16:15,17:45,
+%1;IN4821 Introducción a los Sistemas Públicos
+!5;(IN31A/IN3001),IN3202;
+Mario Waissbluth S.,Carlos Castro G.;60;0;Bcat,mi,18:00,19:30,
+%1;IN4826 Actualidad en Gestión y Políticas Públicas
+!5;IN41A/IN3202;
+Alejandra Mizala S;35;0;Bcat,lu,12:00,13:30,
+%1;IN4839 Ética en el Mercado, la Empresa y los Negocios
+!10;IN3001,IN3202;
+%1;IN4844 Seminario de Educación
+!5;IN2201;
+Pablo Gonzalez Soto;24;0;Bcat,lu,12:00,13:30,
+%1;IN4901 Práctica Profesional I
+!0;IN3001;
+%2;IN5003 Dirección Estratégica
+!10;IN4002;
+Rafael Sotil B.,Gastón L'Huillier T.;50;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+Claudio Pizarro T.;50;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;IN5101 Comportamiento Organizacional
+!10;IN4002,IN4301;
+Sebastián Conde D.,Sebastian Depolo C;90;0;Bcat,lu,16:15,17:45,Bcat,ju,16:15,17:45,Baux,vi,12:00,13:30,
+%1;IN5129 Innovación para la Sostenibilidad
+!5;EI2001,FI2003;
+Felipe Celery C.;50;0;Bcat,vi,12:00,13:30,
+%1;IN5143 Introducción a la Consultoría
+!5;IN4302,IN4601,IN4704;
+Sebastián Balmaceda H.;45;0;Bcat,ju,19:30,21:00,
+%1;IN5204 Organización Industrial
+!10;IN3202/AUTOR;
+;80;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,lu,18:00,19:30,
+%1;IN5303 Finanzas II
+!10;IN4302,IN4402;
+José Miguel Cruz G.;80;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ma,14:30,16:00,
+%1;IN5326 Economía y Regulación de Bancos
+!5;(IN4302/IN56A),(IN5204/IN51A);
+Carlos Pulgar A.;60;0;Bcat,mi,16:15,17:45,
+%1;IN5328 Renta Fija
+!5;IN4302;
+Luis Morales Vera;50;0;Bcat,ma,18:00,19:30,
+%2;IN5502 Diseño de Procesos de Negocios
+!10;(IN3501/CC5401),(IN4301/IN3301);IN55A;
+Sebastián Ríos P.;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,14:30,16:00,
+Mauricio Pilleux Gallardo;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,14:30,16:00,
+%2;IN5602 Marketing II
+!10;IN4601,IN4402;
+Marcel Goic F.;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,14:30,16:00,
+Marcel Goic F.;40;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,14:30,16:00,
+%1;IN5621 Gestión de Marca
+!5;IN58A/IN4601;
+Nicolas Fritis C.;60;0;Bcat,lu,16:15,17:45,
+%1;IN5624 Negocio Internacional Agroindustrial
+!5;IN4601/IN58A;
+Marco Schwartz M.;50;0;Bcat,ma,16:15,17:45,
+%1;IN5827 Manejo de Negocios Internacionales
+!5;IN41B/IN4203;IN664;
+Jaime Zuñiga Castro;60;0;Bcat,vi,16:15,17:45,
+%1;IN5848 Aspectos Jurídicos del Emprendimiento Comercial.
+!5;IN4704/EI3001;
+Sergio Dunlop;40;0;Bcat,lu,18:00,19:30,
+%1;IN5849 Introducción al Crowdfunding
+!5;IN4002;
+Horacio Morales Blum;50;0;Bcat,ma,16:15,17:45,
+%1;IN5902 Práctica Profesional II
+!0;IN4301,IN4703,IN4901,IN3702;IN59A;
+%1;IN5921 Trabajo Dirigido Industrial
+!10;(IN4601/IN58A),(IN4302/IN56A),(IN4703/IN47A);
+%1;IN5924 Trabajo Dirigido en Ingeniería Industrial
+!5;IN4302,IN4601,IN4703;
+%3;IN6004 Gestión Integral de Negocios
+!15;IN4002,IN4302,IN4704,IN5602;
+;60;0;Bcat,mi,8:30,11:45,
+;0;0;Bcat,mi,8:30,11:45,
+;0;0;Bcat,mi,8:30,11:45,
+%1;IN6833 Sistemas de Control de Gestión
+!5;(IN5101/IN50A),IN5003;IN576;
+Iván Álvarez V.;60;0;Bcat,lu,12:00,13:30,
+%1;IN6903 Práctica Profesional III
+!0;IN4601,IN4302,IN5502,IN5902;IN69A;
+%10;IN6908 Introducción al Trabajo de Titulo
+!5;(EI4204/EI2090/EI0006),UD480,IN5902;IN69E;
+Claudio Orsini,Enrique Jofre R.,Orlando Castillo;6;0;Bcat,lu,8:30,11:45,
+Claudia Morales Cisternas,Daniel Varela L.,Alejandro Muñoz R.;6;0;Bcat,mi,18:00,21:00,
+Patricio Conca K.,Ricardo San Martín Z.,Rodolfo Urrutia Uribe;6;0;Bcat,ju,18:00,21:00,
+Alejandra Puente Chandia,Carolina Segovia Riquelme;6;0;Bcat,ma,14:30,17:45,
+Raúl Uribe Darrigrandi,Gerardo Díaz R.,Manuel Díaz Romero;6;0;Bcat,ju,14:30,17:45,
+René Esquivel C.,Juanita Gana Q.,Omar Cerda I.;6;0;Bcat,lu,18:00,21:00,
+Victor Perez V.,Luis Zaviezo S.,Carlos Castro G.;6;0;Bcat,lu,8:30,11:45,
+Edgardo Santibañez V,Ignacio Calisto,Rocío Ruiz Moreno;6;0;Bcat,lu,8:30,11:45,
+Ernesto Tironi,Iván Díaz C.,Francisco Molina J.;6;0;Bcat,lu,18:00,21:00,
+Javier Suazo S.,William Baeza L.,Carlos Pulgar A.;6;0;Bcat,mi,18:00,21:00,
+%10;IN6909 Trabajo de Título
+!35;UD540,IN6908,EI2090,IN6903;
+Claudio Orsini,Enrique Jofre R.,Orlando Castillo;8;0;Bcat,lu,8:30,11:45,
+Daniel Varela L.,Alejandro Muñoz R.;8;0;Bcat,mi,18:00,21:00,
+Patricio Conca K.,Ricardo San Martín Z.,Rodolfo Urrutia Uribe;8;0;Bcat,ju,18:00,21:00,
+Alejandra Puente Chandia,Carolina Segovia Riquelme;8;0;Bcat,ma,14:30,17:45,
+Raúl Uribe Darrigrandi,Gerardo Díaz R.,Manuel Díaz Romero;8;0;Bcat,ju,14:30,17:45,
+René Esquivel C.,Juanita Gana Q.,Omar Cerda I.;8;0;Bcat,lu,18:00,21:00,
+Luis Zaviezo S.,Carlos Castro G.;8;0;Bcat,lu,8:30,11:45,
+Edgardo Santibañez V,Ignacio Calisto,Rocío Ruiz Moreno;8;0;Bcat,lu,8:30,11:45,
+Ernesto Tironi,Iván Díaz C.,Claudia Morales Cisternas,Francisco Molina J.;8;0;Bcat,lu,18:00,21:00,
+Javier Suazo S.,William Baeza L.,Carlos Pulgar A.;8;0;Bcat,mi,18:00,21:00,
+%1;IN6910 Trabajo de Memoria de Título
+!35;UD540,IN6908,EI2090,IN6903,AUTOR;
+%1;IN6923 Trabajo Dirigido en Ingeniería Industrial
+!10;IN5921,AUTOR;
+%1;IN6925 Trabajo Guiado en Empresa
+!25;AUTOR;
+%3;IN6926 Taller de Asesoría Práctica Profesional
+!10;AUTOR;
+;8;0;Bcat,vi,14:30,17:45,
+;8;0;Bcat,vi,14:30,17:45,
+;8;0;Bcat,vi,14:30,17:45,
+%1;IN7500 Taller de Tesis I
+!25;AUTOR;
+%1;IN7501 Taller de Tesis II
+!50;AUTOR;
+%1;EP600 Análisis Económico
+!5;No tiene;
+Marco Hauva S.;0;16;Bcat,mi,18:00,21:00,Baux,ju,18:00,19:30,
+%1;EP601 Matemáticas y Estadística
+!5;No tiene;
+Sara Arancibia C.;0;18;Bcat,lu,18:00,21:00,Baux,ju,19:30,21:00,
+%1;IN7A6 Gestión de Operaciones
+!5;AUTOR;
+%1;IN7A9 Finanzas
+!5;AUTOR;
+%1;IN7D5 Tópicos en Macroeconomía
+!10;IN703/IN759;
+Ernesto Pasten H.;40;0;Bcat,ju,16:15,19:30,
+%1;IN7E0 Organización Industrial Empírica
+!5;IN5204/IN709;
+Carlos Noton N.;40;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;IN7E5 Seminario de Finanzas
+!5;IN56B/AUTOR;
+José Miguel Cruz G.;30;0;Bcat,lu,12:00,13:30,Bcat,mi,12:00,13:30,
+%1;IN7E9 Métodos Empíricos en Economía y Finanzas
+!5;IN3401/IN709;
+Patricio Valenzuela;40;0;Bcat,mi,16:15,19:30,
+%2;IN7F1 Enfoques y Modelos de Análisis en Políticas Públicas
+!5;IN3202,IN3401;
+María Pía Martín M.;0;2;Bcat,ju,10:15,13:30,
+María Pía Martín M.;0;0;Bcat,ma,18:00,21:00,
+%1;IN7F5 Tópicos de Políticas Públicas
+!5;IN3202,IN3401;
+Ignacia Fernandez G;0;18;Bcat,ma,18:00,21:00,
+%1;IN7F6 La Universidad Pública del Siglo XXI
+!10;IN3202,IN3401;
+Victor Perez V.,Sergio Celis G.;0;0;Bcat,lu,14:30,17:45,
+%1;IN7G8 Tópicos y Herramientas de Gestión Pública
+!5;IN3202,IN3401;
+Javier Fuenzalida A.;0;0;Bcat,ma,18:00,21:00,
+%1;IN7G9 Gestión Estratégica del Presupuesto Público
+!5;No tiene;
+Jerko Juretic Díaz;0;0;Bcat,sa,8:30,13:30,
+%1;IN7H2 Políticas de Innovación y Desarrollo Productivo
+!5;No tiene;
+Carlos Álvarez V.;0;0;Bcat,lu,18:00,21:00,
+%1;IN7J0 Introducción a la Ciencia de Datos
+!10;No tiene;
+Sebastián Ríos P.,Jorge Retamales Moreno,Constanza Contreras P.;0;0;Bcat,lu,18:00,21:00,
+%1;IN7J3 Estrategias para Innovación de Proyectos
+!5;No tiene;
+Claudio Salvatore;0;0;Bcat,vi,18:00,21:00,
+%1;IN7J4 Agilidad de Negocio
+!5;No tiene;
+Agustín Villena M.;0;0;Bcat,ju,18:00,21:00,
+%1;IN7J7 Gestión de Proyectos de Tecnologías de la Información
+!10;No tiene;
+Jaime Oviedo S.;0;0;Bcat,sa,8:30,11:45,
+%1;IN7N2 Tecnología de la Información
+!5;No tiene;IN73N;
+%1;IN7R1 Economía Financiera
+!5;IN5303/AUTOR;
+Juan Martínez Sepúlveda;30;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;IN7R2 Modelación de Riesgo y Series de Tiempo en Finanzas
+!5;IN4302/AUTOR;
+Marcela Valenzuela;40;0;Bcat,vi,8:30,13:30,
+%1;IN7R3 Matching and Market Design
+!5;IN2201;
+Matteo Triossi;40;0;Bcat,ma,10:15,13:30,Baux,vi,12:00,13:30,
+%1;IN7R5 Redes Sociales y Económicas
+!5;IN3202/IN701/IN702/AUTOR;
+Rahmi Ilkilic;50;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+%1;IN7R7 Aplicaciones de la Economía Conductual en Políticas Públicas
+!5;IN3202,IN3401;
+Daniel Schwartz P.;5;0;Bcat,mi,14:30,17:45,
+%1;IN7R9 Teoría de Juegos y Economía de la Información
+!5;IN3202/IN701;
+;40;0;Bcat,lu,10:15,11:45,Bcat,ju,10:15,11:45,
+%1;IN7S4 Mercados Laborales Imperfectos
+!5;IN4203;
+Alessandra Pizzo;40;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,
+%1;IN70A Rol del Estado: Aspectos Socio-Políticos
+!5;IN42A;
+Ernesto Ottone F,Enrique Paris H;0;0;Bcat,vi,10:15,13:30,
+%1;IN70B Rol del Estado: Aspectos Económicos
+!5;IN42A/IN70A;
+Alejandro Ferreiro Y;0;0;Bcat,ma,18:00,21:00,
+%1;IN70M Derecho Empresarial
+!5;No tiene;IN7M2;
+%1;IN70U Negociación
+!10;AUTOR;
+%1;IN70Z Tópicos de Economía Internacional
+!8;No tiene;
+%1;IN71A Economía y Políticas Públicas I
+!10;IN42A/IN4301;
+Pablo Gonzalez Soto;0;0;Bcat,lu,8:30,11:45,Baux,vi,8:30,10:00,
+%1;IN71B Economía y Políticas Públicas II
+!10;IN42A/IN71A;
+Mauricio Pereira Flores;0;0;Bcat,vi,18:00,21:00,Baux,ju,18:00,21:00,
+%1;IN71G Métodos Empíricos para la Evaluación de Impacto
+!5;IN4301,IN3401;
+Patricio Valenzuela;0;0;Bcat,mi,16:15,19:30,
+%1;IN71J Diseño de Modelos y Procesos de Negocios con Ti
+!10;AUTOR;
+Cristián Julio A.;0;0;Bcat,lu,18:00,21:00,
+%1;IN72A Análisis Político y Gobernabilidad
+!5;IN3202,IN3401;IN75A;
+Guillermo Campero,Mario Alburquerque F;0;0;Bcat,mi,18:00,21:00,
+%1;IN72F Tesis I
+!20;No tiene;
+María Pía Martín M.;0;0;Bcat,vi,8:30,10:00,
+%1;IN72G Tesis II
+!20;No tiene;
+María Pía Martín M.;0;0;Bcat,ju,8:30,10:00,Baux,ju,10:15,11:45,
+%1;IN72J Arquitectura Tecnológica de Aplicaciones Web
+!10;IN55B/IN71J;
+Jorge Gaete V.;0;0;Bcat,mi,18:00,21:00,
+%1;IN72X Introducción a la Historia del Pensamiento Económico
+!5;IN3202,IN4203;
+Ronald Fischer B.;15;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;IN73B Metodologías Cualitativas Aplicadas a las Políticas Públicas
+!5;No tiene;
+Andrea Peroni;0;0;Bcat,mi,18:00,21:00,
+%2;IN73F Métodos Cuantitativos
+!5;IN42A/IN4301;
+Sara Arancibia C.;0;0;Bcat,ma,8:30,11:45,Baux,mi,8:30,10:00,
+Sara Arancibia C.;0;0;Bcat,lu,18:00,21:00,Baux,ju,18:00,21:00,
+%1;IN73G Evaluación de Proyectos
+!5;IN42A/IN4301;
+Eduardo Contreras V.,Siegfried Cobian M.;0;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,8:30,10:00,Baux,ju,12:00,13:30,
+%1;IN73J Arquitectura, Diseño y Construcción de un Negocio con Apoyo TI
+!10;AUTOR;
+Jonathan Scott R.;0;0;Bcat,ma,18:00,21:00,
+%1;IN74A Gestión Pública
+!10;IN3202,IN3401;
+Vivien Villagran A.;0;0;Bcat,ma,12:00,13:30,Bcat,ju,8:30,10:00,
+%1;IN74P Dirección de Finanzas
+!5;No tiene;
+%1;IN74R Gestión Financiera I
+!5;No tiene;
+%1;IN74S Gestión Financiera II
+!5;No tiene;IN7M3;
+%1;IN74V Habilidades Directivas I
+!15;No tiene;IN7N3;
+%1;IN74W Habilidades Directivas II
+!15;AUTOR;
+%1;IN75B Negociación
+!5;AUTOR;
+Juan Enrique Castro C.;0;0;Bcat,ju,18:00,21:00,
+%1;IN75E Seminario de Gestión y Políticas Públicas I
+!5;AUTOR;
+Alejandra Mizala S;0;0;Bcat,lu,12:00,13:30,
+%1;IN75R Gestión de Operaciones I
+!5;No tiene;IN7M4;
+%1;IN75S Gestión de Operaciones II
+!5;AUTOR;IN7M5;
+%1;IN76E Globalización y Desarrollo en América Latina
+!5;IN3202,IN3401;
+Ernesto Ottone F,Luis Yanez;0;0;Bcat,vi,10:15,13:30,
+%1;IN76J Innovación y Gestión de Negocios
+!10;IN73J;
+Eduardo Olguin;0;0;Bcat,ju,18:00,21:00,
+%1;IN77C Economía de la Educación
+!5;IN3202,IN3401;
+Pablo Gonzalez Soto;0;0;Bcat,lu,18:00,21:00,Baux,vi,18:00,21:00,
+%1;IN77J Orientación a Objetos para E-Business
+!10;IN55A;
+Leonardo Oporto Segura;0;0;Bcat,ma,18:00,21:00,
+%1;IN77P Dirección de Marketing
+!5;No tiene;IN7M7;
+%1;IN77R Gestión Comercial II
+!5;No tiene;IN7M6;
+%1;IN78M Seminario de Innovación y Sociotecnología
+!5;AUTOR;
+Carlos Vignolo F.;0;0;Bcat,mi,18:00,21:00,
+%1;IN78O Microeconomía Avanzada
+!10;(IN34A/IN3701),(MA34A/MA3401/MA34B/MA3402/MA3403),(IN41A/IN2201);
+Sergio Jara D.,Matteo Triossi;30;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ju,16:15,17:45,
+%1;IN79A Trabajo de Tesis I
+!30;IN780/AUTOR;
+%1;IN79C Seminario Final I
+!10;No tiene;
+%1;IN79D Trabajo de Tesis II
+!15;AUTOR;
+%1;IN79F Formulación y Análisis de Políticas Públicas
+!5;No tiene;
+Guillermo Campero,Mario Alburquerque F;0;0;Bcat,mi,18:00,21:00,
+%1;IN79J Proyecto de Grado
+!40;IN73J;
+Ezequiel Muñoz K.;0;0;Bcat,vi,18:00,21:00,
+%1;IN79K Seminario de Tesis
+!40;IN77O,IN79O,IN79L;
+%1;IN79L Seminario de Preparación de Tesis
+!10;UD40;
+%1;IN79O Modelos Estocásticos en Sistemas de Ingeniería
+!10;(IN34A/IN3701),(MA34A/MA3401/MA34B/MA3402/MA3403),(IN41A/IN2201/IN2C1);
+José Rafael Correa H.;30;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+%1;IN79P Política de Negocios
+!10;No tiene;IN7M1;
+%1;IN79R Seminario Final II
+!10;No tiene;
+%1;IN80J Evaluación de Proyectos Basados en TIC'S
+!10;No tiene;IN75J;
+Eduardo Contreras V.,Claudio Jiménez Carvajal;0;0;Bcat,ma,18:00,21:00,
+%1;IN787 Trabajo Dirigido en Ingeniería Industrial
+!10;No tiene;
+%0;IN799 Seminario de Preparación de Tesis
+!15;AUTOR;
+=EOD
+$0;
+=EOD
+$31;MA
+%2;MA1001 Introducción al Cálculo
+!10;No tiene;MA100;
+Natacha Astromujoff;100;0;Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,Baux,mi,18:00,20:00,
+Cristian Reyes R.;100;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,mi,18:00,20:00,
+%6;MA1002 Cálculo Diferencial e Integral
+!10;(MA1001/MA100),(MA1101S/MA110S);MA1A2;
+Jorge San Martín H.;100;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,ma,14:00,16:00,
+Mauricio Telias H.;100;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,ma,14:00,16:00,
+Leonardo Sánchez C.;100;0;Bcat,lu,10:15,11:45,Bcat,vi,8:30,10:00,Baux,vi,10:15,11:45,
+Matías Godoy Campbell;100;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,vi,8:30,10:00,
+Gino Montecinos G.;100;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,vi,14:00,16:00,
+Leonardo Sánchez C.;100;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,vi,14:00,16:00,
+%2;MA1101 Introducción al Álgebra
+!10;No tiene;MA110;
+Patricio Felmer A.;100;0;Bcat,mi,8:30,10:00,Bcat,vi,8:30,10:00,Baux,lu,18:00,20:00,
+Iván Rapaport Z.;100;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,18:00,20:00,
+%6;MA1102 Álgebra Lineal
+!10;(MA1001S/MA100S),(MA1101/MA110);MA1B2;
+Pablo R. Dartnell R;100;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,16:00,18:00,
+Marcos Kiwi K.;100;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+Daniel Remenik Z.;100;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,Baux,lu,8:00,10:00,
+Jaime San Martín A.;100;0;Bcat,lu,14:30,16:00,Baux,vi,14:00,16:00,
+Alejandro Maass S.;100;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,lu,12:00,14:00,
+Jorge Amaya A.;100;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,lu,12:00,14:00,
+%3;MA2001 Cálculo en Varias Variables
+!10;(MA1002/MA1A2),(MA1102/MA1B2);MA2A1/MA22A/MA220;
+Jaime Ortega P.;100;0;Bcat,mi,10:15,11:45,Bcat,ju,8:30,10:00,Baux,ma,8:00,10:00,
+Raul Uribe S.;100;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,mi,10:00,12:00,
+Marcelo Leseigneur P.;100;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,mi,10:00,12:00,
+%6;MA2002 Cálculo Avanzado y Aplicaciones
+!10;(MA2001/MA2A1),(MA2601/MA2G1);MA2A2/MA26B/MA221;
+Michal Kowalczyk;100;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,ma,14:00,16:00,
+Raúl Gormaz A.;100;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,ma,14:00,16:00,
+Gino Montecinos G.;100;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,ma,14:00,16:00,
+Alexander Frank Marambio;100;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,ma,14:00,16:00,
+Michal Kowalczyk;100;0;Bcat,lu,14:30,16:00,Bcat,ju,14:30,16:00,Baux,mi,18:00,20:00,
+Matías Godoy Campbell;100;0;Bcat,mi,18:00,19:30,Bcat,ju,14:30,16:00,Baux,lu,14:00,16:00,
+%3;MA2601 Ecuaciones Diferenciales Ordinarias
+!10;(MA1002/MA1A2),(MA1102/MA1B2);MA2G1/MA26A/MA261;
+Raul Manasevich T.;100;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,Baux,vi,14:00,16:00,
+Claudio Muñoz Ceron;100;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,Baux,vi,14:00,16:00,
+Salome Martínez S.;100;0;Bcat,ma,14:30,16:00,Bcat,vi,14:30,16:00,Baux,ju,14:00,16:00,
+%1;MA3101 Elementos de Álgebra
+!10;MA2001/MA2A1;MA31A;
+Martin Matamala V.;100;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,16:00,18:00,Botro,mi,14:30,16:00,
+%1;MA3402 Estadística
+!10;MA3401/MA34A;MA34B;
+Raúl Gouet B.;100;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,Baux,lu,14:00,16:00,
+%4;MA3403 Probabilidades y Estadística
+!10;MA2001/MA2A1;
+Servet Martínez A.;100;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,vi,16:00,18:00,
+Maya Stein;100;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,vi,16:00,18:00,
+Raúl Gouet B.;100;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,vi,16:00,18:00,
+Fernando Lema F.;100;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,Baux,ju,16:00,18:00,
+%2;MA3701 Optimización
+!10;MA2002;MA37A/IN34A;
+Jorge Amaya A.;100;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ju,14:00,16:00,
+Vicente Acuña A.;100;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,mi,16:00,18:00,
+%1;MA3705 Algoritmos Combinatoriales
+!10;MA3701/IN3701;
+Iván Rapaport Z.;100;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ju,14:00,16:00,
+%1;MA3802 Teoría de la Medida
+!15;MA3801;MA48C;
+Jaime San Martín A.;50;0;Bcat,lu,10:15,11:45,Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ma,14:00,16:00,
+%1;MA4402 Simulación Estocástica: Teoría y Laboratorio
+!10;MA4401;
+Roberto Cortez Milan,Hector Olivero Quinteros;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,16:15,17:45,Blab,mi,14:30,17:45,
+%1;MA4703 Control Óptimo: Teoria y Laboratorio
+!15;MA4801;
+Héctor Ramírez C.;50;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,Baux,lu,14:30,16:00,Blab,ma,18:00,19:30,Blab,mi,14:30,17:45,
+%1;MA4802 Ecuaciones en Derivadas Parciales
+!15;MA4801;
+Carlos Conca R.;50;0;Bcat,lu,10:15,11:45,Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ma,14:00,16:00,
+%1;MA4902 Práctica Profesional I
+!0;No tiene;MA4901;
+%1;MA5306 Problemas Inversos y de Control de EDP
+!10;MA4601/MA4802;
+Axel Osses A.;30;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,16:00,18:00,
+%1;MA5402 Cálculo Estocástico
+!10;MA4401;MA54G;
+Joaquín Fontbona T.;30;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,vi,14:00,16:00,
+%1;MA5500 Laboratorio de Modelamiento Matemático I
+!10;MA49A/MA4902/AUTOR;
+%1;MA5505 Teoría de Grafos
+!10;MA3705;
+Maya Stein;30;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ju,14:00,16:00,
+%1;MA5603 Análisis no Lineal
+!10;MA5601/MA4802;
+Juan Davila B.,Manuel del Pino M.;30;0;Bcat,lu,10:15,11:45,Bcat,mi,10:15,11:45,Baux,ma,14:00,16:00,
+%1;MA5611 Tópicos en Ecuaciones en Derivadas Parciales
+!10;MA5601/MA4802/AUTOR;
+Claudio Muñoz Ceron;30;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,Baux,lu,14:00,16:00,
+%1;MA5801 Análisis Convexo y Dualidad
+!10;MA4801;
+Alejandro Jofre C.;30;0;Bcat,ma,12:00,13:30,Bcat,ju,10:15,11:45,Baux,vi,14:00,16:00,
+%1;MA5902 Practica Profesional II
+!0;MA4902,MA4702;MA5901;
+%1;MA6902 Practica Profesional III
+!0;MA5902,MA4703;MA6901;
+%1;MA6907 Introducción al Trabajo de Titulo
+!10;MA5307;
+%1;MA6908 Introducción al Trabajo de Título
+!5;No tiene;MA69E;
+%1;MA6909 Trabajo de Título
+!35;(MA6908/MA6907),(EI4205S/EI2090);
+%1;MA6910 Trabajo de Memoria de Título
+!35;(MA6908/MA6907),(EI4205/EI2090),AUTOR;
+%0;MA69P Proyecto de Ingeniería Matemática
+!10;(MA44C/MA54C),MA59A,(MA43A/MA43B);
+=EOD
+$58;ME
+%1;ME3201 Ciencias de los Materiales
+!10;(CM2004/FI2004)/(CM1001,FI2001);ME32A/CM3201;
+Aquiles Sepúlveda O.;80;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,mi,14:30,16:00,
+%2;ME3203 Dibujo Mecánico
+!5;EI2001/EI1102;
+Mauro Monsalve R.;20;0;Bcat,ma,18:00,21:00,
+Alexis Barry D.;20;0;Bcat,ma,18:00,21:00,
+%1;ME3204 Mecánica de Sólidos
+!10;CI3201,MA2002;ME3202;
+Roger Bustamante P.;80;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,mi,18:00,19:30,
+%2;ME3301 Mecánica de Fluidos
+!10;FI2004/CM2004;ME33A/CI3101;
+Williams Calderón M.;40;0;Bcat,lu,12:00,13:30,Bcat,mi,10:15,11:45,Baux,vi,14:30,16:00,Blab,mi,8:30,10:00,
+Williams Calderón M.;40;0;Bcat,lu,12:00,13:30,Bcat,ma,10:15,11:45,Baux,vi,14:30,16:00,Blab,mi,10:15,11:45,
+%1;ME3401 Cinemática y Dinámica de Mecanismos
+!10;FI2001;ME36A;
+Elena Atroshchenko;80;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,mi,18:00,19:30,
+%1;ME3601 Ingeniería de Materiales I
+!10;ME3201;ME42A;
+Rodrigo Palma H.;80;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,16:15,17:45,
+%1;ME4011 Centrales Nucleares
+!10;ME4010/ME400;
+Sergio Courtin Vega;40;0;Bcat,lu,18:00,19:30,
+%1;ME4012 Eficiencia Energética
+!10;FI2004,ME4302;
+Edelmiro Varela Izarnotegui;50;0;Bcat,lu,18:00,19:30,Bcat,mi,18:00,19:30,Baux,lu,16:15,17:45,
+%1;ME4030 Seminario de Diseño e Innovación Tecnológica
+!10;FI2001,(CC1001/(CC1000,CC1002));
+%1;ME4301 Termotecnia
+!10;ME3301;ME43A/IQ3201;
+Juan Carlos Elicer C.;80;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,ju,10:15,11:45,
+%1;ME4302 Transferencia de Calor
+!10;ME4301/ME3301;ME43B;
+Alvaro Valencia M.;80;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,ma,16:15,17:45,
+%1;ME4501 Control de Sistemas
+!10;ME3401;ME55A;
+Rodrigo Hernández P.;80;0;Bcat,ma,10:15,11:45,Bcat,mi,10:15,11:45,Baux,lu,14:30,16:00,
+%1;ME4601 Ingeniería de Materiales II
+!10;ME3601;ME42B;
+Ali Akbarifakhrabadi;80;0;Bcat,mi,16:15,17:45,Bcat,ju,18:00,19:30,Baux,lu,18:00,19:30,
+%6;ME4603 Taller Mecánico
+!5;(ME3601,ME3203)/ME3203;
+Juan Carlos Salgado T.;12;0;Bcat,ma,8:00,12:00,
+Juan Carlos Salgado T.;12;0;Bcat,ma,14:00,18:00,
+Juan Carlos Salgado T.;12;0;Bcat,mi,8:00,12:00,
+Juan Carlos Salgado T.;12;0;Bcat,mi,14:00,18:00,
+Juan Carlos Salgado T.;12;0;Bcat,ju,8:00,12:00,
+Juan Carlos Salgado T.;12;0;Bcat,ju,14:00,18:00,
+%1;ME4701 Vibraciones Mecánicas
+!10;ME3401,(ME3204/MA3403);
+Viviana Meruane Naranjo;80;0;Bcat,mi,16:15,17:45,Bcat,ju,16:15,17:45,Baux,mi,14:30,16:00,
+%1;ME4705 Fabricación Digital
+!10;FI2002;
+Juan Zagal Montealegre;30;0;Bcat,mi,16:15,17:45,
+%1;ME4706 Introducción a la Biomecánica Animal
+!10;FI2001,AUTOR;
+Bruno Grossi;70;0;Bcat,ju,16:15,17:45,
+%1;ME4707 Robótica
+!10;FI2003;
+Juan Zagal Montealegre;80;0;Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ju,14:30,16:00,
+%1;ME4901 Práctica Profesional I
+!0;ME4603/ME3203;ME49A;
+%1;ME5101 Trabajo Dirigido
+!5;AUTOR;ME542;
+%1;ME5102 Trabajo Dirigido Avanzado
+!10;AUTOR;
+%1;ME5300 Máquinas
+!10;ME4302;ME53A;
+Juan Carlos Elicer C.;80;0;Bcat,lu,10:15,11:45,Bcat,ma,12:00,13:30,Bcat,mi,8:30,10:00,Baux,ju,12:00,13:30,
+%4;ME5301 Laboratorio de Máquinas
+!5;ME5300S;ME53B;
+Kim Hauser Vavra;13;0;Blab,lu,14:30,17:45,
+Ricardo Diaz;10;0;Blab,ma,14:30,17:45,
+Ricardo Diaz;10;0;Bcat,ju,14:30,17:45,
+Kim Hauser Vavra;13;0;Bcat,vi,14:30,17:45,
+%4;ME5400 Ingeniería en Termofluidos
+!10;ME5300/ME5301;
+Ramon Frederick G.;15;0;Bcat,mi,10:15,11:45,
+Ramon Frederick G.;15;0;Bcat,ju,10:15,11:45,
+José Cardemil;15;0;Bcat,lu,14:30,16:00,
+José Cardemil;15;0;Bcat,mi,14:30,16:00,
+%1;ME5500 Elementos de Máquinas
+!10;(ME4603,ME3204,ME3601)/(ME3202,ME3203)/ME4602;ME5600;
+Alejandro Ortiz B.;52;0;Bcat,ma,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ju,10:15,11:45,
+%1;ME5501 Fundamentos de Instrumentación
+!10;ME4501;
+Rodrigo Hernández P.;20;0;Bcat,ma,14:30,16:00,
+%1;ME5601 Diseño de Sistemas Mecánicos
+!10;ME5600/(ME5500,ME4701);
+Javier Larrondo P.;40;0;Bcat,vi,14:30,17:45,Baux,ju,10:15,11:45,
+%1;ME5602 Diseño de Equipos de Proceso
+!10;ME5600/(ME58BS/ME5700S);ME56C;
+%1;ME5700 Procesos de Manufactura
+!10;(ME4601,(ME4707/ME4603))/ME4602;ME58A;
+Rubén Fernández Urrutia;80;0;Bcat,mi,10:15,11:45,Bcat,vi,12:00,13:30,Baux,lu,12:00,13:30,
+%1;ME5701 Proyectos en Materiales y Manufactura
+!10;ME5700;
+Leonel Nuñez L.;40;0;Bcat,mi,8:30,10:00,Baux,mi,16:15,17:45,
+%1;ME5702 Gestión de Activos Físicos
+!10;ME4701/IN4703;ME57A;
+Enrique López;80;0;Bcat,lu,14:30,16:00,Bcat,mi,14:30,16:00,Baux,ju,16:15,17:45,
+%1;ME5703 Procesos y Negocios Mineros
+!10;ME3201;
+Guillermo Ugarte;30;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;ME5704 Mantenimiento Predictivo
+!10;ME4701;
+Eduardo Salamanca H;30;0;Bcat,vi,8:30,10:00,
+%1;ME5800 Taller en Innovación y Sustentabilidad
+!5;ME3203/ME4603/ME5300/ME4602;
+David Carrasco Manríquez;30;0;Bcat,ma,18:00,19:30,
+%1;ME5803 Taller de Desarrollo de Carrera Profesional
+!5;ME5901/ME59A/ME6908/ME6909;
+Paula Cabrera;30;0;Bcat,ma,12:00,13:30,
+%1;ME5804 Oratoria
+!5;ME4901;
+Catalina Millán;15;0;Bcat,ju,8:30,10:00,
+%1;ME5901 Práctica Profesional II
+!0;ME4901;ME59A;
+%1;ME6000 Introducción y Aplicaciones de Energia Solar
+!10;FI2004/CM2004;
+Roberto Román L.;60;0;Bcat,ju,16:15,19:30,
+%1;ME6600 Proyecto en Ingeniería Mecánica
+!10;ME5601,IN3301;ME66A;
+Sebastian Franjola Lara;40;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;ME6700 Dirección de Proyectos
+!10;UD350;
+Benedicto Tapia A.;40;0;Bcat,ma,10:00,12:00,
+%1;ME6901 Práctica Profesional III
+!0;ME5901;ME69A;
+%1;ME6908 Introducción al Trabajo de Título
+!5;UD480;ME69E;
+Aquiles Sepúlveda O.;100;0;Bcat,ma,16:15,17:45,
+%4;ME6909 Trabajo de Título
+!35;ME6908;
+Rodrigo Palma H.;50;0;Bcat,mi,16:15,17:45,
+Enrique López;50;0;Bcat,mi,16:15,17:45,
+Elena Atroshchenko;50;0;Bcat,mi,16:15,17:45,
+Williams Calderón M.;50;0;Bcat,mi,16:15,17:45,
+%1;ME6910 Trabajo de Memoria de Título
+!35;AUTOR;
+%1;ME67A Mecánica de Fluidos Computacional
+!10;(ME33A,ME43B)/(ME3301,ME4302);
+Alvaro Valencia M.;20;0;Bcat,lu,12:00,13:30,
+%1;ME467 Diseño de Rotores Aerodinámicos
+!10;ME3301;
+Pablo Castillo C.;30;0;Bcat,mi,10:15,11:45,
+%1;ME621 Industrias Mecánicas
+!5;(ME5300/ME5700/ME58B),UD400,AUTOR;ME315;
+Cristian Urrutia Narvaez;10;0;Bcat,sa,10:15,11:45,
+%1;ME701 Mecánica de Medios Continuos
+!10;(ME43B,ME46A)/(ME4302,ME3202);
+Roger Bustamante P.;30;0;Bcat,vi,12:00,14:00,
+%1;ME706 Dinámica Estructural
+!10;ME4701;
+Viviana Meruane Naranjo;30;0;Bcat,ma,16:15,17:45,
+%1;ME709 Gestión de Activos Físicos Aplicada
+!10;No tiene;
+Enrique López;50;0;Bcat,lu,12:00,13:30,
+%1;ME714 Análisis Exergético
+!9;ME53A;
+José Cardemil;30;0;Bcat,lu,16:15,17:45,Bcat,mi,16:15,17:45,
+%1;ME716 Conversión Térmica de la Energía Solar
+!12;ME43B/ME4302;
+Roberto Román L.;20;0;Bcat,vi,10:15,13:30,
+%1;ME719 Radiación Térmica
+!10;ME4302/IQ3202;ME715;
+Ramon Frederick G.;20;0;Bcat,lu,14:30,16:00,
+%1;ME750 Métodos Matemáticos en Ingeniería
+!10;AUTOR;
+Elena Atroshchenko;30;0;Bcat,ma,10:15,11:45,
+%1;ME790 Trabajo de Tesis I
+!40;AUTOR;
+%1;ME791 Trabajo de Tesis II
+!40;ME790;
+%1;ME797 Trabajo de Tesis I
+!30;AUTOR;
+%0;ME798 Trabajo de Tesis II
+!30;AUTOR;
+=EOD
+$58;MI
+%1;MI3010 Fenómenos de Transporte en Metalurgia Extractiva
+!10;(CM2004/FI2004),MA2002;MI31A;
+Leandro Voisin A.,Christian Ihle Bascuñan;30;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,lu,14:30,16:00,
+%1;MI3100 Química Mineralógica
+!10;CM1001;CM3001;
+Manuel Caraballo M;30;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,ma,16:15,17:45,
+%1;MI3130 Minería
+!10;(IN2201/IN2C1),(EI1102/EI1B2/CC10A/CC10B);MI47A;
+Leandro Voisin A.,Sebastián Troncoso Borquez;30;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,vi,14:30,16:00,
+%1;MI4020 Fundamentos de Procesos Mineralúrgicos
+!10;MI3010/IQ3202;
+Aldo Casali B.;30;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,lu,16:15,17:45,
+%2;MI4040 Análisis Estadístico y Geoestadístico de Datos
+!10;MA3403/MA3402S;MI68A;
+Xavier Emery;12;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Blab,ma,14:30,16:00,
+Xavier Emery;12;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Blab,ju,14:30,16:00,
+%1;MI4060 Mecánica de Rocas
+!10;MI3130,(GL4102/AUTOR),((ME3202/CI3202/MI3060)/AUTOR);MI46B;
+Sofía Rebolledo L.,Javier Vallejos Massa;30;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,vi,14:30,16:00,
+%1;MI4070 Fundamentos de Tecnología Minera
+!10;GL3101,MI3130,MI4060;MI57G;
+Eduardo Eguillor Recabarren,María Valencia V.;30;0;Bcat,ma,14:30,16:00,Bcat,vi,14:30,16:00,Baux,ma,16:00,18:00,Baux,vi,16:00,18:00,
+%1;MI4100 Fundamentos de Metalurgia Extractiva
+!10;MI4110/IQ3203;MI41D;
+Luis Cifuentes Seves;30;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,lu,8:30,10:00,
+%1;MI4901 Práctica Profesional I
+!0;GL3101,MI3130;MI49A;
+%1;MI5021 Ingeniería del Procesamiento de Minerales
+!10;MI4020,(MI4110/IQ3203);
+Christian Ihle Bascuñan,Willy Kracht;30;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,vi,8:30,10:00,
+%2;MI5022 Análisis y Simulación de Procesos Mineralurgicos
+!10;MI5021,MI4040;
+Magín Torres R.;20;0;Bcat,ma,16:15,19:30,
+Willy Kracht;20;0;Bcat,lu,14:30,16:00,Bcat,ma,16:15,17:45,Baux,ma,18:00,19:30,
+%1;MI5031 Procesos Hidro Metalúrgicos
+!10;MI5101;
+Patricio Dip Segovia,Gonzalo Montes A.;20;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,ju,8:30,10:00,
+%2;MI5041 Evaluación de Yacimientos
+!10;MI4040,GL4401S;MI54A;
+Alejandro Cáceres S.;12;0;Bcat,ma,14:30,17:45,Blab,lu,14:30,16:00,
+Alejandro Cáceres S.;12;0;Bcat,ma,14:30,17:45,Blab,lu,16:15,17:45,
+%1;MI5051 Sustentabilidad en Minería
+!10;(MI4070,MI4020,MI4100)/AUTOR;MI55D;
+Jacques Wiertz,Manuel Caraballo M;30;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,Baux,ju,16:15,17:45,
+%1;MI5071 Sistemas Mineros
+!10;MI4070,MI4060;MI58A;
+Sebastián Troncoso Borquez,Javier Santibañez Boric;30;0;Bcat,vi,14:30,17:45,Baux,vi,10:15,11:45,
+%1;MI5072 Simulación de Procesos Mineros
+!10;MI5071/AUTOR;
+Raúl Castro R.;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,8:30,10:00,
+%3;MI5073 Planificación Minera
+!10;MI5071,MI5041;
+Nelson Morales Varela,Javier Cornejo G.;10;0;Bcat,vi,14:30,18:00,Baux,vi,10:15,11:45,Blab,lu,10:15,11:45,
+Nelson Morales Varela,Javier Cornejo G.;10;0;Bcat,vi,14:30,18:00,Baux,vi,10:15,11:45,Blab,lu,12:00,13:30,
+Nelson Morales Varela,Javier Cornejo G.;10;0;Bcat,vi,14:30,18:00,Baux,vi,10:15,11:45,Blab,vi,8:30,10:00,
+%1;MI5081 Economía de Minerales
+!10;IN2201,MI5041;
+Fernando Acosta Barriga,Antonio Cecchi F.;30;0;Bcat,vi,18:00,21:00,Baux,ju,12:00,14:00,
+%1;MI5082 Gestión y Evaluación de Proyectos Mineros
+!10;MI5071,MI5041S;MI65A;
+Gustavo Reyes B.;30;0;Bcat,mi,18:00,21:00,Baux,mi,16:15,17:45,
+%1;MI5101 Ingeniería de Procesos Metalúrgicos
+!10;MI4100;
+Tomas Vargas V.,Gonzalo Montes A.,Leandro Voisin A.;30;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,lu,8:00,10:00,
+%1;MI5901 Práctica Profesional II
+!0;(MI4070/MI4020),(MI4901/AUTOR);MI59A;
+%2;MI6072 Diseño Minero
+!10;MI5071;
+Marcelo Vargas Vergara;16;0;Bcat,vi,14:30,18:00,Blab,ma,10:15,11:45,
+Marcelo Vargas Vergara;16;0;Bcat,vi,14:30,18:00,Blab,ju,8:00,10:00,
+%1;MI6081 Gestión de Operaciones Mineras
+!10;MI5071,(MI5021/MI5101),MI5051S;
+Benjamín Galdames C.;30;0;Bcat,ma,18:00,21:00,Baux,vi,18:00,19:30,
+%2;MI6121 Taller de Proyecto Minero
+!10;MI5073S,MI5082S;MI64B;
+Alfonso Ovalle W.,Linda Castillo Delgado;16;0;Bcat,ju,18:00,21:00,
+Juan Montes A.;16;0;Bcat,vi,10:15,11:45,
+%1;MI6131 Legislación Minera
+!5;MI3130,MI5901;MI65G;
+;40;0;Bcat,mi,19:30,21:00,Baux,mi,18:00,19:30,
+%1;MI6141 Taller de Autoconocimiento y Repertorios Sociales
+!5;MI5901,UD440;
+Jorge Luzoro;10;0;Bcat,ma,8:00,10:00,
+%1;MI6142 Taller de Redacción y Presentación de Textos Técnicos
+!5;MI6908S;
+Hans Göpfert H.;15;0;Bcat,vi,16:15,17:45,
+%1;MI6143 Innovación y Emprendimiento
+!5;MI5901,UD440;
+Juan Stolz,Pedro Alywin;25;0;Bcat,ju,10:15,13:30,
+%1;MI6144 Liderazgo en Minería
+!10;(MI5901,UD440)/AUTOR;
+Rodrigo Montaño F.,Carlos Llanos;25;0;Bcat,vi,8:30,12:00,
+%1;MI6145 Taller Desarrollo de Carrera Profesional
+!5;AUTOR;
+Paula Cabrera;20;0;Bcat,vi,12:00,14:00,
+%1;MI6901 Práctica Profesional III
+!0;MI5901/AUTOR;MI69A;
+%1;MI6908 Introducción al Trabajo de Título
+!5;(EI4205S/EI2090),MI5901S,UD480;MI69E;
+%1;MI6909 Trabajo de Título
+!35;MI6908,EI2090,UD540,AUTOR;
+%1;MI6910 Trabajo de Memoria de Título
+!35;MI6908,EI2090,UD540,AUTOR;
+%1;MI7908 Seminario de Preparación de Tesis
+!5;No tiene;
+%1;MI7909 Tesis I
+!35;MI7908/AUTOR;
+%1;MI7910 Tesis II
+!40;MI7909/AUTOR;
+%1;MI8130 Análisis de Datos en Ingeniería de Minas
+!10;(MA3403/MA3402),AUTOR;
+Xavier Emery;5;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Blab,ju,14:30,16:00,
+%1;MI8131 Seminario de Tesis de Doctorado
+!10;MI8130;
+Xavier Emery;5;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Blab,ju,14:30,16:00,
+%1;MI8132 Unidad de Investigación
+!20;MI8130;
+%1;MI8133 Tópicos Especiales en Mineria
+!10;MI8130;
+%1;MI51G Procesos Hidro-Electro Metalúrgicos
+!10;QI33A,(MI42C/IQ48A);
+%1;MI70A Temas Especiales en Metalurgia Extractiva
+!10;AUTOR;
+%1;MI73A Trabajo Dirigido
+!10;AUTOR;
+%1;MI74D Fundamentos Geomecánicos de Métodos de Explotación por Hundimiento
+!10;AUTOR;
+%1;MI74E Tópicos Avanzados en Preparación Minera Subterránea
+!10;AUTOR;
+%1;MI74F Diseño Experimental y Análisis de Datos Industriales
+!10;AUTOR;
+%1;MI74G Tópicos Avanz. de Diseño y Planif. de Minas Expl. por Hundimiento
+!10;AUTOR;
+%1;MI75B Fenómenos de Transporte para Procesos Metalúrgicos
+!10;AUTOR;
+Leandro Voisin A.,Christian Ihle Bascuñan;30;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,lu,14:30,16:00,
+%1;MI75E Tópicos Avanzados en Planificación Minera
+!10;AUTOR;
+%1;MI76B Economía de Recursos Naturales
+!10;AUTOR;
+%1;MI76C Minería y Desarrollo Económico
+!10;AUTOR;
+%1;MI76D Riesgo y Decisiones en Proyectos Mineros
+!10;AUTOR;
+%1;MI76F Competividad en Minería y Análisis de Mercados de Minerales
+!10;AUTOR;
+%1;MI79A Tesis I
+!25;AUTOR;
+%1;MI79B Tesis II
+!25;AUTOR;
+%1;MI79C Seminario de Preparación de Tesis
+!10;AUTOR;
+%0;MI79D Taller de Tesis
+!40;AUTOR;
+=EOD
+$66;QB
+%1;BT3101 Bioquímica General
+!10;(FI2004/FI2A4/CM2004/CM2A4),IQ3204S/AUTOR;BT35A;
+Rodriguez Vives Juan Pablo,Oriana Salazar A,Bárbara Andrews F.;40;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,8:30,10:00,Blab,ju,14:30,17:45,
+%1;BT3102 Biología Celular
+!10;(CM2004/FI2004),FI2003S;BT31B;
+Omar Porras,Ziomara Gerdtzen H.;40;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,mi,10:15,11:45,Blab,ju,14:30,17:45,
+%1;BT4104 Biología Molecular II
+!10;BT4103;BT51A;
+Cambiazo A. Verónica,Oriana Salazar A;40;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Blab,mi,14:30,17:45,
+%1;BT4451 Introducción a la Sostenibilidad Ecológica
+!10;No tiene;
+Matías Tapia Von Schultzendorff;40;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,lu,16:15,17:45,
+%1;BT4551 Energía Renovable a Partir de Biomasas
+!10;(FI2004/FI2A4)/(CM2004/QI32A);
+Francisco Gracia C.,Maria Elena Lienqueo C.;50;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,Baux,mi,16:15,17:45,
+%1;BT4901 Práctica Profesional I
+!0;IQ3202;BT49A/IQ4901;
+%1;BT5304 Separación y Procesos Biotecnológicos
+!10;IQ3202,IQ4305S;IQ7431/BT56A;
+Juan A. Asenjo,Maria Elena Lienqueo C.;40;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,mi,14:30,16:00,
+%1;BT5402 Trabajo Dirigido en Biotecnología
+!5;AUTOR;BT549;
+%1;BT5403 Trabajo Guiado en Biotecnología
+!10;AUTOR;BT551;
+%1;BT5422 Tecnologías Microbianas
+!10;BT4201;BT53C;
+%1;BT5423 Biología Sintética
+!10;FI2003/BT3401/AUTOR;
+Alvaro Olivera N.;30;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,mi,16:15,17:45,Blab,lu,14:30,17:45,
+%1;BT5501 Inmunología Básica
+!5;BT3102,BT3101;
+Alfredo de Ioannes,Maria Ines Becker;50;0;Bcat,mi,14:30,17:45,
+%1;BT5901 Práctica Profesional II
+!0;BT4901,BT4103;BT59A/IQ59A/IQ5901/BT5902/IQ5901/IQ5902;
+%1;BT6901 Práctica Profesional III
+!0;IN4703S,BT4104,BT5901;IQ6901/BT69A/IQ69A;
+%1;BT6908 Introducción al Trabajo de Título
+!5;UD480,AUTOR;BT69E;
+%1;BT6909 Trabajo de Título
+!35;BT6908/BT69E/AUTOR;
+%1;BT6910 Trabajo de Memoria de Título
+!35;BT6908,AUTOR;
+%1;BT7401 Trabajo Guiado en Biotecnología
+!10;AUTOR;
+%1;BT7412 Bioinformática
+!10;AUTOR;
+%1;BT7431 Biología Molecular e Ingeniería Genética
+!10;BT4103/BT4104/AUTOR;
+%1;BT7451 Seminario en Biotecnología
+!10;No tiene;
+%1;IQ3201 Termodinámica Aplicada
+!10;(CM2004/FI2004),EI2001;
+Joaquin Cortes G.;60;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,mi,16:15,17:45,
+%1;IQ3202 Fenómenos de Transporte
+!10;FI2001,MA2601,MA2002,(CC1001/CC1002),(FI2004/CM2004);
+Felipe Diaz A.;65;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,Baux,vi,8:30,10:00,
+%1;IQ3203 Fisicoquímica Aplicada
+!10;IQ3201S,(FI2004/CM2004);QI42Z/BT46A;
+Joaquin Cortes G.,Tomas Vargas V.,Paulo Araya F.;60;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,Baux,vi,14:30,16:00,
+%1;IQ3205 Química Inorgánica
+!10;(FI2004/CM2004),FI2003S;CM3001/QI33A;
+Melanie Colet Lagrille;50;0;Bcat,ma,14:30,16:00,Bcat,mi,14:30,16:00,Baux,ma,16:15,17:45,
+%1;IQ3451 Introducción a la Sustentabilidad en la Ingeniería
+!10;EI1101/EI2001;
+Felipe Diaz A.,Mariana Bruning Gonzalez;25;0;Bcat,mi,14:30,16:00,Bcat,ju,18:00,19:30,
+%1;IQ4303 Operaciones Unitarias y Procesos de Separación
+!10;IQ3201,IQ3301;BT5303/IQ56A;
+Juan A. Asenjo,Alvaro Olivera N.;50;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,Baux,lu,16:15,17:45,
+%1;IQ4304 Operaciones Sólido Fluido
+!10;IQ3201,IQ3301;IQ48A;
+Humberto Palza C.;50;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,Baux,mi,8:30,10:00,
+%1;IQ4305 Reactores Químicos y Bioquímicos
+!10;IQ3201,IQ3202,IQ3301;IQ55C,IQ55B;
+Luis Amestica S.,Oreste Sillano D.,Paulo Araya F.;50;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,Baux,vi,14:30,16:00,Blab,ju,14:30,17:45,
+%1;IQ4801 Laboratorio de la Ingeniería Química
+!10;IQ3301,IQ3202;IQ53C;
+Juan Quijada Abarca,Jorge Castillo G.;50;0;Blab,ma,14:30,18:00,
+%1;IQ4901 Práctica Profesional I
+!0;IQ3202;IQ49A/BT49A/BT4901;
+%1;IQ5307 Dinámica y Control de Procesos
+!10;(FI3104/IQ4101),IQ4801,IQ4305S;IQ57A;
+Cristian Salgado H.;50;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,Baux,mi,10:00,12:00,
+%1;IQ5402 Trabajo Dirigido en Ingeniería Química
+!5;AUTOR;IQ549;
+%1;IQ5403 Trabajo Guiado en Ingeniería Química
+!10;AUTOR;IQ551;
+%1;IQ5432 Tecnología de Materiales Plásticos
+!10;IQ4305S/AUTOR;IQ584;
+%1;IQ5472 Industria de Procesos Químicos y Biotecnológicos
+!5;IQ4801,IQ4305;
+%1;IQ5502 Ingeniería Integral para el Desarrollo Local Sostenible
+!5;((IN3701/MA3701),IQ4801S)/ME4302/(IN4301,IN4002)/(CI5102S/CI5202);
+Diego de la Fuente Llovet;50;0;Bcat,mi,14:30,16:00,Bcat,ju,18:00,19:30,
+%1;IQ5701 Taller de Diseño de Procesos
+!10;IQ4305,IQ4303S,IQ4801,(IQ5306/BT5304S/IQ7431S);IQ58A/IQ58B/BT65A/BT5701;
+Felipe Diaz A.;40;0;Bcat,mi,18:00,21:00,Baux,vi,14:30,16:00,
+%1;IQ5901 Práctica Profesional II
+!0;IQ4901;IQ5902/IQ59A/BT59A/BT5901;
+%1;IQ6441 Taller de Diseño de Equipos
+!10;(IQ48A/IQ4304),(IQ56A/IQ46B/IQ4303);IQ67A/IQ6473;
+%1;IQ6901 Práctica Profesional III
+!0;IQ5901;IQ69A/BT6901/BT69A;
+%1;IQ6908 Introducción al Trabajo de Título
+!5;UD480,AUTOR;
+%1;IQ6909 Trabajo de Título
+!35;IQ6908,AUTOR,UD480;
+%1;IQ6910 Trabajo de Memoria de Título
+!35;IQ6908,AUTOR;
+%1;IQ7001 Trabajo de Tesis I
+!30;AUTOR;IQ797;
+%1;IQ7002 Trabajo de Tesis II
+!30;IQ7001;IQ798;
+%1;IQ7401 Trabajo Guiado en Ingeniería Química
+!5;AUTOR;
+%1;IQ7402 Trabajo Guiado en Ingeniería Química
+!5;AUTOR;
+%1;IQ7403 Seminario Avanzado de Ingeniería Química
+!10;AUTOR;
+%1;IQ7411 Modelación de Procesos Químicos
+!10;IQ56A/BT5303/IQ4303/AUTOR;
+%1;IQ7412 Métodos Matemáticos de Ingeniería Química
+!10;IQ46A/IQ4302/AUTOR;IQ791;
+%1;IQ7421 Termodinámica Avanzada
+!10;IQ3201/IQ35A/MI41A/AUTOR;
+Albert Herrera Zeppelin;40;0;Bcat,mi,16:15,17:45,Bcat,vi,16:15,17:45,
+%1;IQ7422 Transferencia de Masa Avanzada
+!10;IQ4302/AUTOR;IQ763;
+Francisco Gracia C.;0;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%1;IQ7423 Cinética Electroquímica
+!10;IQ3203/AUTOR;IQ770;
+%1;IQ7432 Procesos de Polimerización
+!10;AUTOR;IQ743;
+%1;IQ7434 Catálisis Aplicada
+!10;IQ55AS/IQ55CS/IQ4305/AUTOR;IQ755;
+%1;IQ7501 Seminario de Ingeniería Química
+!5;AUTOR;
+%1;IQ7502 Seminario Avanzado en Ingeniería Química
+!10;AUTOR;
+%1;IQ7503 Seminario de Ingeniería Química
+!5;AUTOR;
+%1;IQ7504 Seminario de Ingeniería Química
+!5;AUTOR;
+%1;IQ7505 Seminario de Ingeniería Química
+!5;AUTOR;
+%1;IQ7506 Seminario de Ingeniería Química
+!5;AUTOR;
+%1;IQ8003 Trabajo de Tesis I
+!60;AUTOR;
+%1;IQ8004 Trabajo de Tesis II
+!60;IQ8003;
+%1;IQ8005 Trabajo de Tesis III
+!60;IQ8004;EP91A;
+%0;IQ8006 Trabajo de Tesis IV
+!60;IQ8005;EP91B;
+=EOD
+$0;
+=EOD
+$8;idiomas
+%5;EI2201 Inglés 1
+!5;(EI0001,UD95)/(EI0A1,UD95);EI1A1;
+;20;0;Bcat,lu,8:30,10:00,Bcat,mi,8:30,10:00,
+;20;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+;20;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+;20;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+%11;EI2202 Inglés 2
+!5;((EI0002,UD95)/(EI0A2,UD95))/(EI2201/EI1A1);EI1A2;
+;20;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+;20;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+;20;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+;20;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+;20;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,
+;20;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+;20;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+;20;0;Bcat,mi,10:15,11:45,Bcat,vi,10:15,11:45,
+;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%3;EI2301 Francés Elemental
+!5;EI0031;
+Jaime Rojas;20;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+Jaime Rojas;20;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+Emilie Grosset ..;20;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+%1;EI2302 Frances Básico Intermedio.
+!5;EI2301/EI0032;
+Jaime Rojas;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+%14;EI3203 Inglés 3
+!5;((EI003/EI0A3/EI0003),UD95)/EI2202/EI1A2;EI1A3;
+;20;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+;20;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+;20;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+;20;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+;20;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+;20;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+;20;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,
+;20;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+;20;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+;20;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+;20;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+%18;EI4204 Inglés 4
+!5;(EI0004,UD95)/EI3203/EI1A3/(EI0A4,UD95);EI1A4/EP4204;
+;20;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+;20;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+;20;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+;20;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+;20;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+;20;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,
+;20;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,
+;20;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+;20;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+;20;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+;20;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+;20;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+;20;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+;20;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+;20;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+;20;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,
+;20;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,
+%21;EI4205 Inglés 5
+!5;(EI0005,UD95)/EI4204/EI1A4/(EI0A5,UD95);EI1A5;
+;20;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+;20;0;Bcat,lu,8:30,10:00,Bcat,vi,8:30,10:00,
+;20;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+;20;0;Bcat,lu,10:15,11:45,Bcat,vi,10:15,11:45,
+;20;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+;20;0;Bcat,lu,12:00,13:30,Bcat,vi,12:00,13:30,
+;20;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,
+;20;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,
+;20;0;Bcat,lu,14:30,16:00,Bcat,vi,14:30,16:00,
+;20;0;Bcat,lu,16:15,17:45,Bcat,vi,16:15,17:45,
+;20;0;Bcat,ma,8:30,10:00,Bcat,ju,8:30,10:00,
+;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+;20;0;Bcat,ma,10:15,11:45,Bcat,ju,10:15,11:45,
+;20;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+;20;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+;20;0;Bcat,ma,12:00,13:30,Bcat,ju,12:00,13:30,
+;20;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+;20;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+;20;0;Bcat,ma,14:30,16:00,Bcat,ju,14:30,16:00,
+;20;0;Bcat,ma,16:15,17:45,Bcat,ju,16:15,17:45,
+;20;0;Bcat,ma,18:00,19:30,Bcat,ju,18:00,19:30,
+%3;FT1101 Comunicación académica en Ingeniería y Ciencias
+!5;TESTDE;
+Enrique Sologuren;40;0;Bcat,lu,10:00,12:00,
+;40;0;Bcat,ma,12:00,14:00,
+Carmen Núñez;40;0;Bcat,mi,14:00,16:00,
+=EOD
+$2;ing
+%10;EI1102 Introducción a la Ingeniería II
+!5;EI1101/EI110;EI1B2;
+Julio Lira R.;100;0;Bcat,lu,14:00,17:45,
+Horacio Buldrini D.;100;0;Bcat,vi,8:00,11:45,
+Eugenio Bravo;100;0;Bcat,ma,14:00,17:45,
+Eugenio Bravo;100;0;Bcat,mi,14:00,17:45,
+Julio Lira R.;100;0;Bcat,lu,8:00,11:45,
+Horacio Buldrini D.;100;0;Bcat,mi,8:00,11:45,
+Jorge Castillo G.;59;0;Bcat,vi,14:00,17:45,
+Jorge Castillo G.;100;0;Bcat,ju,14:00,17:45,
+Horacio Buldrini D.;0;0;Bcat,ju,16:00,19:30,
+Luisa Pinto L.;20;0;Bcat,ju,8:30,12:00,
+%1;EI2001 Taller de Proyecto
+!5;EI1102/EI1B2/CC10A/CC10B;EI2A1/SD20A/SD15A/ME160;
+Alejandro Chacon A,Cecilia Mujica;25;0;Bcat,ma,18:00,20:00,
+=EOD

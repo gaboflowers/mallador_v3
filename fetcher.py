@@ -23,7 +23,7 @@ global codigoDepto
 codigoDepto = {'AS':'3', 'BT':'268', 'CC':'5', 'CI':'6', 'CM':'306', 'DR':'7',\
                'EH':'8', 'escuela':'27', 'idiomas':'9', 'ing':'12060002', 'EL':'10',\
                'FG':'310', 'FI':'13', 'GF':'15', 'GL':'16', 'IN':'19', 'IQ':'20',\
-               'MA':'21', 'ME':'22', 'MI':'23'}
+               'MA':'21', 'ME':'22', 'MI':'23', 'QB':'307'}
 
 global codigosDeptos
 codigosDeptos = codigoDepto.keys()

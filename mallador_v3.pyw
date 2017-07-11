@@ -726,7 +726,7 @@ class VentanaMallador(Frame):
 		               'EH':'Humanista', 'escuela':'Escuela de Ing. y Cs.', 'idiomas':'Escuela de Ing. y Cs. (Idiomas)',\
 		               'ing':'Escuela de Ing. y Cs. (Ing. e Inn.)', 'EL':u'Eléctrica', 'FG':'Formacion General',\
 		               'FI':u'Física', 'GF':'Geofisica', 'GL':u'Geología', 'IN':'Industrias', 'IQ':u'Química',\
-		               'MA':u'Matemática', 'ME':u'Mecánica', 'MI':'Minas', 'TE':u"Área de Idiomas", 'VA':u"Formación General"}
+		               'MA':u'Matemática', 'ME':u'Mecánica', 'MI':'Minas', 'TE':u"Área de Idiomas", 'VA':u"Formación General", 'QB':u'Química y Biotecnología'}
 		try:
 		    return nombres[depto]
 		except KeyError: return "?????"
