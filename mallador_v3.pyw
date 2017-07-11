@@ -62,6 +62,7 @@ class VentanaMallador(Frame):
 		#self.cargados = [] # OBSOLETO (usar self.dict_cargados) lista de cursos cargados
 		
 		self.d_cargados = dict()
+		self.d_colores_cargados = dict()
 		self.lista_cargados = [] #para preservar el orden entre eliminaciones
 		self.ultimo_ramo_cargado = ""
 		
@@ -372,52 +373,57 @@ class VentanaMallador(Frame):
 		varCheckbox = self.d_widgets_ramo[codigo]['mostrar'] #evento "caja marcada o desmarcada?"
 
 		if varCheckbox.get(): #si "Mostrar" esta marcado
-		    color = self.asignar_color(codigo)
+			try:
+				color = self.d_colores_cargados[codigo]
+			except KeyError:
+				color = self.asignar_color(codigo)
+				self.d_colores_cargados[codigo] = color
 
-		    seccion_marcada = self.d_widgets_ramo[codigo]['seccion'].get() #numero seccion marcada por Radiobutton
-		    bloques = self.d_bloques_ramo[codigo][seccion_marcada]
-		    
-		    items_canvas = []
-		    i=0
-		    for bloque in bloques: #bloque = structHorario.Bloque(str tipo, str dia, Hora ti, Hora tf)
-		        dias = ["lu","ma","mi","ju","vi","sa"]
-		        w = 600
-		        tipo = bloque.tipo
-		        dia = bloque.dia
-		        ti = bloque.ti # class Hora
-		        tf = bloque.tf #
+			seccion_marcada = self.d_widgets_ramo[codigo]['seccion'].get() #numero seccion marcada por Radiobutton
+			bloques = self.d_bloques_ramo[codigo][seccion_marcada]
+
+			items_canvas = []
+			i=0
+			for bloque in bloques: #bloque = structHorario.Bloque(str tipo, str dia, Hora ti, Hora tf)
+				dias = ["lu","ma","mi","ju","vi","sa"]
+				w = 600
+				tipo = bloque.tipo
+				dia = bloque.dia
+				ti = bloque.ti # class Hora
+				tf = bloque.tf #
 
 
-		        # El contorno del rectangulo depende del tipo de ramo
-		        dashTuple = None
-		        if tipo == "aux":
-		            dashTuple = (2,2)
-		        elif tipo == "lab":
-		            dashTuple = (3,2,1)
+				# El contorno del rectangulo depende del tipo de ramo
+				dashTuple = None
+				if tipo == "aux":
+					dashTuple = (2,2)
+				elif tipo == "lab":
+					dashTuple = (3,2,1)
 
-		        offset = 0
-		        if len(self.d_cargados)>1:
-		            offset = 3*i/(len(self.d_cargados) - 1)
-		        print "off",offset
+				offset = 0
+				if len(self.d_cargados)>1:
+					offset = 3*i/(len(self.d_cargados) - 1)
+				print "off",offset
 
-		        x1 = equis1 = dias.index(bloque.dia)*w/5+offset
-		        x2 = x1+w/5-30
-		        y1 = self.minutos_a_coord(ti.getMinutos())
-		        y2 = self.minutos_a_coord(tf.getMinutos())
+				x1 = equis1 = dias.index(bloque.dia)*w/5+offset
+				x2 = x1+w/5-30
+				y1 = self.minutos_a_coord(ti.getMinutos())
+				y2 = self.minutos_a_coord(tf.getMinutos())
 
-		        R = self.canvas.create_rectangle(x1,y1,x2,y2, tags=codigo, dash=dashTuple,fill=color)
-		        texto = codigo+"\n("+tipo+")"
-		        T = self.canvas.create_text(x1+w/10-offset, (y1+y2)/2 ,text = texto, tags=codigo)
-		        items_canvas.append(R)
-		        items_canvas.append(T)
-		        i+=1
-		        self.n_bloques += 1
+				R = self.canvas.create_rectangle(x1,y1,x2,y2, tags=codigo, dash=dashTuple,fill=color)
+				texto = codigo+"\n("+tipo+")"
+				T = self.canvas.create_text(x1+w/10-offset, (y1+y2)/2 ,text = texto, tags=codigo)
+				items_canvas.append(R)
+				items_canvas.append(T)
+				i+=1
+				self.n_bloques += 1
 
-		    self.d_geometrias_ramo[codigo] = items_canvas
-		    print "s.d_g_r",self.d_geometrias_ramo
-		    
+			self.d_geometrias_ramo[codigo] = items_canvas
+			print "s.d_g_r",self.d_geometrias_ramo
+
 		else: #"Mostrar" esta desmarcado
-		    self.canvas.delete(codigo) #borro todas las geometrias con el tag [codigo]
+			self.canvas.delete(codigo) #borro todas las geometrias con el tag [codigo]
+			del self.d_colores_cargados[codigo]
 
 		self.ud_actualizar_mostradas()
 		self.choques_actualizar()
