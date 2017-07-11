@@ -62,6 +62,7 @@ class VentanaMallador(Frame):
 		#self.cargados = [] # OBSOLETO (usar self.dict_cargados) lista de cursos cargados
 		
 		self.d_cargados = dict()
+		self.lista_cargados = [] #para preservar el orden entre eliminaciones
 		self.ultimo_ramo_cargado = ""
 		
 		#self.dicc_cajas_ramo = [] #<-- para guardar las cajas de los objetos dentro del canvas que se mueve
@@ -163,9 +164,15 @@ class VentanaMallador(Frame):
 		for dicc in self.d_cajas_ramo.values():
 		    dicc['frame'].pack_forget()
 
+		cajas_ramo = self.d_cajas_ramo.values()
+		for codigo_ramo in self.lista_cargados:
+			dicc = self.d_cajas_ramo[codigo_ramo]
+			dicc['frame'].pack(side=LEFT, fill=Y)
+
+		'''
 		for dicc in self.d_cajas_ramo.values():
 		    dicc['frame'].pack(side=LEFT, fill=Y)
-
+		'''
 		
 	def actualizar_ramos_inferior(self,agregaRamo=True): # <------------?
 		'''Si agregaRamo = True, significa que fue llamado por widgets_main
@@ -453,6 +460,7 @@ class VentanaMallador(Frame):
 
 	def quitarRamo(self,codigo):
 		del self.d_cargados[codigo]
+		self.lista_cargados.remove(codigo)
 		self.canvas.delete(codigo)
 		
 		try:
@@ -820,12 +828,13 @@ class VentanaMallador(Frame):
 		curso = self.union_catalogos[depto_seleccionado][curso_seleccionado]
 
 		if curso.cod not in self.d_cargados:
-		    self.d_cargados[curso.cod] = curso
-		    print "--self.d_cargados"
-		    print self.d_cargados
-		    print "--End_self.d_cargados"
-		    self.ultimo_ramo_cargado = curso.cod
-		    self.nuevo_ramo_inferior()
+			self.d_cargados[curso.cod] = curso
+			self.lista_cargados.append(curso.cod)
+			print "--self.d_cargados"
+			print self.d_cargados
+			print "--End_self.d_cargados"
+			self.ultimo_ramo_cargado = curso.cod
+			self.nuevo_ramo_inferior()
 
 		'''
 		if curso not in self.cargados: #solo si el curso ya no estaba
