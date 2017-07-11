@@ -58,7 +58,7 @@ hacia la terminal, para que se ingrese la ruta completa del archivo, y luego Ent
 	- Por defecto, los ramos cargados están ocultos. Al marcar la casilla "Mostrar", aparecerán los bloques dibujados en el horario. Puede escoger cualquier sección en cualquier momento, y los bloques de dicho ramo se redibujarán.
 	- Si no quiere que algún ramo siga apareciendo, puede desmarcar la casilla "Mostrar", o hacer clic en "Quitar" para removerlo de la lista de menúes. Si quiere agregarlo nuevamente, puede volver a hacerlo en "Mostrar cursos disponibles".Debi
 	- **Debido a un bug, no se pueden deslizar las listas de secciones de cada ramo. Si agregó un ramo cuyo botón de menú quedó dibujado fuera de la ventana, para removerlo tendrá sólo que ocultarlo, o volver a iniciar el programa.**
-	- **Una vez borrado un ramo, lo más probable es que el resto de los ramos cargados queden en un orden distinto al que tenían originalmente. Esto se debe a la implementación mediante Diccionario, la cual no garantiza ningún orden. Debido a que no es crucial, no planeo cambiar esto prontamente.**
+	- ~~**Una vez borrado un ramo,lo más probable es que el resto de los ramos cargados queden en un orden distinto al que tenían originalmente. Esto se debe a la implementación mediante Diccionario, la cual no garantiza ningún orden. Debido a que no es crucial, no planeo cambiar esto prontamente.~~ Arreglado 11-07-2017.
 	
 ## Para colaboradores:
 
