@@ -62,7 +62,7 @@ hacia la terminal, para que se ingrese la ruta completa del archivo, y luego Ent
 	- **Debido a un bug, no se pueden deslizar las listas de secciones de cada ramo. Si agregó un ramo cuyo botón de menú quedó dibujado fuera de la ventana, para removerlo tendrá sólo que ocultarlo, o volver a iniciar el programa.**
 	- ~~Una vez borrado un ramo,lo más probable es que el resto de los ramos cargados queden en un orden distinto al que tenían originalmente. Esto se debe a la implementación mediante Diccionario, la cual no garantiza ningún orden. Debido a que no es crucial, no planeo cambiar esto prontamente.~~ Arreglado 11-07-2017.
 	
-## Para colaboradores:
+## Para colaboradores (Información antigua):
 
 Para poder probar el panel inferior:
 - Primero, importar el catálogo de prueba (Otoño 2016):
