@@ -4,7 +4,8 @@ Interfaz para visualizar horarios U-Campus (fcfm por el momento)
 Estado actual:
 - La interfaz deja descargar y guardar catálogos (mediante fetcher.py).
 - Se pueden incorporar ramos a la ventana principal.
-- No funciona el scrollbar la lista de sección de cada ramo
+- No funciona el scrollbar la lista de sección de cada ramo.
+- Pendiente: ~~ordenar~~ reescribir el código, implementar MVC.
 
 En resumen, **de momento (2017-01-05) ya sirve para visualizar los ramos, a excepción de los que tengan más de 8 secciones, en cuyo caso aún no se puede hacer scroll para revisar toda la lista**.
 
