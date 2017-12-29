@@ -134,6 +134,7 @@ def parseCursosSopa(sopa):
 				elif tipo == "semana": #<-- Problemas diferenciando semanas de horas; no voy a parsear semanas (*)
 					continue
 				else: tipo = "otro"
+				item = item.replace(",","")
 				item = item.split(" ")
 
 				#print 'item: ',item # <- debugging
@@ -156,6 +157,14 @@ def parseCursosSopa(sopa):
 							t_i2 = item[j+4]
 							t_f2 = item[j+6]
 							bloque2 = structHorario.Bloque(tipo,dia,t_i2,t_f2)
+							"""
+							try:
+								
+							except ValueError:
+								print "fallo"
+								print "item: "+repr(item)
+								exit(1)
+							"""
 
 					#print "dia: "+dia,"t_i: "+t_i,"t_f: "+t_f <- debugging
 					bloque = structHorario.Bloque(tipo,dia,t_i,t_f)
