@@ -40,7 +40,7 @@ hacia la terminal, para que se ingrese la ruta completa del archivo, y luego Ent
 - Para obtener el catálogo de algún semestre (posterior a Otoño 2013, inclusive):
 	- Abrir *mallador_v3.pyw*
 	- Clic en "Archivo", luego en "Gestionar catalogos"
-	- Ingresar año y semestre en la parte inferior. Por defecto, lee la fecha del sistema y "asume" el semestre, pero debido a varias razones político-administrativas, usted puede modificarlo. Clic en Descargar.
+	- Ingresar año y semestre en la parte inferior. Por defecto, lee la fecha del sistema y "asume" el semestre, pero debido a ~~paros~~ varias razones político-administrativas, usted puede modificarlo. Clic en Descargar.
 	- Una vez hecho clic, el programa puede demorar varios segundos (o minutos, dependiendo de la conexión) en cargar. Es normal que mientras esté cargando, al hacer clic en la ventana el sistema muestre que esté pegado. Basta con esperar (a menos que pase mucho tiempo, eso queda al sentido común del usuario). Si aun así falla, seguir con la sección siguiente.
 	- El programa mostrará en el Gestor de catálogos el item "DESCARGADO"+[código semestre]. Si lo desea, puede hacer clic en "Guardar catálogo" para no tener que descargarlo nuevamente. En este momento, ya puede cerrar la ventana del Gestor. Para seguir con la visualización de ramos, sáltese la sección siguiente.
 
