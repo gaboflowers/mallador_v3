@@ -69,8 +69,12 @@ def parseCursosSopa(sopa, cod_depto_debug=None):
             link_programa = tag_programa['href']
         except AttributeError:
             link_programa = None
+        try:
+            tag_nombre_y_codigo.em.extract()
+        except AttributeError:
+	        pass
         nombre_y_codigo = tag_nombre_y_codigo.text.replace('\n','').replace('\t','') # UNICODE
-        print "tablaInTablas:",nombre_y_codigo
+        #print "tablaInTablas:",nombre_y_codigo
         item_curso = structHorario.Curso([nombre_y_codigo]) # [nombre+codigo curso, [datos], secc1, secc2, secc3, ...]
 
         tag = tag_nombre_y_codigo
@@ -86,7 +90,7 @@ def parseCursosSopa(sopa, cod_depto_debug=None):
             try:
 	            key = t.text
 	            value = t.findNextSibling('dd').text
-	            datos[key] = value
+	            datos[unidecode.unidecode(key)] = value
             except AttributeError:	
 	            print "attr error",codigo_este_curso
 	            break
@@ -232,12 +236,13 @@ def getCatalogoHTML(yr,sem):
 #retorna una lista "Catalogo" (cada elemento de getCatalogoHTML parseado
 #por parseCursosSopa
 def getCatalogo(yr,sem):
+    print("Estoy en getCatalogo")
     string = str(yr) + str(sem)
     catalogo = structHorario.Catalogo(string)
-    
     sopas_deptos, cod_deptos = getCatalogoHTML(yr, sem)
     for sopa_depto, cod_depto in zip(sopas_deptos, cod_deptos):
         catalogo_depto_parseado = parseCursosSopa(sopa_depto, cod_depto)
+        if len(catalogo_depto_parseado) == 1: continue # o catalogo vacio
         #print "objeto catalogo"
         #print type(catalogo_depto_parseado)
         catalogo.append(catalogo_depto_parseado)
@@ -287,9 +292,10 @@ def guardarCatalogo(catalogo,yr,sem,extension='fcfm',file_name=None):
             if len(datos_curso) < 2:
                 string = '!N' #!N: "no hay datos"
             else:
-                if 'UD' not in datos_curso: datos_curso['UD'] = "-1"
+                #if 'UD' not in datos_curso: datos_curso['UD'] = "-1" # :'c snif, i miss you, UD's
+                if 'Creditos' not in datos_curso: datos_curso['Creditos'] = "-1" 
                 if 'Requisitos' not in datos_curso: datos_curso['Requisitos'] = ""
-                string = '!'+datos_curso['UD']+';'+datos_curso['Requisitos']+";"
+                string = '!'+datos_curso['Creditos']+';'+datos_curso['Requisitos']+";"
                 
                 if len(datos_curso) == 3:
 					try:
@@ -376,7 +382,7 @@ def cargarCatalogo(nombre_archivo):
         elif primer_char == "!": # datos de curso
 			datos = item[1:-1].split(";")[:-1]
 			if datos[0] != "N":
-				dict_datos = {'UD':datos[0]}
+				dict_datos = {'Creditos':datos[0]}
 				try:
 					dict_datos['Requisitos'] = datos[1]
 					dict_datos['Equivalencias'] = datos[2]

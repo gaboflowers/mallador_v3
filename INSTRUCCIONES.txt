@@ -1,0 +1,5 @@
+Se recomienda leer el texto que aparece abajo de la página https://github.com/gaboflowers/mallador_v3
+Al menos, la sección de Dependencias y la de Instrucciones
+
+Este programa aún es una versión BETA.
+Sugerencias, ideas que solucionen bugs, o cosas mágicas, se reciben en gabriel.flores.m [at] ug.uchile.cl

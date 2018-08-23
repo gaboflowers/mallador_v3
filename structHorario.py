@@ -197,3 +197,6 @@ class Catalogo(list):
 
     def __repr__(self):
         return str(self)
+
+    def list(self):
+        return repr(list(self))
